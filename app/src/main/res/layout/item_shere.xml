@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginBottom="@dimen/s10"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="@dimen/s10"
+        android:background="@drawable/acitvity012"
+        android:padding="@dimen/s10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="邀请好友必赚50元"
+            android:textColor="@color/homeback"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="@dimen/s5"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textSize="@dimen/sp12"
+            android:text="邀请首位好友必得50元" />
+
+        <TextView
+            android:id="@+id/send"
+            android:layout_width="@dimen/s80"
+            android:layout_height="@dimen/s30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_radius_bottom_pink2"
+            android:gravity="center"
+            android:paddingLeft="@dimen/s10"
+            android:paddingRight="@dimen/s10"
+            android:text="去邀请"
+            android:textSize="@dimen/sp12"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</LinearLayout>

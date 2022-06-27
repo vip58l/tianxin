@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/s2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/s10"
+        android:paddingTop="@dimen/s5"
+        android:paddingRight="@dimen/s10"
+        android:paddingBottom="@dimen/s5">
+
+        <ImageView
+            android:id="@+id/circleimageview"
+            android:layout_width="@dimen/s60"
+            android:layout_height="@dimen/s60"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/s2"
+            android:src="@mipmap/cover_defult" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_money"
+            android:layout_toRightOf="@+id/circleimageview"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/s20"
+                android:layout_marginTop="@dimen/s5"
+                android:paddingLeft="@dimen/s10"
+                android:text="小可爱"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="@dimen/s10"
+                android:text="13800138000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="@dimen/s10"
+                android:text="注册时间: 2022-03-10 14:14:14"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="+ 0.01元"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/sp16" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

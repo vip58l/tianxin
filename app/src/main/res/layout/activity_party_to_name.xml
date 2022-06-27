@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.party.activity_party_toName">
+
+    <com.tianxin.widget.Backtitle
+        android:layout_width="match_parent"
+        app:title_name="聚会报名"
+        android:layout_height="@dimen/s40" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/s20">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/s20"
+                android:text="@string/attitle"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp20" />
+
+            <com.tianxin.widget.party_weide
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s40"
+                app:patry_name="@string/ta4"
+                app:patry_tag=""
+                app:patry_visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/s5"
+                android:layout_marginBottom="@dimen/s5"
+                android:background="@color/home3" />
+
+            <com.tianxin.widget.party_weide
+                android:id="@+id/t2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:patry_name="@string/ta5"
+                app:patry_visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/s5"
+                android:layout_marginBottom="@dimen/s5"
+                android:background="@color/home3" />
+
+            <com.tianxin.widget.party_weide
+                android:id="@+id/t3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:patry_name="@string/ta6"
+                app:patry_tag=""
+                app:patry_visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/s5"
+                android:layout_marginBottom="@dimen/s5"
+                android:background="@color/home3" />
+
+            <com.tianxin.widget.party_weide
+                android:id="@+id/t4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:patry_name="@string/taa1"
+                app:patry_tag="请选择" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/s5"
+                android:layout_marginBottom="@dimen/s5"
+                android:background="@color/home3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s40"
+                android:gravity="left|center"
+                android:text="备注信息" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/s5"
+                android:layout_marginBottom="@dimen/s5"
+                android:background="@color/home3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/e1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/activity013"
+                    android:gravity="left|top"
+                    android:hint="@string/htmes"
+                    android:maxLength="50"
+                    android:maxLines="6"
+                    android:minLines="6"
+                    android:padding="@dimen/s10"
+                    android:textSize="@dimen/sp14" />
+
+                <ImageView
+                    android:id="@+id/clockwise"
+                    android:layout_width="@dimen/s20"
+                    android:layout_height="@dimen/s20"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/s5"
+                    android:layout_marginBottom="@dimen/s5"
+                    android:src="@mipmap/ce7"
+                    android:visibility="gone"></ImageView>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tips"
+                android:layout_marginTop="@dimen/s50"
+                android:layout_marginBottom="@dimen/s20"
+                android:background="@drawable/diis_bg7"
+                android:text="确认报名"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/sp16" />
+
+            <LinearLayout
+                android:id="@+id/tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/check_login"
+                    android:layout_width="@dimen/s25"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:alpha="0.8"
+                    android:button="@drawable/login_checkbox"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:padding="@dimen/s5" />
+
+                <TextView
+                    android:id="@+id/t5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ta12"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

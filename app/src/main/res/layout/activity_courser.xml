@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linboot"
+        android:orientation="vertical">
+
+        <com.tianxin.widget.itembackTopbr
+            android:id="@+id/itemback"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s40" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_marginTop="@dimen/s20"
+            android:layout_marginRight="@dimen/s10"
+            android:orientation="vertical"
+            android:padding="@dimen/s10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_msg71"
+                android:textColor="@color/homeback"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            style="@style/leak"
+            android:background="@drawable/diis_bg8">
+
+            <LinearLayout
+                android:id="@+id/lin9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_msg70"
+                    android:textColor="@color/homeback"
+                    android:textSize="@dimen/sp20"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/s10"
+                    android:background="@drawable/activity011"
+                    android:paddingLeft="@dimen/s10"
+                    android:paddingTop="@dimen/s2"
+                    android:paddingRight="@dimen/s10"
+                    android:paddingBottom="@dimen/s2"
+                    android:text="90%的人用直播卖课"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp12"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lin9"
+                android:layout_marginTop="@dimen/s10"
+                android:text="适用于教学，中途进入可直接观看全部视频"
+                android:textSize="@dimen/sp12"></TextView>
+
+            <ImageView
+                android:layout_width="@dimen/s30"
+                android:layout_height="@dimen/s30"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/aa2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            style="@style/leak">
+
+            <LinearLayout
+                android:id="@+id/lin10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_msg72"
+                    android:textColor="@color/homeback"
+                    android:textSize="@dimen/sp20"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/s10"
+                    android:background="@drawable/activity011"
+                    android:paddingLeft="@dimen/s10"
+                    android:paddingTop="@dimen/s2"
+                    android:paddingRight="@dimen/s10"
+                    android:paddingBottom="@dimen/s2"
+                    android:text="90%的人用直播卖课"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp12"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lin10"
+                android:layout_marginTop="@dimen/s10"
+                android:text="适用于教学，中途进入可直接收听全部内容"
+                android:textSize="@dimen/sp12"></TextView>
+
+            <ImageView
+                android:layout_width="@dimen/s30"
+                android:layout_height="@dimen/s30"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/aa1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout3"
+            style="@style/leak">
+
+            <LinearLayout
+                android:id="@+id/lin11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_msg73"
+                    android:textColor="@color/homeback"
+                    android:textSize="@dimen/sp20"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/s10"
+                    android:background="@drawable/activity011"
+                    android:paddingLeft="@dimen/s10"
+                    android:paddingTop="@dimen/s2"
+                    android:paddingRight="@dimen/s10"
+                    android:paddingBottom="@dimen/s2"
+                    android:text="90%的人用直播卖课"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp12"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lin11"
+                android:layout_marginTop="@dimen/s10"
+                android:text="适用于教学，中途进入可直接观看，直播卖课"
+                android:textSize="@dimen/sp12"></TextView>
+
+            <ImageView
+                android:layout_width="@dimen/s30"
+                android:layout_height="@dimen/s30"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/aba" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout4"
+            style="@style/leak">
+
+            <LinearLayout
+                android:id="@+id/lin14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="预览已发布的课程"
+                    android:textColor="@color/homeback"
+                    android:textSize="@dimen/sp20"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/s10"
+                    android:background="@drawable/activity011"
+                    android:paddingLeft="@dimen/s10"
+                    android:paddingTop="@dimen/s2"
+                    android:paddingRight="@dimen/s10"
+                    android:paddingBottom="@dimen/s2"
+                    android:text="90%的人用直播卖课"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp12"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lin14"
+                android:layout_marginTop="@dimen/s10"
+                android:text="可进行 编辑 修改 删除 等操作"
+                android:textSize="@dimen/sp12"></TextView>
+
+            <ImageView
+                android:layout_width="@dimen/s30"
+                android:layout_height="@dimen/s30"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/aa4" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linboot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/s10"
+        android:padding="@dimen/s10">
+
+        <TextView
+            android:id="@+id/send"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s50"
+            android:background="@drawable/bg_radius_bottom_pink2"
+            android:gravity="center"
+            android:padding="@dimen/s10"
+            android:text="@string/tv_msg74"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>

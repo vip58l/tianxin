@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/s20"
+    android:orientation="vertical"
+    tools:context=".activity.browse.activity_browse">
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            app:tabBackground="@null"
+            app:tabIndicatorColor="@null"
+            app:tabIndicatorHeight="0dip"
+            app:tabMode="auto"
+            app:tabSelectedTextColor="#E53935"
+            app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+            app:tabTextColor="#999" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/s30"
+            android:layout_height="@dimen/s20"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/s5"
+            android:src="@mipmap/icon_lent" />
+
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/head"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/s5"
+            android:text="@string/openvps2"
+            android:textColor="@color/home"
+            android:textSize="@dimen/sp13" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#ffff5376"
+            android:gravity="center"
+            android:padding="@dimen/s10"
+            android:text="@string/openvip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

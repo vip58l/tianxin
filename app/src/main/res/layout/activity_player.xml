@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homeback"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mBottomLayout"
+        android:orientation="vertical" />
+
+    <!--头部导航-->
+    <include layout="@layout/head" />
+
+    <!--底部导航-->
+    <include layout="@layout/footer" />
+
+</RelativeLayout>

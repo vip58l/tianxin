@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home3"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.register.activity_rpwd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.tianxin.widget.Backtitle
+            android:id="@+id/backtitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s40"
+            app:title_name="绑定手机号" />
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout0"
+            android:orientation="vertical"
+            android:padding="@dimen/sp10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/s10"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/username"
+                    style="@style/edit_e2"
+                    android:hint="@string/tvphone" />
+
+                <ImageView
+                    android:id="@+id/editshow0"
+                    android:layout_width="@dimen/s20"
+                    android:layout_height="@dimen/s20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/s5"
+                    android:alpha="0.5"
+                    android:src="@mipmap/cdq"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/s10"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/password"
+                    style="@style/edit_e1"
+                    android:hint="@string/tvpassword" />
+
+                <ImageView
+                    android:id="@+id/editshow1"
+                    android:layout_width="@dimen/s20"
+                    android:layout_height="@dimen/s20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/s5"
+                    android:alpha="0.5"
+                    android:src="@mipmap/cdq" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/s10"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/password2"
+                    style="@style/edit_e1"
+                    android:hint="@string/tvpassword2" />
+
+                <ImageView
+                    android:id="@+id/editshow2"
+                    android:layout_width="@dimen/s20"
+                    android:layout_height="@dimen/s20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/s5"
+                    android:alpha="0.5"
+                    android:src="@mipmap/cdq" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/wx"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s40"
+                    android:layout_marginBottom="@dimen/s10"
+                    android:background="@drawable/diis_bg1"
+                    android:hint="微信号/选填"
+                    android:paddingLeft="@dimen/s10"
+                    android:paddingRight="@dimen/s10"
+                    android:textSize="@dimen/sp14"
+                    android:visibility="gone"></EditText>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/qq"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s40"
+                android:layout_marginBottom="@dimen/s10"
+                android:background="@drawable/diis_bg1"
+                android:hint="QQ号码/选填"
+                android:inputType="number"
+                android:maxLength="15"
+                android:paddingLeft="@dimen/s10"
+                android:paddingRight="@dimen/s10"
+                android:textSize="@dimen/sp14"
+                android:visibility="gone"></EditText>
+
+            <LinearLayout
+                android:id="@+id/layout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/mycode"
+                    style="@style/edit_e6"
+                    android:hint="@string/mycodemsghin" />
+
+                <TextView
+                    android:id="@+id/codemsg"
+                    android:layout_width="@dimen/s100"
+                    android:layout_height="@dimen/s35"
+                    android:layout_gravity="center"
+                    android:background="@drawable/acitvity04"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/s5"
+                    android:paddingBottom="@dimen/s5"
+                    android:text="@string/tvcodemsg"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp12" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/smallLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/sex1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/s40"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/s10"
+                android:layout_marginRight="@dimen/s10"
+                android:layout_weight="1"
+                android:background="@drawable/bg_jianbian_yuanjiao"
+
+                android:gravity="center"
+                android:text="男神"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/sex2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/s40"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/s10"
+                android:layout_marginRight="@dimen/s10"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_item4"
+                android:gravity="center"
+                android:text="女神" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sendcontext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s40"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_marginTop="@dimen/s40"
+            android:layout_marginRight="@dimen/s10"
+            android:layout_marginBottom="@dimen/s30"
+            android:background="@drawable/bg_jianbian_yuanjiao"
+            android:text="绑定手机号"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <com.tianxin.widget.passwnewwd
+        android:id="@+id/passwnewwd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/home3"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--用来初始化会话列表 主是用于处理进直直播间获法获取对像-->
+    <com.tencent.qcloud.tim.uikit.modules.conversation.ConversationLayout
+        android:id="@+id/conversation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/live_scenes_live_room_swipe_refresh_layout_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/live_scenes_live_room_rv_room_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <include layout="@layout/layout_img_eoerr" android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/live_scenes_live_create_room"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@mipmap/avv"
+        android:clickable="true"
+        android:visibility="visible" />
+
+</RelativeLayout>

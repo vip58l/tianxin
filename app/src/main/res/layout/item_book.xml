@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="136.0dip"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8.0dip">
+
+            <ImageView
+                android:id="@+id/item_sex_img"
+                android:layout_width="90.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2.0dip"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_sex_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="roommate（我的老师）"
+                    android:textColor="#ff333333"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/item_sex_tv_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:lineSpacingExtra="4.0dip"
+                    android:lines="3"
+                    android:text="我对老师的爱恋，没想到是这样的老师。"
+                    android:textColor="#ff909090"
+                    android:textSize="13.0sp" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip">
+
+                    <LinearLayout
+                        android:id="@+id/item_sex_lin1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1.0dip"
+                            android:src="@mipmap/icon_sex_autuor" />
+
+                        <TextView
+                            android:id="@+id/item_sex_tv_author"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:textColor="#ff909090"
+                            android:textSize="11.0sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/item_sex_tv_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="8.0dip"
+                        android:paddingRight="8.0dip"
+                        android:text="15.32MB"
+                        android:textColor="#ff909090"
+                        android:textSize="11.0sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:background="@drawable/bg_line_base" />
+
+    </LinearLayout>
+</LinearLayout>

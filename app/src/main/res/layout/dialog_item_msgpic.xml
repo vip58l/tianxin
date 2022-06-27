@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/diis_bg3"
+    android:orientation="vertical"
+    android:padding="@dimen/s10">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="@dimen/s25"
+        android:layout_height="@dimen/s25"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/cdq"></ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/s100"
+            android:layout_height="@dimen/s100"
+            android:layout_marginTop="@dimen/s30"
+            android:layout_marginBottom="@dimen/s5"
+            android:src="@mipmap/icon_man">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/mtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s10"
+            android:layout_marginBottom="@dimen/s10"
+            android:gravity="center"
+            android:text="上传照片获得更多曝光"
+            android:textColor="@color/homeback"
+            android:textSize="@dimen/sp18"></TextView>
+
+        <TextView
+            android:id="@+id/titlemsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s10"
+            android:layout_marginBottom="@dimen/s10"
+            android:gravity="center"
+            android:textColor="@color/home"
+            android:textSize="@dimen/sp14"
+            android:text="@string/tv_dialot_item_auatar"/>
+
+        <TextView
+            android:id="@+id/updatepic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s50"
+            android:layout_marginLeft="@dimen/s40"
+            android:layout_marginTop="@dimen/s10"
+            android:layout_marginRight="@dimen/s50"
+            android:layout_marginBottom="@dimen/s20"
+            android:background="@drawable/bg_radius_bottom_pink2"
+            android:gravity="center"
+            android:text="马上上传"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18"></TextView>
+    </LinearLayout>
+
+</RelativeLayout>

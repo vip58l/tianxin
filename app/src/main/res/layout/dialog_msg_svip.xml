@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/s300"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_flowlayout2"
+    android:gravity="center"
+    android:padding="@dimen/s10">
+
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="@dimen/s10"
+        android:text="@string/tv_msg224"
+        android:textColor="@color/homeback" />
+
+    <View
+        android:id="@+id/v1"
+        android:layout_marginTop="@dimen/s5"
+        android:layout_marginBottom="@dimen/s5"
+        android:layout_below="@+id/tv2"
+        android:layout_width="match_parent"
+        android:background="@color/home3"
+        android:layout_height="0.3dp"/>
+
+    <LinearLayout
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v1"
+
+        android:layout_marginBottom="@dimen/s5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/send1"
+            style="@style/actexts2"
+            android:text="@string/tv_msg152" />
+
+        <TextView
+            android:id="@+id/send2"
+            style="@style/actexts2"
+            android:text="@string/tv_msg153" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

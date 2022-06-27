@@ -1,0 +1,62 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+
+        release {
+            minifyEnabled true
+            buildConfigField 'String', 'COS_APP_ID', quotWrapper("1312525658")
+            buildConfigField 'String', 'COS_SECRET_ID', quotWrapper("AKID51jDUVAi39G8lBNSL0ShiW6aqtmSu89w")
+            buildConfigField 'String', 'COS_SECRET_KEY', quotWrapper("by83wd7ORJzShjYAacWCerqcBYhdMr66")
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            buildConfigField 'String', 'COS_APP_ID', quotWrapper("1312525658")
+            buildConfigField 'String', 'COS_SECRET_ID', quotWrapper("AKID51jDUVAi39G8lBNSL0ShiW6aqtmSu89w")
+            buildConfigField 'String', 'COS_SECRET_KEY', quotWrapper("by83wd7ORJzShjYAacWCerqcBYhdMr66")
+        }
+
+
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+static String quotWrapper(key) {
+    if (key == null) {
+        return "\"\""
+    }
+    return "\"".concat(key).concat("\"")
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    implementation 'org.jetbrains:annotations-java5:22.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'com.google.code.gson:gson:2.8.8'
+    implementation project(path: ':Module:tuikit-live')
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.tencent.qcloud:cosxml:5.5.5'
+    implementation 'com.contrarywind:Android-PickerView:4.1.9'
+
+}

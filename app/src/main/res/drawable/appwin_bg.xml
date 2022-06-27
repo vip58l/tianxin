@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:height="@dimen/s200"
+        android:drawable="@drawable/bg_jianbian_h" />
+    <item
+        android:height="30.0dip"
+        android:drawable="@drawable/bg_jianbian_h"
+        android:gravity="top" />
+
+    <gradient
+        android:angle="180.0"
+        android:endColor="@color/c_main"
+        android:startColor="#fff53d60" />
+</layer-list>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tencent.qcloud.costransferpractice">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application>
+
+        <activity
+            android:name=".bucket.BucketActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".bucket.BucketAddActivity"
+            android:exported="false"
+            android:label="@string/bucket_add_title"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".region.RegionActivity"
+            android:exported="false"
+            android:label="@string/region"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".object.ObjectActivity"
+            android:exported="false"
+            android:label="@string/object_title"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".transfer.UploadActivity"
+            android:exported="false"
+            android:label="@string/upload_title"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".transfer.DownloadActivity"
+            android:exported="false"
+            android:label="@string/download_title"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".transfer.Api"
+            android:exported="false"
+            android:label="@string/download_title2"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

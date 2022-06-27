@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/s1">
+
+    <RelativeLayout
+        android:id="@+id/relayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s220"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="1dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/bg_shade_bom"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/shape_cover_gold_background6"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/info_ll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s70"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.5"
+            android:background="@drawable/shape_cover_gold_background6"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/topzd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s5"
+            android:layout_marginTop="@dimen/s5"
+            android:background="@drawable/activity011"
+            android:gravity="center"
+            android:paddingLeft="@dimen/s8"
+            android:paddingTop="@dimen/s3"
+            android:paddingRight="@dimen/s8"
+            android:paddingBottom="@dimen/s3"
+            android:text="@string/zd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp12"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:paddingLeft="@dimen/s5"
+        android:text="标题测试"
+        android:textColor="@color/half_transparent"
+        android:textSize="@dimen/sp12"
+        app:layout_constraintTop_toBottomOf="@+id/relayout"
+        tools:layout_editor_absoluteX="-45dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/relayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleimageview"
+            android:layout_width="@dimen/s25"
+            android:layout_height="@dimen/s25"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@mipmap/cover_defult"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/image"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/s25"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:lines="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp12"
+            app:layout_constraintBottom_toBottomOf="@+id/image"
+            app:layout_constraintEnd_toStartOf="@+id/time"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/circleimageview" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="04:60"
+
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/image"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_state_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/acitvity07"
+        android:gravity="center"
+        android:padding="@dimen/s10"
+        android:text="内容审核中"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/relayout" />
+
+    <TextView
+        android:id="@+id/sendsvip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/s5"
+        android:layout_marginEnd="@dimen/s5"
+        android:background="@drawable/bg_radius_bottom_pink5"
+        android:paddingLeft="@dimen/s10"
+        android:paddingTop="@dimen/s2"
+        android:paddingRight="@dimen/s10"
+        android:paddingBottom="2sp"
+        android:text="@string/tv_msg278"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp10"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/iv_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/trtcvoiceroom_ic_lock"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp16"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/relayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/relayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

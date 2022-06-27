@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/s2"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="@dimen/s5">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/s40"
+        android:layout_height="@dimen/s40"
+        android:padding="@dimen/s2"
+        android:scaleType="center" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/s10"
+        android:layout_marginRight="@dimen/s10"
+        android:layout_weight="1"
+        android:text="-" />
+
+    <RadioButton
+        android:id="@+id/radiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</LinearLayout>

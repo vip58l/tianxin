@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/s5"
+        android:layout_marginBottom="@dimen/s10">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s180"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/s2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="小可爱"
+                android:textColor="@color/homeback"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s10"
+                android:layout_marginRight="@dimen/s10"
+                android:text="Lv10"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="上海"
+                android:textSize="@dimen/sp12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s5"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout11">
+
+            <TextView
+                android:id="@+id/sheight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s2"
+                android:background="@drawable/bg_radius_bottom_pink5"
+                android:paddingLeft="@dimen/s8"
+                android:paddingTop="@dimen/s1"
+                android:paddingRight="@dimen/s8"
+                android:paddingBottom="@dimen/s1"
+                android:text="170cm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp10" />
+
+            <TextView
+                android:id="@+id/Weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s5"
+                android:paddingLeft="@dimen/s8"
+                android:paddingTop="@dimen/s1"
+                android:paddingRight="@dimen/s8"
+                android:paddingBottom="@dimen/s1"
+                android:text="49Kg"
+                android:textColor="@color/home"
+                android:textSize="@dimen/sp10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/s2"
+            android:paddingRight="@dimen/s2"
+            android:paddingBottom="@dimen/s5"
+            android:layout_marginTop="@dimen/s5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+            <TextView
+                android:id="@+id/myoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="0"
+                android:textColor="@color/c_main1"
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s2"
+                android:layout_marginRight="@dimen/s10"
+                android:text="金币/分钟"
+                android:textColor="@color/c_main1"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:id="@+id/tag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="颜值/在线"
+                android:textColor="@color/teal006"
+                android:textSize="@dimen/sp12" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

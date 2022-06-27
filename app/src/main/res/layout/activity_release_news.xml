@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.LatestNews.activity_news">
+
+    <com.tianxin.widget.itembackTopbr
+        android:id="@+id/itemback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40" />
+
+    <EditText
+        android:id="@+id/contentet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/s10"
+        android:background="@drawable/acitvity012"
+        android:gravity="top|left"
+        android:hint="@string/tv_msg_tm8"
+        android:maxLength="500"
+        android:maxLines="20"
+        android:minLines="5"
+        android:padding="@dimen/s10"
+        android:textSize="@dimen/sp15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/s10">
+
+        <TextView
+            android:id="@+id/circular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/s10"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/s5"
+            android:paddingBottom="@dimen/s5"
+            android:text="@string/tv_msg_tm7"
+            android:textColor="@color/home"
+            android:textSize="11sp" />
+
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/500" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loationimges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/s2"
+            android:paddingTop="15dp"
+            android:paddingRight="@dimen/s2" />
+
+        <TextView
+            android:id="@+id/drag_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:visibility="gone"
+            android:text="（支持长按拖动排序、左右侧滑可删除）"
+            android:textColor="#ACACAC" />
+
+    </LinearLayout>
+
+    <com.tianxin.activity.LatestNews.upfile.filevideo
+        android:id="@+id/filevideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sf_paydialog_yuanjiaotop2"
+    android:orientation="vertical"
+    android:padding="@dimen/s10">
+
+    <ImageView
+
+        android:id="@+id/img_close"
+        android:layout_width="@dimen/s20"
+        android:layout_height="@dimen/s20"
+        android:layout_gravity="right"
+        android:src="@mipmap/cdq" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/s120"
+        android:layout_height="@dimen/s120"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/s10"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_welcome1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/s20"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="入驻类型"
+            android:textColor="@color/homeback" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/s40"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_marginRight="@dimen/s5"
+            android:gravity="center"
+            android:paddingLeft="@dimen/s10"
+            android:text="@string/tm123"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/sp18" />
+
+        <ImageView
+            android:layout_width="@dimen/s15"
+            android:layout_height="@dimen/s15"
+            android:src="@mipmap/icon_me_jiao" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/s10"
+        android:layout_marginBottom="@dimen/s5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="认证名称"
+            android:textColor="@color/homeback" />
+
+        <EditText
+            android:id="@+id/editshow"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/s40"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_weight="1"
+            android:background="@drawable/acitvity011"
+            android:hint="不超过20个字"
+            android:maxLength="20"
+            android:paddingLeft="@dimen/s10"
+            android:textSize="@dimen/sp14" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/s20"
+        android:layout_marginBottom="@dimen/s10"
+        android:text="平台公会或个人开播均可获得会员打赏礼物50%收益分成 让你的才华有更强变现能力 赶紧加入吧." />
+
+    <TextView
+        android:id="@+id/sendbtn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/s10"
+        android:layout_marginTop="@dimen/s30"
+        android:layout_marginRight="@dimen/s10"
+        android:layout_marginBottom="@dimen/s15"
+        android:background="@drawable/bg_radius_bottom_pink2"
+        android:gravity="center"
+        android:text="提交确认"
+        android:textColor="@color/white" />
+
+</LinearLayout>

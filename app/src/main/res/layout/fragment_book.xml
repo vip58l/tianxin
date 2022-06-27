@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <androidx.core.widget.SwipeRefreshLayout
+        android:id="@+id/pullToRefreshLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ListView
+            android:id="@+id/pullListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffffff"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:scrollingCache="false" />
+    </androidx.core.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.steven.selectimage.widget.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/show_layout"
+        android:layout_width="110dp"
+        android:layout_height="110dp">
+
+        <ImageView
+            android:id="@+id/iv_selected_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="1dp"
+            android:padding="1dp"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/deltaRelative"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="1dp"
+            android:layout_marginStart="1dp"
+            android:src="@mipmap/ce7" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_margin="2dp"
+        android:src="@mipmap/add_icon"
+        android:visibility="gone" />
+
+</com.steven.selectimage.widget.SquareFrameLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home3"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.Withdrawal.References">
+
+    <com.tianxin.widget.itembackTopbr
+        android:id="@+id/itemback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tab_color"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/s150"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/s10">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout7"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="@dimen/s10"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/s5"
+                                android:text="金币收益"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp12" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/goldcoin"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0.00"
+                                    android:textColor="@color/home5"
+                                    android:textSize="@dimen/sp20"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:text="币"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp12"
+                                    app:layout_constraintBottom_toBottomOf="@+id/linearLayout7"
+                                    app:layout_constraintStart_toEndOf="@+id/linearLayout7"
+                                    app:layout_constraintTop_toTopOf="@+id/linearLayout7"
+                                    app:layout_constraintVertical_bias="0.78"
+                                    tools:ignore="MissingConstraints" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/s10"
+                            android:layout_marginEnd="20dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/s5"
+                                android:text="现金收益"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp12" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/money"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0.00"
+                                    android:textColor="@color/home5"
+                                    android:textSize="@dimen/sp20"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:text="元"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp12" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/chartfacegv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableTop="@mipmap/signature_refresh_icon_n"
+                        android:padding="@dimen/s10"
+                        android:text="兑换收益"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp12" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/msg_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/s20"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/s10"
+                    android:gravity="center"
+                    android:text="每天签到，可随机领取金币,满100币起兑换10元"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp14" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/s10">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

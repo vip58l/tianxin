@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.picenter.activity_data">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_marginBottom="@dimen/s5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@mipmap/icon_cert_head2"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/s10"
+                android:background="@drawable/acitvity012"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/s10"
+                android:paddingRight="@dimen/s10">
+
+                <TextView
+                    android:id="@+id/sex_msg"
+                    style="@style/actextsh"
+                    android:text="@string/a12"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/a0"
+                    style="@style/actextsk"
+                    android:text="姓名：保密" />
+
+                <TextView
+                    android:id="@+id/a1"
+                    style="@style/actextsk"
+                    android:text="年龄：20岁" />
+
+                <TextView
+                    android:id="@+id/a2"
+                    style="@style/actextsk"
+                    android:text="身高：168cm" />
+
+                <TextView
+                    android:id="@+id/a22"
+                    style="@style/actextsk"
+                    android:text="体重：" />
+
+                <TextView
+                    android:id="@+id/a3"
+                    style="@style/actextsk"
+                    android:text="学历：保密" />
+
+                <TextView
+                    android:id="@+id/a4"
+                    style="@style/actextsk"
+                    android:text="婚姻：未婚" />
+
+                <TextView
+                    android:id="@+id/a5"
+                    style="@style/actextsk"
+                    android:text="工作：保密" />
+
+                <TextView
+                    android:id="@+id/a6"
+                    style="@style/actextsk"
+                    android:text="籍贯：保密" />
+
+                <TextView
+                    android:id="@+id/a7"
+                    style="@style/actextsk"
+                    android:text="现居城市：北京" />
+
+                <TextView
+                    android:id="@+id/a8"
+                    style="@style/actextsk"
+                    android:text="详情地址：对方暂未公开" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s10"
+                android:layout_marginRight="@dimen/s10"
+                android:background="@drawable/acitvity012"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/s10"
+                android:paddingRight="@dimen/s10">
+
+                <TextView
+                    style="@style/actextsh"
+                    android:text="对另一半的要求"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/a9"
+                    style="@style/actextsk"
+                    android:text="年龄：无要求" />
+
+                <TextView
+                    android:id="@+id/a10"
+                    style="@style/actextsk"
+                    android:text="身高：无要求" />
+
+                <TextView
+                    android:id="@+id/a11"
+                    style="@style/actextsk"
+                    android:ellipsize="end"
+                    android:maxLines="5"
+                    android:padding="@dimen/s5"
+                    android:text="希望对方工作稳定，性格开朗，积极向上有事业心" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_shade_top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s50"
+        android:layout_marginTop="@dimen/s20">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/s15"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/s5"
+            android:src="@mipmap/authsdk_return_bg" />
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back"
+            android:text="返回"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/stitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/RefreshL"
+            android:layout_width="@dimen/s40"
+            android:layout_height="@dimen/s40"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/s5"
+            android:layout_marginRight="@dimen/s10"
+            android:src="@mipmap/dy_play_more"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/s10"
+        android:paddingTop="@dimen/s5"
+        android:paddingRight="@dimen/s10">
+
+        <TextView
+            android:id="@+id/chat0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="@drawable/bg_radius_bottom_pink4"
+            android:gravity="center"
+            android:padding="@dimen/s10"
+            android:text="视频/语音/聊天"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/chat1"
+            style="@style/actextsl"
+            android:text="聊天"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/chat2"
+            style="@style/actextsl"
+            android:text="微信"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/chat3"
+            style="@style/actextsl"
+            android:text="电话"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/chat4"
+            style="@style/actextsl"
+            android:text="QQ"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/chat5"
+            style="@style/actextsl"
+            android:text="红娘" />
+
+    </LinearLayout>
+
+</RelativeLayout>

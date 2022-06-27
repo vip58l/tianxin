@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/s10"
+    android:padding="@dimen/s10">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/backstage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/code"
+            android:layout_width="@dimen/s100"
+            android:layout_height="@dimen/s100"
+            android:layout_marginBottom="50dp"
+            android:background="@mipmap/ic_welcome1"
+            android:padding="@dimen/s2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/shadetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="邀请码"
+            android:textSize="@dimen/sp12"
+            app:layout_constraintEnd_toEndOf="@+id/code"
+            app:layout_constraintStart_toStartOf="@+id/code"
+            app:layout_constraintTop_toBottomOf="@+id/code" />
+
+        <TextView
+            android:id="@+id/userid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/acitvity05"
+            android:paddingLeft="@dimen/s10"
+            android:paddingTop="@dimen/s2"
+            android:paddingRight="@dimen/s10"
+            android:paddingBottom="@dimen/s2"
+            android:text="12345"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp12"
+            app:layout_constraintEnd_toEndOf="@+id/shadetext"
+            app:layout_constraintStart_toStartOf="@+id/shadetext"
+            app:layout_constraintTop_toBottomOf="@+id/shadetext" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

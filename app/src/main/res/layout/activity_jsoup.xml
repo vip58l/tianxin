@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DouYing.activity_jsonvideo">
+
+    <com.tianxin.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s50"
+        tools:ignore="MissingConstraints" />
+
+    <com.tianxin.activity.DouYing.KWebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:hint="@string/input_share_text"
+        android:padding="@dimen/s10"
+        android:textIsSelectable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResult" />
+
+    <TextView
+        android:id="@+id/tvmax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/s30"
+        android:text="下载文件大小"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/webView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/button1"
+            android:onClick="button1"
+            android:text="@string/start_parse" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/button1"
+            android:onClick="button2"
+            android:text="@string/start_parse2" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/button1"
+            android:onClick="button3"
+            android:text="@string/videplay" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/button1"
+            android:onClick="button4"
+            android:text="@string/videplay2"
+            android:visibility="gone"
+
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onResultClick"
+        android:padding="@dimen/s10"
+        android:text="@string/parse_result_show_rect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backtitle" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s2"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_progressbar_bg"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

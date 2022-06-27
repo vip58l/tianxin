@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.tianxin.widget.Backtitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/s150"
+        android:layout_height="@dimen/s150"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/s20"
+        android:src="@mipmap/boy_off" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/s10"
+        android:textSize="@dimen/sp18"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="@dimen/s300"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/s10"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/a4b"
+                android:text="男生"
+                android:textSize="@dimen/sp20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/s5"
+                android:text="男生"
+                android:textSize="@dimen/sp18"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/a4a"
+                android:text="男生"
+                android:textSize="@dimen/sp20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s5"
+                android:padding="@dimen/s5"
+                android:text="女生"
+                android:textSize="@dimen/sp18"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/s20"
+        android:layout_marginRight="@dimen/s10"
+        android:text="性别注册之后不可修改"
+        android:textSize="@dimen/sp15" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s50"
+        android:layout_marginLeft="@dimen/s10"
+        android:layout_marginTop="@dimen/s20"
+        android:layout_marginRight="@dimen/s10"
+        android:background="@drawable/diis_bg1"
+        android:drawableLeft="@mipmap/icon_login_phone"
+        android:hint="@string/tm76"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:paddingLeft="@dimen/s10"
+        android:textSize="@dimen/sp16" />
+
+
+    <LinearLayout
+        android:id="@+id/layout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/s10"
+        android:layout_marginTop="@dimen/s20"
+        android:layout_marginRight="@dimen/s10"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/s40"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/s10"
+            android:layout_weight="1"
+            android:background="@drawable/diis_bg1"
+            android:drawableLeft="@mipmap/icon_login_code"
+            android:hint="@string/tm189"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingLeft="@dimen/s10"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/codemsg"
+            android:layout_width="@dimen/s100"
+            android:layout_height="@dimen/s35"
+            android:layout_gravity="center"
+            android:background="@drawable/acitvity04"
+            android:gravity="center"
+            android:paddingTop="@dimen/s5"
+            android:paddingBottom="@dimen/s5"
+            android:text="@string/tvcodemsg"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp12" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/s10"
+        android:layout_marginTop="@dimen/s100"
+        android:layout_marginRight="@dimen/s10"
+        android:background="@drawable/btn_pink_bg"
+        android:text="完善基本资料"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp16"
+        android:textStyle="bold" />
+
+</LinearLayout>

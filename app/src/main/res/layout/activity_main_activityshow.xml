@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_welcome1"
+    tools:context=".Test.MainActivityshow">
+
+    <!--用于插入特效动画-->
+    <LinearLayout
+        android:id="@+id/ll_gift_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:animateLayoutChanges="true"
+        android:gravity="top"
+        android:layout_above="@+id/boobutton"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/boobutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sned1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@color/c_fu"
+            android:text="礼物特效1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp10"></Button>
+
+        <Button
+            android:id="@+id/sned2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@color/c_fu"
+            android:text="礼物特效2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp10"></Button>
+
+        <Button
+            android:id="@+id/sned3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@color/c_fu"
+            android:text="礼物特效3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp10"></Button>
+
+        <Button
+            android:id="@+id/sned4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@color/c_fu"
+            android:text="礼物特效4"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp10"></Button>
+
+        <Button
+            android:id="@+id/sned5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@color/c_fu"
+            android:text="礼物特效5"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp10"></Button>
+    </LinearLayout>
+
+</RelativeLayout>

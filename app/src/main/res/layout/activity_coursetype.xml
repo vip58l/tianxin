@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homeback" android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.tianxin.widget.itembackTopbr
+        android:id="@+id/itemback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40" />
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/photo_view"
+        android:layout_width="match_parent"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="center"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

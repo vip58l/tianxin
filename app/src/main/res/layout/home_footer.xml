@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img1"
+        style="@style/layoutwh"
+        android:src="@mipmap/a_" />
+
+    <TextView
+        android:id="@+id/hone_title"
+        style="@style/indexamin"
+        android:text="@string/home1" />
+
+</LinearLayout>
+

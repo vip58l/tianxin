@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.Activity_qiaoapi">
+
+    <com.tianxin.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40"
+        app:title_name="立即付款" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/sendcontext"
+        android:layout_below="@+id/backtitle"
+        android:layout_marginTop="@dimen/s5"
+        android:layout_marginBottom="@dimen/s5"
+        android:orientation="vertical"
+        android:padding="@dimen/s10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s2"
+            android:background="@drawable/itemttitle"
+            android:orientation="horizontal"
+            android:padding="@dimen/s10">
+
+            <TextView
+                android:id="@+id/mtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="name"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/money"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥0.00元" />
+
+        </LinearLayout>
+
+<!--        <com.scwang.smartrefresh.layout.SmartRefreshLayout-->
+<!--            android:id="@+id/smartRefreshLayout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <com.scwang.smartrefresh.layout.header.ClassicsHeader-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content" />-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+<!--            &lt;!&ndash;这里可以自一义下拉刷新footer&ndash;&gt;-->
+<!--            <com.scwang.smartrefresh.layout.footer.ClassicsFooter-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content" />-->
+<!--        </com.scwang.smartrefresh.layout.SmartRefreshLayout>-->
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sendcontext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/s20"
+        android:layout_marginRight="@dimen/s20"
+        android:layout_marginBottom="@dimen/s10"
+        android:background="@drawable/bg_radius_bottom_pink2"
+        android:gravity="center"
+        android:padding="@dimen/s15"
+        android:text="立即支付"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

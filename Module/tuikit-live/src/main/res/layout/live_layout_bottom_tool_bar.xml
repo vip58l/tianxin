@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_bottom_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <LinearLayout
+        android:id="@+id/ll_function"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/icon_margin2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/live_bottom_toolbar_height"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/live_bg_button_common"
+        android:gravity="center_vertical"
+        android:hint="说点什么..."
+        android:textColorHint="@color/live_voice_room_text_color_second"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/ll_function"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</merge>

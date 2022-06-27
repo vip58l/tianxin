@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/gbvip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        android:src="@mipmap/yp2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/s100"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/s10"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="@dimen/s100"
+            android:layout_height="@dimen/s100"
+            android:src="@mipmap/img_vip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s40"
+            android:layout_marginBottom="@dimen/s40"
+            android:text="开通VIP即可解锁查看优质异性哦"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/buymoney"
+            android:layout_width="@dimen/s300"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_pink_bg"
+            android:gravity="center"
+            android:padding="@dimen/s10"
+            android:text="获取VIP特权"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

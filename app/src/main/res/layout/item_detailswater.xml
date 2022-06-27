@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/s10">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s25"
+            android:layout_toLeftOf="@+id/tv3"
+            android:text="提现手续费"
+            android:textColor="@color/homeback"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s25"
+            android:layout_below="@+id/tv1"
+            android:layout_toLeftOf="@+id/tv3"
+            android:gravity="left|center"
+            android:text="2021-01-23 12:51:00"
+            android:textSize="@dimen/sp12"/>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_marginTop="@dimen/s10"
+            android:text="1800.00"
+            android:textColor="@color/shelf_background1"
+            android:textSize="@dimen/sp16"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

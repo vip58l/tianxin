@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/s10"
+        android:layout_marginRight="@dimen/s10"
+        android:background="@drawable/acitvity012"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/msgname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/s15"
+            android:layout_marginBottom="@dimen/s10"
+            android:gravity="center"
+            android:text="@string/tm129"
+            android:textColor="@color/homeback"
+            android:textSize="@dimen/sp18" />
+
+        <TextView
+            android:id="@+id/chartmsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/s10"
+            android:gravity="center|left"
+            android:lineSpacingExtra="@dimen/s5"
+            android:paddingLeft="@dimen/s10"
+            android:paddingRight="@dimen/s10"
+            android:text="@string/tm130"
+            android:textColor="@color/teal006" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginTop="@dimen/s5"
+            android:layout_marginBottom="@dimen/s5"
+
+            android:background="@color/home3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s10"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:id="@+id/kankan"
+                style="@style/actexts2"
+                android:text="@string/tm131"
+                android:textColor="@color/home" />
+
+            <TextView
+                android:id="@+id/exit"
+                style="@style/actexts2"
+                android:text="@string/tm132" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.Memberverify.activity_Namecenter">
+
+    <com.tianxin.widget.itembackTopbr
+        android:id="@+id/itemback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/s10"
+        android:paddingRight="@dimen/s10"
+        android:text="@string/tvmsg_t1"
+        android:textSize="@dimen/sp12" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/s10"
+        android:paddingRight="@dimen/s10">
+
+
+        <EditText
+            android:id="@+id/ename"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s40"
+            android:background="@drawable/bg_flowlayout2"
+            android:hint="@string/edit_name"
+            android:maxLength="10"
+            android:paddingLeft="@dimen/s10"
+            android:textSize="@dimen/sp14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/home3" />
+
+        <EditText
+            android:id="@+id/eidnumber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s40"
+            android:background="@drawable/bg_flowlayout2"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="@string/idnumbertext"
+            android:maxLength="18"
+            android:paddingLeft="@dimen/s10"
+            android:textSize="@dimen/sp14" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/s10"
+        android:paddingRight="@dimen/s10"
+        android:text="@string/tv_namecenter1"
+        android:textSize="@dimen/sp12" />
+
+
+    <LinearLayout
+        android:id="@+id/lin10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/s10"
+        android:orientation="horizontal"
+        android:padding="@dimen/s10"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s120">
+
+                <ImageView
+                    android:id="@+id/iv_img1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s120"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/s5"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ly_zrrz_sfzrxm_img" />
+
+                <ImageView
+                    android:id="@+id/delete1"
+                    android:layout_width="@dimen/s20"
+                    android:layout_height="@dimen/s20"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/ic_news_detail_withvideo_close"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/tm112"
+                android:textColor="@color/home"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s120">
+
+
+                <ImageView
+                    android:id="@+id/iv_img2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s120"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/s5"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ly_zrrz_sfzghm_img" />
+
+                <ImageView
+                    android:id="@+id/delete2"
+                    android:layout_width="@dimen/s20"
+                    android:layout_height="@dimen/s20"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/ic_news_detail_withvideo_close"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/tm110"
+                android:textColor="@color/home"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_img3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s100"
+                android:layout_gravity="center"
+                android:padding="@dimen/s2"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/cover_defult2"></ImageView>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/tm109"
+                android:textColor="@color/home" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/senbnt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40"
+        android:layout_marginLeft="@dimen/s20"
+        android:layout_marginTop="@dimen/s30"
+        android:layout_marginRight="@dimen/s20"
+        android:background="@drawable/bg_radius_bottom_pink4"
+        android:gravity="center"
+        android:text="@string/tm108"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/sex1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/s10"
+        android:lineSpacingExtra="5dp"
+        android:padding="@dimen/s10"
+        android:text="@string/tv_namecenter3"
+        android:textSize="@dimen/sp13" />
+
+
+</LinearLayout>

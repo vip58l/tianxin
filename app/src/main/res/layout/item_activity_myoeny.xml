@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.tianxin.widget.itembackTopbr
+        android:id="@+id/itemback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40">
+
+    </com.tianxin.widget.itembackTopbr>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/s10"
+        android:layout_marginRight="@dimen/s10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s100"
+            android:layout_marginTop="@dimen/s10"
+            android:background="@drawable/bg_jianbian_yuanjiao3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/myoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp24"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s10"
+                android:text="剩于金币"
+                android:textColor="@color/background_color"></TextView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s30"
+            android:layout_marginTop="@dimen/s10"
+            android:layout_marginBottom="@dimen/s10"
+            android:background="@color/shelf_background"
+            android:gravity="center"
+            android:text="绑定结算帐户"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s10"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/s40"
+                    android:layout_height="@dimen/s40"
+                    android:src="@mipmap/wifipay_wallet_deposit_default_icon"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/s10"
+                    android:text="收入"
+                    android:textColor="@color/homeback"></TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="@dimen/s40"
+                android:background="@color/c_font_defult"></View>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/s40"
+                    android:layout_height="@dimen/s40"
+                    android:src="@mipmap/wifipay_wallet_withdraw_default_icon"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/s10"
+                    android:text="支出"
+                    android:textColor="@color/homeback"></TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/c_font_defult"></View>
+
+        <FrameLayout
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

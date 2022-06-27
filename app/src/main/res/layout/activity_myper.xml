@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.ZYservices.activity_myper">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s240">
+
+        <ImageView
+            android:id="@+id/bg_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/b8" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.5"
+            android:scaleType="fitXY"
+            android:src="@mipmap/bg_shade_bom"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.tianxin.widget.itembackTopbr
+            android:id="@+id/itemback"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s40"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="@dimen/s80"
+            android:layout_height="@dimen/s80"
+            android:layout_marginStart="10dp"
+            android:src="@mipmap/rtc_user_portrait"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemback" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="设置社区昵称"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/name"
+            app:layout_constraintStart_toEndOf="@+id/name"
+            app:layout_constraintTop_toTopOf="@+id/name" />
+
+        <ImageView
+            android:id="@+id/editquery"
+            android:layout_width="@dimen/s25"
+            android:layout_height="@dimen/s25"
+            android:layout_marginStart="10dp"
+            android:alpha="0.5"
+            android:padding="@dimen/s2"
+            android:src="@mipmap/r6"
+            app:layout_constraintBottom_toBottomOf="@+id/title"
+            app:layout_constraintStart_toEndOf="@+id/title"
+            app:layout_constraintTop_toTopOf="@+id/title" />
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="什么也没填..."
+            android:textColor="@color/home3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <TextView
+            android:id="@+id/tvedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s20"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/activity013"
+            android:padding="@dimen/s6"
+            android:text="编辑个人资料"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp13"
+
+            app:layout_constraintBottom_toBottomOf="@+id/circleImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/circleImageView"
+            app:layout_constraintVertical_bias="0.18" />
+
+        <TextView
+            android:id="@+id/tvedit1"
+            android:layout_width="@dimen/s60"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s20"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/activity013"
+            android:gravity="center"
+            android:padding="@dimen/s6"
+            android:text="+关注"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp13"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/circleImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/circleImageView"
+            app:layout_constraintVertical_bias="0.18" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:padding="@dimen/s10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/msg">
+
+            <TextView
+                android:id="@+id/count1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/s5"
+                android:gravity="center"
+                android:text="粉丝"
+                android:textColor="@color/home3"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:id="@+id/count2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/s15"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/s5"
+                android:gravity="center"
+                android:text="关注"
+                android:textColor="@color/home3"
+                android:textSize="@dimen/sp12" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/constraintLayout"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

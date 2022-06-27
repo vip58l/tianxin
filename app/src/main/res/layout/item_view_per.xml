@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/s5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/s2"
+        android:layout_marginTop="@dimen/s10"
+        android:layout_marginBottom="@dimen/s10"
+        android:background="@drawable/acitvity012"
+        android:orientation="vertical"
+        android:padding="@dimen/s10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s10"
+            android:gravity="center"
+            android:text="@string/tm143"
+            android:textColor="@color/homeback" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s10"
+            android:orientation="horizontal">
+
+            <com.tianxin.widget.view_item_conmp
+                android:id="@+id/conmp1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.tianxin.widget.view_item_conmp
+                android:id="@+id/conmp2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s10"
+            android:orientation="horizontal">
+
+            <com.tianxin.widget.view_item_conmp
+                android:id="@+id/conmp3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.tianxin.widget.view_item_conmp
+                android:id="@+id/conmp4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s5"
+            android:orientation="horizontal">
+
+            <com.tianxin.widget.view_item_conmp
+                android:id="@+id/conmp5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.tianxin.widget.view_item_conmp
+                android:id="@+id/conmp6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/s4"
+        android:layout_marginBottom="@dimen/s5"
+        android:background="@drawable/acitvity012"
+        android:orientation="vertical"
+        android:padding="@dimen/s10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tm144"
+            android:textColor="@color/homeback" />
+
+        <TextView
+            android:id="@+id/cforsds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s5"
+            android:lineSpacingExtra="8dp"
+            android:padding="@dimen/s5"
+            android:text="@string/tm145"
+            android:textSize="@dimen/sp13" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/s4"
+        android:layout_marginBottom="@dimen/s5"
+        android:background="@drawable/acitvity012"
+        android:orientation="vertical"
+        android:padding="@dimen/s10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tm146"
+            android:textColor="@color/homeback" />
+
+        <TextView
+            android:id="@+id/cforsds11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s5"
+            android:lineSpacingExtra="8dp"
+            android:padding="@dimen/s5"
+            android:text="@string/tm147"
+            android:textSize="@dimen/sp13" />
+
+    </LinearLayout>
+
+</LinearLayout>

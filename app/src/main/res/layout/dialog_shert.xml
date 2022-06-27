@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sf_paydialog_yuanjiaotop2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/s5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/s10"
+            android:text="分享到" />
+
+        <ImageView
+            android:id="@+id/fill"
+            android:layout_width="@dimen/s30"
+            android:layout_height="@dimen/s30"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_news2_detail_withvideo_close" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/s20"
+        android:orientation="horizontal">
+
+        <com.tianxin.widget.indexlay_item
+            android:id="@+id/wx1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:indexlay_name="微信"
+            app:indexlay_src="@mipmap/weixin" />
+
+        <com.tianxin.widget.indexlay_item
+            android:id="@+id/wx2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:indexlay_name="朋友圈"
+            app:indexlay_src="@mipmap/pengyouquan" />
+
+        <com.tianxin.widget.indexlay_item
+            android:id="@+id/wx3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:indexlay_name="保存图片"
+            app:indexlay_src="@mipmap/chm" />
+
+        <com.tianxin.widget.indexlay_item
+            android:id="@+id/wx4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:indexlay_name="复制链接"
+            app:indexlay_src="@mipmap/ic_input_keyboard_pressed" />
+
+    </LinearLayout>
+
+</LinearLayout>

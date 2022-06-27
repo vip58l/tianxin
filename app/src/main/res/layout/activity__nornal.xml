@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Test.activity_Nornal">
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2201" />
+
+    <Button
+        android:id="@+id/button0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="普通模式" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MVC模式" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MVP模式" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MVVP模式" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="扫一扫好友" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="生成二维码" />
+
+    <TextView
+        android:id="@+id/restart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/s10"
+        android:gravity="center"
+        android:padding="@dimen/s10"
+
+        android:shadowColor="@color/colorAccent"
+        android:shadowDx="1.0"
+        android:shadowDy="1.0"
+        android:shadowRadius="1"
+
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp30" />
+
+    <!-- 自定义属性的介绍：
+         shadowTextColor ：文字颜色
+         shadowBgStartColor：背景渐变开始颜色
+         shadowBgEndColor：背景渐变结束颜色
+         shadowSelectStartColor：点击后背景渐变开始颜色
+         shadowSelectEndColor：点击后背景渐变结束颜色
+         shadowTextRadius：背景圆角
+         shadowTextSize：背景字体大小
+         containerShadowColor：阴影颜色
+         containerShadowColor：阴影颜色
+         containerShadowRadius：阴影半径
+         containerCornerRadius:阴影圆角
+         containerDeltaLength：阴影到边框距离
+         deltaX：阴影X方向偏移
+         deltaY：阴影Y
+         enable：是否显示阴影
+     -->
+
+    <ImageView
+        android:id="@+id/mImage"
+        android:layout_width="@dimen/s200"
+        android:layout_height="@dimen/s200"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/s10" />
+
+</LinearLayout>

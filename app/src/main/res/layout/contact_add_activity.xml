@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <com.tencent.qcloud.tim.uikit.component.TitleBarLayout
+        android:id="@+id/add_friend_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/page_title_height" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="@dimen/s10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s20"
+            android:layout_marginBottom="@dimen/s10"
+            android:gravity="center_vertical"
+            android:text="@string/add_wording3"
+            android:textColor="@color/home"
+            android:textSize="@dimen/sp12" />
+
+        <EditText
+            android:id="@+id/user_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/acitvity011"
+            android:hint="@string/hint_add_user_id"
+            android:iconifiedByDefault="false"
+            android:maxLength="30"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:textSize="@dimen/sp14" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s20"
+            android:layout_marginBottom="@dimen/s10"
+            android:gravity="center_vertical"
+            android:text="@string/add_wording"
+            android:textColor="@color/home"
+            android:textSize="@dimen/sp12" />
+
+        <EditText
+            android:id="@+id/add_wording"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/acitvity011"
+            android:hint="@string/hint_add_wording"
+            android:maxLength="100"
+            android:minLines="2"
+            android:padding="10dp"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:textSize="@dimen/btn_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s30"
+            android:layout_marginBottom="@dimen/s10"
+            android:gravity="center_vertical"
+            android:text="@string/add_wording2"
+            android:textColor="@color/home"
+            android:textSize="@dimen/sp12" />
+
+        <EditText
+            android:id="@+id/add_wording2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/acitvity011"
+            android:hint="@string/hint_add_wording2"
+            android:maxLength="100"
+            android:minLines="2"
+            android:padding="10dp"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:textSize="@dimen/btn_text_size" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/btn_margin_left"
+        android:layout_marginTop="@dimen/btn_margin_top"
+        android:layout_marginRight="@dimen/btn_margin_right"
+        android:background="@drawable/activity011"
+        android:onClick="add"
+        android:text="@string/contact_add2"
+        android:textColor="@color/white" />
+
+</LinearLayout>

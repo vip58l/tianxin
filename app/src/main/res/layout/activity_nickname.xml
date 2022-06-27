@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home3"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.tianxin.widget.itembackTopbr
+        android:id="@+id/itemback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40" />
+
+    <com.tianxin.widget.myeditview
+        android:id="@+id/myeditview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/s5" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/s10"
+        android:background="@drawable/bg_radius_bottom_pink2"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/s10"
+        android:gravity="center"
+        android:text="@string/nickname"
+        android:textColor="@color/home"
+        android:textSize="@dimen/sp14" />
+</LinearLayout>

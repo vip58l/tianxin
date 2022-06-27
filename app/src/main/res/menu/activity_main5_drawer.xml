@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Import" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Slideshow" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Tools" />
+    </group>
+
+    <item android:title="分类1">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Send" />
+        </menu>
+    </item>
+
+    <item android:title="分类2">
+        <menu>
+            <item
+                android:id="@+id/nav_share1"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send1"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Send" />
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera1"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Import" />
+        <item
+            android:id="@+id/nav_gallery1"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/nav_slideshow1"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Slideshow" />
+        <item
+            android:id="@+id/nav_manage1"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Tools" />
+    </group>
+
+</menu>

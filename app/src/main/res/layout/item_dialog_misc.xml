@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/s10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s25"
+            android:layout_toLeftOf="@+id/name"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:lines="1"
+            android:text="标题"
+            android:textColor="@color/homeback"></TextView>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="@dimen/s100"
+            android:layout_height="@dimen/s25"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/s10"
+            android:gravity="center"
+            android:text="小可爱"></TextView>
+
+    </RelativeLayout>
+</LinearLayout>

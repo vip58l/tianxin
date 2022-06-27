@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="320.0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/sf_paydialog_yuanjiao1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/icon_margin"
+            android:src="@drawable/rc_cs_close" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/alert_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/truename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/icon_margin5"
+                android:layout_marginBottom="@dimen/icon_margin5"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/pcity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/icon_margin"
+                android:layout_marginBottom="@dimen/icon_margin"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="成为VIP会员，可解锁私密空间,免费接听视频或语音通话，还有超多福利等着你"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/send_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sf_press_button_alipay2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:paddingTop="@dimen/icon_margin"
+            android:paddingBottom="@dimen/icon_margin"
+            android:text="VIP会员免费接听"
+            android:textColor="@color/white"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/trtcaudiiocall_title"
+            android:textColor="@color/partTranslucent" />
+
+    </LinearLayout>
+
+</LinearLayout>

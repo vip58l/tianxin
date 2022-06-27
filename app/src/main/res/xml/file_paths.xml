@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-files-path name="sharedata" path="shareData"/>
+    <root-path name="root" path="." />
+    <files-path name="files" path="." />
+    <cache-path name="cache" path="." />
+    <external-path name="external" path="." />
+    <external-files-path name="name" path="path/" />
+    <external-cache-path name="filename" path="path/" />
+    <external-files-path name="download" path="Download/"/>
+</paths>

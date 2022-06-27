@@ -1,0 +1,12 @@
+第1步：运行进入控制台 cmd
+
+第2步：定位到.android文件夹下，输入cd .android
+
+第3步：输入keytool -list -v -keystore debug.keystore，会得到三种指纹证书，选取SHA1类型的证书（密钥口令是android）
+
+
+调试版本
+keytool -list -v -keystore debug.keystore （密钥口令是android）
+
+发布版：
+输入 keytool -list -v -keystore d:\paixide\key/key.jks

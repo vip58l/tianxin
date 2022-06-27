@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_positive_hover"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.tianxin.widget.itembackTopbr
+        android:id="@+id/item_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40"
+        tools:ignore="MissingConstraints">
+
+    </com.tianxin.widget.itembackTopbr>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_back"
+        android:layout_marginLeft="@dimen/s10"
+        android:layout_marginTop="@dimen/s10"
+        android:layout_marginRight="@dimen/s10"
+        android:background="@drawable/acitvity04"
+        android:orientation="horizontal">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgicon"
+            android:layout_width="@dimen/s50"
+            android:layout_height="@dimen/s50"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/room_change_bg"
+            app:civ_border_color="#F1ECF1"
+            app:civ_border_width="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/s10">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="小清新"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imgicon"
+                app:layout_constraintTop_toTopOf="@+id/view" />
+
+            <TextView
+                android:id="@+id/tv_conter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="暂未开通会员，错过了好多..."
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:layout_marginLeft="@dimen/s10"
+        android:layout_marginTop="@dimen/s20"
+        android:layout_marginRight="@dimen/s10"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/s20"
+        android:gravity="center"
+        android:text="拥有以下特权" />
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/payment"
+        android:layout_below="@+id/textView5"
+        android:layout_marginLeft="@dimen/s10"
+        android:layout_marginTop="@dimen/s20"
+        android:layout_marginRight="@dimen/s10"
+        android:layout_marginBottom="@dimen/s20"
+        android:numColumns="4" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/send"
+        android:layout_marginBottom="@dimen/s20"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/s10"
+        android:paddingRight="@dimen/s10">
+
+        <LinearLayout
+            android:id="@+id/lay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/activity014"
+            android:gravity="center"
+            android:padding="@dimen/s10">
+
+            <ImageView
+                android:layout_width="@dimen/s20"
+                android:layout_height="@dimen/s20"
+                android:src="@mipmap/icon_dv_ailipay" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/s10"
+                android:gravity="center"
+                android:text="支付宝"
+                android:textSize="@dimen/s16"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/s10"
+            android:layout_height="@dimen/s40" />
+
+        <LinearLayout
+            android:id="@+id/lay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/activity014"
+            android:gravity="center"
+            android:padding="@dimen/s10">
+
+            <ImageView
+                android:layout_width="@dimen/s20"
+                android:layout_height="@dimen/s20"
+                android:src="@mipmap/icon_dv_weixin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/s10"
+                android:gravity="center"
+                android:text="微信支付"
+                android:textSize="@dimen/s16"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40"
+        android:layout_above="@+id/pay_ok"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/acitvity03"
+        android:gravity="center"
+        android:text="确认充值" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/pay_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/s15"
+        android:layout_marginBottom="@dimen/s10"
+        android:gravity="center"
+        android:text="@string/tv_msg_tt29"
+        android:textSize="12sp" />
+
+</RelativeLayout>

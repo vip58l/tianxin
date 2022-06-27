@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/colorAccent" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorAccent"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/supdate"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/hideshow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/al7"
+                android:drawablePadding="10dp"
+                android:padding="5dp"
+                android:textColor="@color/colorAccent" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="@dimen/s10">
+
+            <TextView
+                android:id="@+id/tv_state_lab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="状态："
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_state_lab"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_upload"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="6dp" />
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:padding="@dimen/s10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="谁可以看"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/image1"
+                android:text="所有人" />
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_me_jiao" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:padding="@dimen/s10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是否收费"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/image2"
+                android:text="免费" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_me_jiao" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:padding="@dimen/s10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="位置显示"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/image3"
+                android:text="公开" />
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_me_jiao" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tev_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/s10"
+            android:textSize="14sp"
+            android:lineSpacingExtra="5dp"
+            android:text="发布本人真实视频赚取收益，播放量越高收益越高,排名越靠前 系统自动优先推送给更多用户。" />
+
+        <RelativeLayout
+            android:id="@+id/smallLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="@dimen/s10">
+
+            <TextView
+                android:id="@+id/btn_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/acitvity08"
+                android:gravity="center"
+                android:padding="@dimen/s10"
+                android:text="立即上传"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

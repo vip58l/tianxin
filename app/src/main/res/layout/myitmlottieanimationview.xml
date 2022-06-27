@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/yp" />
+
+    <!--3. 显示 SVGA 动画-->
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/svgaImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        app:autoPlay="true"
+        app:loopCount="1" />
+
+    <!--如此，动画就能跑起来了，解释下一下属性：
+1.lottie_fileName：在app/src/main/assets目录下的动画json文件名。
+2.lottie_loop：动画是否循环播放，默认不循环播放。
+3.lottie_autoPlay：动画是否自动播放，默认不自动播放。
+4.alottie_imageAssetsFolder：动画所依赖的图片目录，在pp/src/main/assets/目录下的子目录，该子目录存放所有图片。-->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/s10"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="火箭"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="一箭穿心"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="火箭"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="游艇"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="0dp"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="汽车飞机"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="0dp"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="战斗机"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/loading" />
+
+    <ImageView
+        android:id="@+id/viewdiagnose"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_diagnosing_sweep" />
+
+</RelativeLayout>

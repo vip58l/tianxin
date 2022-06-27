@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yp"
+    android:focusableInTouchMode="true">
+
+    <!--主播头像和名称头部管理分组隐藏-->
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_after_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="btn_bottom_stop_pk,layout_top_toolbar,layout_bottom_toolbar,layout_chat,view_danmaku" />
+
+    <!--底部主播分组管理隐藏-->
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_bottom_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="btn_bottom_stop_pk,layout_bottom_toolbar,layout_chat,view_danmaku, heart_layout" />
+
+    <!--美颜面板控件 View-->
+    <!--    <com.tencent.liteav.demo.beauty.view.BeautyPanel
+            android:id="@+id/beauty_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />-->
+
+    <!--垂直分割线-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <!--水平分割线-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <!--播放器-->
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/video_view_anchor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--用于加入pk对像-->
+    <RelativeLayout
+        android:id="@+id/layout_pk_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gl_horizontal"
+        app:layout_constraintLeft_toLeftOf="@id/gl_vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_top_toolbar" />
+
+    <TextView
+        android:id="@+id/tv_pk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/activity_pk"
+        android:paddingLeft="@dimen/beauty_ugc_cut_margin"
+        android:paddingTop="@dimen/icon_margin2"
+        android:paddingRight="@dimen/beauty_ugc_cut_margin"
+        android:paddingBottom="@dimen/icon_margin2"
+        android:text="@string/showNetworsg"
+        android:textColor="@color/white"
+        android:textSize="@dimen/beauty_h4"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/layout_pk_container"
+        tools:visibility="gone" />
+
+    <!--PK图标-->
+    <ImageView
+        android:id="@+id/iv_pk_layer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/live_icon_pk_layer"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/gl_horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:visibility="gone" />
+
+    <!--排麦需求-->
+    <ImageView
+        android:id="@+id/img_badge"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/live_shape_red_dot"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/btn_bottom_stop_pk"
+        app:layout_constraintTop_toTopOf="@+id/btn_bottom_stop_pk" />
+
+    <!--连麦列表-->
+    <TextView
+        android:id="@+id/btn_bottom_stop_pk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/acitvitylinmai"
+        android:paddingLeft="12dp"
+        android:paddingTop="7dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="7dp"
+        android:text="@string/live_wait_link"
+        android:textColor="@color/live_white"
+        android:textSize="@dimen/live_text_size_middle"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/layout_bottom_toolbar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!--连麦：播放小窗口定义 开始-->
+    <!--连麦：第一个播放小窗口-->
+    <com.tencent.qcloud.tim.tuikit.live.modules.liveroom.ui.widget.LiveVideoView
+        android:id="@+id/video_view_link_mic_1"
+        style="@style/TUILiveRoomLinkMic"
+        app:layout_constraintBottom_toTopOf="@+id/btn_bottom_stop_pk"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!--连麦：第二个播放小窗口-->
+    <com.tencent.qcloud.tim.tuikit.live.modules.liveroom.ui.widget.LiveVideoView
+        android:id="@+id/video_view_link_mic_2"
+        style="@style/TUILiveRoomLinkMic"
+        app:layout_constraintBottom_toTopOf="@+id/video_view_link_mic_1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!--连麦：第三个播放小窗口-->
+    <com.tencent.qcloud.tim.tuikit.live.modules.liveroom.ui.widget.LiveVideoView
+        android:id="@+id/video_view_link_mic_3"
+        style="@style/TUILiveRoomLinkMic"
+        app:layout_constraintBottom_toTopOf="@+id/video_view_link_mic_2"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <!--连麦：播放小窗口定义 结束-->
+
+    <!--     <com.tencent.liteav.liveroom.ui.anchor.AnchorPKSelectView
+             android:id="@+id/anchor_pk_select_view"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@color/trtcliveroom_color_bg_select_pk"
+             android:visibility="gone"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             tools:ignore="MissingClass" />-->
+
+    <!--点赞动画区域-->
+    <com.tencent.qcloud.tim.tuikit.live.component.like.HeartLayout
+        android:id="@+id/heart_layout"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@id/layout_bottom_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="gone" />
+
+    <!--开播控件预览页的Layout-->
+    <com.tencent.qcloud.tim.tuikit.live.modules.liveroom.ui.LiveRoomPreviewLayout
+        android:id="@+id/layout_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    音乐面板-->
+    <!--      <com.tencent.liteav.audiosettingkit.AudioEffectPanel
+              android:id="@+id/anchor_audio_panel"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:visibility="gone"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              tools:visibility="gone" />-->
+
+    <master.flame.danmaku.ui.widget.DanmakuView
+        android:id="@+id/view_danmaku"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--消息列表滚动区域-->
+    <com.tencent.qcloud.tim.tuikit.live.component.message.ChatLayout
+        android:id="@+id/layout_chat"
+        android:layout_width="220dp"
+        android:layout_height="180dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_bottom_toolbar"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <!--主播头部区域展示-->
+    <com.tencent.qcloud.tim.tuikit.live.component.topbar.TopToolBarLayout
+        android:id="@+id/layout_top_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--消息输入和4个按钮功能 自定义图标-->
+    <com.tencent.qcloud.tim.tuikit.live.component.bottombar.BottomToolBarLayout
+        android:id="@+id/layout_bottom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <!--等待主播接受-->
+    <TextView
+        android:id="@+id/state_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/live_status_tips"
+        android:background="@drawable/live_bg_state_tips"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textColor="@color/live_white"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--礼物弹幕最多展示的个数-->
+    <com.tencent.qcloud.tim.tuikit.live.component.gift.imp.GiftAnimatorLayout
+        android:id="@+id/lottie_animator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/live_gift_lottie_view_height"
+        android:layout_marginBottom="@dimen/live_gift_panel_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <!--倒计时动画 123 View-->
+    <com.tencent.qcloud.tim.tuikit.live.component.countdown.CountDownTimerView
+        android:id="@+id/countdown_timer_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--3. 显示 SVGA 礼物动画-->
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/svgaImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:autoPlay="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:loopCount="1"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

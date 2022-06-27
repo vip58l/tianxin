@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_remind"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/s10">
+
+    <LinearLayout
+        android:id="@+id/ll_comment1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/actextsg"
+            android:src="@drawable/heart_drawable_white" />
+
+        <TextView
+            android:id="@+id/tv_like"
+            style="@style/actexts12"
+            android:text="点赞" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_comment2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/actextsg"
+            android:src="@drawable/comments_drawable_white" />
+
+        <TextView
+            android:id="@+id/tv_comment"
+            style="@style/actexts12"
+            android:text="评论" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_comment3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/actextsg"
+            android:src="@mipmap/icon_xw_ptr_refresh_failed" />
+
+        <TextView
+            android:id="@+id/tv_comment3"
+            style="@style/actexts12"
+            android:text="举报" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_comment4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/actextsg"
+            android:src="@mipmap/icon_swipe_delete" />
+
+        <TextView
+            android:id="@+id/tv_comment4"
+            style="@style/actexts12"
+            android:text="删除" />
+    </LinearLayout>
+
+</LinearLayout>

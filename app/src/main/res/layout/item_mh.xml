@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8.0dip">
+
+        <ImageView
+            android:id="@+id/item_sex_img"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:scaleType="center"
+            android:src="@mipmap/cover_defult" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_sex_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="roommate（我的老师）"
+                android:textColor="#ff333333"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/item_sex_tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:singleLine="true"
+                android:text="我对老师的爱恋，没想到是这样的老师。"
+                android:textColor="#ff909090"
+                android:textSize="13.0sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip">
+
+                <LinearLayout
+                    android:id="@+id/item_sex_lin1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1.0dip"
+                        android:src="@mipmap/icon_sex_autuor" />
+
+                    <TextView
+                        android:id="@+id/item_sex_tv_author"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:text="part"
+                        android:textColor="#ff909090"
+                        android:textSize="11.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/item_sex_lin2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_sex_lin1"
+                    android:layout_marginTop="5.0dip"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1.0dip"
+                        android:src="@mipmap/icon_sex_tag" />
+
+                    <TextView
+                        android:id="@+id/item_sex_tv_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:singleLine="true"
+                        android:text="少女"
+                        android:textColor="#ff909090"
+                        android:textSize="11.0sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/item_sex_tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/nopress_button_mc"
+                    android:paddingLeft="8.0dip"
+                    android:paddingTop="4.0dip"
+                    android:paddingRight="8.0dip"
+                    android:paddingBottom="4.0dip"
+                    android:text="已完结"
+                    android:textColor="#ffffffff"
+                    android:textSize="10.0sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#ccc" />
+
+</LinearLayout>

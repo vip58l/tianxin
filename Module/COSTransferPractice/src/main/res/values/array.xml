@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab">
+        <item>在线充值</item>
+        <item>加入VIP</item>
+        <item>开通记录</item>
+    </string-array>
+
+    <string-array name="tabs1">
+        <item>所有人可见</item>
+        <item>仅限自己可见</item>
+    </string-array>
+    <string-array name="tabs2">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>50</item>
+        <item>80</item>
+        <item>100</item>
+        <item>150</item>
+        <item>160</item>
+        <item>180</item>
+        <item>200</item>
+        <item>300</item>
+    </string-array>
+    <string-array name="tabs33">
+        <item>公开</item>
+        <item>不公开</item>
+    </string-array>
+    <string-array name="sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+
+    <string-array name="qrcodetitle1">
+        <item>保存到本地</item>
+        <item>识别二维码</item>
+    </string-array>
+    <string-array name="qrcodetitle0">
+        <item>保存到本地</item>
+    </string-array>
+
+    <string-array name="qrarray">
+        <item>引诱未成年人</item>>
+        <item>低俗无趣视频</item>>
+        <item>垃圾广告视频</item>>
+        <item>此人是骗子</item>>
+    </string-array>
+
+</resources>

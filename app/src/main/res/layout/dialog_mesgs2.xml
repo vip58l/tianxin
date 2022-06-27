@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sp10"
+        android:layout_marginTop="@dimen/s50"
+        android:layout_marginRight="@dimen/sp10"
+        android:background="@drawable/momey_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_marginRight="@dimen/s10"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/s50"
+            android:gravity="center"
+            android:text="邀请您免费相亲"
+            android:textColor="@color/toolpop_background"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="还有体验卡未使用哦"
+            android:textColor="@color/home"
+            android:textSize="@dimen/sp12" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sp10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/kankan"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="我想看看"
+                android:textColor="@color/half_transparent" />
+
+
+            <TextView
+                android:id="@+id/exit"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="狠心离开"
+                android:textColor="@color/half_transparent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout2"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/s50"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/colas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/a3v"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon"
+            app:civ_border_color="#F1ECF1"
+            app:civ_border_width="2dp"
+            android:layout_width="@dimen/s80"
+            android:layout_height="@dimen/s80"
+            android:src="@mipmap/a8f"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:paddingTop="@dimen/s5"
+            android:paddingBottom="@dimen/s5"
+            android:paddingLeft="@dimen/s10"
+            android:paddingRight="@dimen/s10"
+            android:background="@drawable/bg_jianbian_yuanjiao"
+            android:text="我是小虾鱼"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp10"></TextView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

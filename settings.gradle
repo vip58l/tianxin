@@ -1,0 +1,13 @@
+include ':app'
+include ':Module:debug'
+include ':Module:tuikit'
+include ':Module:tuikit-live'
+include ':Module:SelectImage'
+include ':Module:alipay'
+include ':Module:lib.homhomlib.divergeview2'
+include ':Module:COSTransferPractice'
+include ':Module:tuivoiceRoom'
+include ':Module:savglotti'
+include ':Module:tutorial'
+rootProject.name="tianxin"
+

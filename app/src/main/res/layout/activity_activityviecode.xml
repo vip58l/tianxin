@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home3"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.tianxin.widget.itembackTopbr
+            android:id="@+id/itemback"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s50"
+            android:layout_weight="1">
+
+        </com.tianxin.widget.itembackTopbr>
+
+
+        <ImageView
+            android:layout_width="@dimen/s100"
+            android:layout_height="@dimen/s100"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/s40"
+            android:padding="@dimen/s5"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/VersionName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/s10"
+            android:text="@string/ts4" />
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            style="@style/acaaa"
+            android:layout_marginTop="@dimen/s50">
+
+            <TextView
+                style="@style/actextsviecode"
+                android:text="@string/ts5" />
+
+            <ImageView style="@style/imagesa1" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            style="@style/acaaa"
+            android:layout_marginTop="@dimen/s1">
+
+            <TextView
+                style="@style/actextsviecode"
+                android:text="@string/ts611"></TextView>
+
+            <ImageView style="@style/imagesa1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout4"
+            style="@style/acaaa"
+            android:layout_marginTop="@dimen/s1">
+
+            <TextView
+                style="@style/actextsviecode"
+                android:text="@string/ts612"></TextView>
+
+            <ImageView style="@style/imagesa1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout5"
+            style="@style/acaaa"
+            android:layout_marginTop="@dimen/s1">
+
+            <TextView
+                style="@style/actextsviecode"
+                android:text="@string/ts613"></TextView>
+
+            <ImageView style="@style/imagesa1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout456"
+            style="@style/acaaa"
+            android:layout_marginTop="@dimen/s1">
+
+            <TextView
+                style="@style/actextsviecode"
+                android:text="@string/tv_msg_11268"></TextView>
+
+            <ImageView style="@style/imagesa1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            style="@style/acaaa"
+            android:layout_marginTop="@dimen/s1">
+
+            <TextView
+                style="@style/actextsviecode"
+                android:text="@string/ts614" />
+
+            <TextView
+                android:id="@+id/tm_m3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/s10"
+                android:paddingRight="@dimen/s10"
+                android:textSize="@dimen/sp12" />
+
+            <ImageView style="@style/imagesa1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tm_m2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/s5"
+            android:gravity="center"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:id="@+id/tm_m1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/s15"
+            android:gravity="center"
+            android:textSize="@dimen/sp12" />
+
+    </LinearLayout>
+
+</RelativeLayout>

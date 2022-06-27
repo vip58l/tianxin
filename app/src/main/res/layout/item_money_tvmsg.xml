@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/s300"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/acitvity012"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/s10">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/s20"
+        android:layout_marginBottom="@dimen/s20"
+        android:text="规则说明"
+        android:textColor="@color/homeback"
+        android:textStyle="bold" />
+
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s200"
+        android:layout_marginBottom="@dimen/s20"
+        android:padding="@dimen/s10"
+        tools:ignore="WebViewLayout" />
+
+    <TextView
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40"
+        android:layout_marginLeft="@dimen/s10"
+        android:layout_marginRight="@dimen/s10"
+        android:layout_marginBottom="@dimen/s20"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="我知道了"
+        android:textColor="@color/white" />
+
+</LinearLayout>

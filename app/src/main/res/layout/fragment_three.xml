@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--
+    tabGravity有两种属性：center和fill；center指的是居中显示，fill指的是沾满全屏。
+    app:tabGravity="fill"：拉伸宽度
+    app:tabMode="fixed"   :默认
+    app:tabIndicatorColor ：指示条的颜色
+    app:tabIndicatorHeight  ：指示条的高度
+    app:tabSelectedTextColor ： tab被选中时的字体颜色
+    app:tabTextColor ： tab未被选中时的字体颜色
+    app:tabMode="scrollable" ： 默认是fixed：固定的，标签很多时候会被挤压，不能滑动。
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/s20"
+            android:layout_marginLeft="@dimen/s10"
+            android:padding="@dimen/s2"
+            android:paddingLeft="@dimen/s10"
+            android:src="@mipmap/icon_lent" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/s10"
+            android:layout_weight="1"
+            app:tabIndicatorColor="@color/colorAccent"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/colorAccent"/>
+
+        <ImageView
+            android:id="@+id/SearchActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/s10"
+            android:src="@mipmap/icon_search"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

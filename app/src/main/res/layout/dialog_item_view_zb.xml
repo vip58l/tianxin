@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/s10"
+        android:background="@drawable/acitvity012"
+        android:orientation="vertical"
+        android:padding="@dimen/s10">
+
+        <TextView
+            android:id="@+id/mssge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/s10"
+            android:text="欢迎加入%s直播"
+            android:textColor="@color/homeback" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/s10"
+            android:text="需要真人认证申请成为主播"
+            android:textColor="@color/c_font_1" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/home3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s20"
+            android:layout_marginBottom="@dimen/s10"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/exit"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/c_font_1"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/endroot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="去申请"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

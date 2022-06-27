@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:paddingLeft="5dp"
+
+   >
+
+    <ImageView
+        android:id="@+id/img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@mipmap/cover_defult"
+        android:scaleType="center"/>
+
+    <TextView
+        android:id="@+id/tag_ms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/c_fu"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingTop="2dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="2dp"
+        android:text="国产"
+        android:textColor="@color/white"
+        android:textSize="12sp"></TextView>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/img_bg"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:text="热门推荐"
+        android:textSize="12sp"
+        android:textColor="@color/reader_default_bg_toolbar" />
+
+</RelativeLayout>

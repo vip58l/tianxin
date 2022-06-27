@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/s10"
+    android:paddingTop="@dimen/s8"
+    android:paddingRight="@dimen/s10"
+    android:paddingBottom="@dimen/s8">
+
+    <RelativeLayout
+        android:layout_width="@dimen/s60"
+        android:layout_height="@dimen/s60">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/s60"
+            android:layout_height="@dimen/s60"
+            android:src="@mipmap/boy_on" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/s10"
+        android:paddingRight="@dimen/s10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/s5"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="神秘人"
+                    android:textColor="@color/homeback"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@+id/tv_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp12"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_gx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="2222"
+                    android:textSize="@dimen/sp10"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/lay_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/s15"
+                        android:layout_height="@dimen/s15"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/task_collect_money" />
+
+                    <TextView
+                        android:id="@+id/tv_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/s5"
+                        android:gravity="center"
+                        android:text="00.00"
+                        android:textColor="@color/c_fu"
+                        android:textSize="@dimen/sp14" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_vip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="right"
+                android:background="@drawable/bg_radius_bottom_pink2"
+                android:paddingLeft="@dimen/s15"
+                android:paddingTop="@dimen/s4"
+                android:paddingRight="@dimen/s15"
+                android:paddingBottom="@dimen/s4"
+                android:text="VIP会员"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp10"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/s15"
+        android:layout_height="@dimen/s15"
+        android:src="@mipmap/icon_me_jiao" />
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/new_boon_bg" />
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="70.0dip"
+        android:background="@color/transparent">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_left"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/s10"
+            android:text="我"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/img_left"
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="15.0dip"
+            android:paddingTop="16.0dip"
+            android:paddingRight="16.0dip"
+            android:paddingBottom="16.0dip"
+            android:scaleType="fitStart"
+            android:src="@mipmap/icon_lent"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <!--    <cn.bingoogolapple.bgabanner.BGABanner-->
+    <!--        android:id="@+id/banner"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="380.0dip"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginLeft="38.0dip"-->
+    <!--        android:layout_marginTop="86.0dip"-->
+    <!--        android:layout_marginRight="38.0dip"-->
+    <!--        android:clipChildren="false"-->
+    <!--        app:banner_contentBottomMargin="0.0dip"-->
+    <!--        app:banner_isNeedShowindicator="false"-->
+    <!--        app:banner_pointAutoPlayInterval="3000"-->
+    <!--        app:banner_pointContainerBackground="@color/transparent" />-->
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="380.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="38.0dip"
+        android:layout_marginTop="86.0dip"
+        android:layout_marginRight="38.0dip"
+        android:clipChildren="false"
+        />
+
+    <TextView
+        android:id="@+id/btn_call"
+        android:layout_width="200.0dip"
+        android:layout_height="55.0dip"
+        android:layout_below="@id/banner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40.0dip"
+        android:layout_marginTop="40.0dip"
+        android:layout_marginRight="40.0dip"
+        android:background="@drawable/register_btn_selector"
+        android:enabled="true"
+        android:gravity="center"
+        android:text="向TA发起语音通话"
+        android:textColor="@color/white"
+        android:textSize="15.0sp" />
+
+    <TextView
+        android:id="@+id/tv_call_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_call"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25.0dip"
+        android:layout_marginTop="25.0dip"
+        android:layout_marginEnd="25.0dip"
+        android:enabled="true"
+        android:textColor="@color/white"
+        android:textSize="12.0sp" />
+
+</RelativeLayout>

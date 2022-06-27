@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activit_fill_call_bg"
+    android:fitsSystemWindows="true">
+
+    <com.tianxin.activity.video2.widget.player
+        android:id="@+id/play_mp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </com.tianxin.activity.video2.widget.player>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="@dimen/s60"
+        android:background="@drawable/acitvity02"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/s80"
+            android:layout_height="@dimen/s80"
+            android:layout_marginLeft="@dimen/s2"
+            android:padding="@dimen/s5"
+            android:src="@mipmap/boy_off" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/s10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/s10"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s5"
+                android:layout_marginRight="@dimen/s10"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/desc2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/s10"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/s10"
+        android:layout_marginBottom="@dimen/s10"
+        android:background="@drawable/acitvity07"
+        android:ellipsize="end"
+        android:lineSpacingExtra="5dp"
+        android:maxLines="2"
+        android:minLines="1"
+        android:padding="@dimen/s5"
+        android:paddingLeft="@dimen/s5"
+        android:paddingTop="@dimen/s10"
+        android:paddingRight="@dimen/s5"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/s10"
+        android:layout_marginBottom="@dimen/s20"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/play_mp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/send2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_hangup"
+            android:drawablePadding="@dimen/s10"
+            android:gravity="center"
+            android:text="拒绝接听"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/send1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_dialing"
+            android:drawablePadding="@dimen/s10"
+            android:gravity="center"
+            android:paddingBottom="@dimen/s10"
+            android:text="立即接听"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/exit"
+        android:layout_width="@dimen/s40"
+        android:layout_height="@dimen/s40"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:src="@mipmap/trtcvoiceroom_ic_exit_room"
+        app:layout_constraintEnd_toEndOf="@+id/play_mp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

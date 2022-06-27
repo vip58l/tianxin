@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/s5"
+        android:layout_marginRight="@dimen/s5"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/s10"
+        android:paddingRight="@dimen/s10">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/s50"
+            android:layout_height="@dimen/s50"
+            android:layout_gravity="center"
+            android:src="@mipmap/boy_on" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/s10">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="@dimen/sp16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginTop="@dimen/s5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_pink_bg2"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/s5"
+                    android:paddingTop="@dimen/s1"
+                    android:paddingRight="@dimen/s5"
+                    android:paddingBottom="@dimen/s1"
+                    android:text="36岁"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp10" />
+
+                <TextView
+                    android:id="@+id/imagesvip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/s10"
+                    android:background="@drawable/bg_radius_bottom_pink2"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/s5"
+                    android:paddingTop="@dimen/s1"
+                    android:paddingRight="@dimen/s5"
+                    android:paddingBottom="@dimen/s1"
+                    android:text="SVIP"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp10" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/s5"
+        android:layout_marginRight="@dimen/s5"
+        android:orientation="vertical"
+        android:padding="@dimen/s10">
+
+        <com.tianxin.widget.MTextView
+            android:id="@+id/tv_mtextiew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s10"
+            android:lineSpacingExtra="3dp" />
+
+        <LinearLayout
+            android:id="@+id/relayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/show_img"
+                    android:layout_width="@dimen/s150"
+                    android:layout_height="@dimen/s180"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_welcome1" />
+
+                <ImageView
+                    android:id="@+id/play_mp"
+                    android:layout_width="@dimen/s60"
+                    android:layout_height="@dimen/s60"
+                    android:layout_centerInParent="true"
+                    android:alpha="0.8"
+                    android:src="@mipmap/play" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s10">
+
+            <TextView
+                android:id="@+id/datetime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_marginRight="@dimen/s10"
+                android:layout_weight="1"
+                android:text="1天前"
+                android:textSize="@dimen/sp12" />
+
+            <com.tianxin.widget.item_dianzhang
+                android:id="@+id/chatcaw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/s20" />
+
+
+            <com.tianxin.widget.item_dianzhang
+                android:id="@+id/chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/s20" />
+
+
+            <ImageView
+                android:id="@+id/showdelete"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/s25"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/s2"
+                android:src="@mipmap/dy_play_more2" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

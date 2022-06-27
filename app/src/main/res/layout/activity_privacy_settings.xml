@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.tianxin.widget.Backtitle
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40"
+        android:layout_marginBottom="@dimen/s10"
+        app:title_name="@string/g1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/s1"
+        android:background="@drawable/acitvity012"
+        android:orientation="horizontal"
+        android:padding="@dimen/s10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/g2"
+            android:textColor="@color/custom_transparent"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/s_v1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:switchMinWidth="@dimen/s30"
+            android:textOff="off"
+            android:textOn="on"
+            android:thumb="@drawable/thumb"
+            android:track="@drawable/track" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/acitvity012"
+        android:orientation="horizontal"
+        android:padding="@dimen/s10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/g3"
+            android:textColor="@color/custom_transparent"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/s_v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:switchMinWidth="@dimen/s30"
+            android:textOff="off"
+            android:textOn="on"
+            android:thumb="@drawable/thumb"
+            android:track="@drawable/track" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/acitvity012"
+        android:orientation="horizontal"
+        android:padding="@dimen/s10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/g4"
+            android:textColor="@color/custom_transparent"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/s_v3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:switchMinWidth="@dimen/s30"
+            android:textOff="off"
+            android:textOn="on"
+            android:thumb="@drawable/thumb"
+            android:track="@drawable/track" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/acitvity012"
+        android:orientation="horizontal"
+        android:padding="@dimen/s10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/g5"
+            android:textColor="@color/custom_transparent"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/s_v4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:switchMinWidth="@dimen/s30"
+            android:textOff="off"
+            android:textOn="on"
+            android:thumb="@drawable/thumb"
+            android:track="@drawable/track" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/acitvity012"
+        android:orientation="horizontal"
+        android:padding="@dimen/s10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/g6"
+            android:textColor="@color/custom_transparent"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/s_v5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:switchMinWidth="@dimen/s30"
+            android:textOff="off"
+            android:textOn="on"
+            android:thumb="@drawable/thumb"
+            android:track="@drawable/track" />
+
+    </LinearLayout>
+
+</LinearLayout>

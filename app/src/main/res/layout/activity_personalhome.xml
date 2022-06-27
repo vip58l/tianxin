@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activity.picenter.activity_personalhome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s180"
+                android:background="@mipmap/ic_welcome1"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="@dimen/s30"
+                android:layout_height="@dimen/s30"
+                android:layout_marginLeft="@dimen/s10"
+                android:layout_marginTop="@dimen/s30"
+                android:alpha="0.5"
+                android:src="@mipmap/icon_back_white" />
+
+            <ImageView
+                android:id="@+id/RefreshL"
+                android:layout_width="@dimen/s30"
+                android:layout_height="@dimen/s30"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/s10"
+                android:layout_marginTop="@dimen/s30"
+                android:layout_marginRight="@dimen/s10"
+                android:src="@mipmap/dy_play_more" />
+
+            <LinearLayout
+                android:id="@+id/topPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/s5">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/s40"
+                    android:layout_marginLeft="@dimen/s10"
+                    android:layout_weight="1" />
+
+                <com.tianxin.activity.picenter.widget.widgetactivity
+                    android:id="@+id/widet1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:text_name="0"
+                    app:text_title="关注" />
+
+                <com.tianxin.activity.picenter.widget.widgetactivity
+                    android:id="@+id/widet2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:text_name="0"
+                    app:text_title="粉丝" />
+
+                <com.tianxin.activity.picenter.widget.widgetactivity
+                    android:id="@+id/widet3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:text_name="0"
+                    app:text_title="获赞" />
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleimageview"
+                android:layout_width="@dimen/s100"
+                android:layout_height="@dimen/s100"
+                android:layout_below="@+id/image"
+                android:layout_marginLeft="@dimen/s10"
+                android:layout_marginTop="-50dp"
+                app:civ_border_color="@color/home3"
+                app:civ_border_width="2dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/s5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/s10"
+                android:paddingRight="@dimen/s10"
+                android:paddingBottom="@dimen/s10">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/s10"
+                    android:text="name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/s5"
+                        android:layout_weight="1"
+                        android:text="用户ID:1234"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:textColor="@color/home"
+                        android:textSize="@dimen/sp12" />
+
+                    <TextView
+                        android:id="@+id/dfdfkldfkl"
+                        android:layout_width="@dimen/s80"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/activity011"
+                        android:gravity="center"
+                        android:padding="@dimen/s5"
+                        android:text="关注"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp12" />
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/s5"
+                        android:id="@+id/chat0"
+                        android:layout_width="@dimen/s80"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/acitvity07"
+                        android:gravity="center"
+                        android:padding="@dimen/s5"
+                        android:text="私信"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp12" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/s5"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:textColor="@color/home"
+                    android:textSize="@dimen/sp12" />
+
+            </LinearLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s40"
+                android:layout_marginTop="@dimen/s10" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

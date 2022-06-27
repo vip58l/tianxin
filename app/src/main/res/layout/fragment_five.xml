@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/topbar_h"
+        android:layout_gravity="center"
+        android:background="@color/c_main"
+        android:gravity="center"
+        android:text="劲爆漫画"
+        android:textColor="#ffffffff"
+        android:textSize="18.0sp" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/pullToRefreshLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ListView
+            android:id="@+id/pullListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffffff"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:scrollingCache="false" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

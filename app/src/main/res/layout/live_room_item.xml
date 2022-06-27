@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/s240">
+
+    <ImageView
+        android:id="@+id/live_iv_live_room_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        tools:layout_editor_absoluteX="0dp"
+        android:background="@mipmap/bg_shade_bom"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/live_iv_live_room_image"
+        android:layout_width="@dimen/s30"
+        android:layout_height="@dimen/s30"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        app:source="svga_liveing.svga"
+        android:src="@mipmap/v1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/live_tv_live_member_count"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="在线"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/live_tv_live_anchor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:singleLine="true"
+        android:text="房间详情"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/live_tv_live_room_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="房间标题"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="343dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="78dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

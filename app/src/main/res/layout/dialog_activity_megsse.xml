@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_marginRight="@dimen/s10"
+            android:background="@drawable/acitvity012"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/s10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="@dimen/s30"
+                android:layout_height="@dimen/s30"
+                android:layout_gravity="right"
+                android:alpha="0.5"
+                android:src="@mipmap/ic_news2_detail_withvideo_close" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s280">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_welcome1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:alpha="0.3"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/bg_shade_bom" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="@dimen/s10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/file_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/s10"
+                        android:text="name"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp16"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/s10"
+                            android:background="@drawable/btn_pink_bg"
+                            android:paddingLeft="@dimen/s10"
+                            android:paddingRight="@dimen/s10"
+                            android:text="31"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp12"></TextView>
+
+                        <TextView
+                            android:id="@+id/vip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_pink_bg"
+                            android:paddingLeft="@dimen/s10"
+                            android:paddingRight="@dimen/s10"
+                            android:text="VIP"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp12"
+                            android:visibility="gone"></TextView>
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/s10"
+                            android:background="@drawable/acitvity017"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:paddingLeft="@dimen/s10"
+                            android:paddingRight="@dimen/s10"
+                            android:text="北京"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp12" />
+
+                        <TextView
+                            android:id="@+id/address2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/s10"
+                            android:background="@drawable/btn_pink_bg"
+                            android:paddingLeft="@dimen/s10"
+                            android:paddingRight="@dimen/s10"
+                            android:text="上海"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp12" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="一个人过，我想和你一一起聊聊 单身太久没人懂"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp12" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s45"
+                android:layout_below="@+id/image"
+                android:layout_marginTop="@dimen/s20"
+                android:layout_marginBottom="@dimen/s10"
+                android:background="@drawable/bg_radius_bottom_pink2"
+                android:gravity="center"
+                android:text="去和TA视频聊天(5秒)"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

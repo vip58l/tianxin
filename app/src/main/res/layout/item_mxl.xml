@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/s2"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/s10"
+        android:paddingTop="@dimen/s5"
+        android:paddingRight="@dimen/s10"
+        android:paddingBottom="@dimen/s5">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/s120"
+            android:layout_height="@dimen/s80"
+            android:layout_marginRight="@dimen/s20"
+            android:padding="@dimen/s2"
+            android:scaleType="centerCrop"></ImageView>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s30"
+            android:layout_toRightOf="@+id/icon"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:lines="1"
+            android:text="推荐精品 新品上市"
+            android:textColor="@color/half_transparent"></TextView>
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s20"
+            android:layout_below="@+id/title"
+            android:layout_toRightOf="@+id/icon"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="免费品尝 抢购热潮"
+            android:textColor="@color/home"
+            android:textSize="@dimen/sp12"></TextView>
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s20"
+            android:layout_below="@+id/title1"
+            android:layout_marginTop="@dimen/s5"
+            android:layout_toRightOf="@+id/icon"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="免费品尝 抢购热潮"
+            android:textColor="@color/home"
+            android:textSize="@dimen/sp12"></TextView>
+
+    </RelativeLayout>
+
+</LinearLayout>

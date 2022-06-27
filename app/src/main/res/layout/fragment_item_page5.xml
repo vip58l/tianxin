@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/layouta2"
+        style="@style/actextsif">
+
+        <ImageView
+            android:id="@+id/icon"
+            style="@style/styindexamin"
+            android:src="@mipmap/ar3" />
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/actexts1"
+            android:text="我的等级" />
+
+        <ImageView
+            android:id="@+id/backright"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/icon_me_jiao" />
+
+    </LinearLayout>
+
+</LinearLayout>

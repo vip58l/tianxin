@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/s5"
+    android:paddingBottom="@dimen/s5">
+
+    <ImageView
+        android:id="@+id/item_sex_img"
+        android:layout_width="@dimen/s60"
+        android:layout_height="60dp"
+        android:layout_marginLeft="6.0dip"
+        android:background="@mipmap/ic_man_choose"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12.0dip"
+        android:layout_marginTop="1.0dip"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_sex_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="我的老师）"
+            android:textColor="#ff333333" />
+
+        <TextView
+            android:id="@+id/item_sex_tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1.0dip"
+            android:layout_marginTop="4.0dip"
+            android:ellipsize="end"
+            android:lineSpacingExtra="4.0dip"
+            android:lines="1"
+            android:text="第一章"
+            android:textColor="#ff909090"
+            android:textSize="13.0sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.0dip">
+
+            <ImageView
+                android:id="@+id/imgs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                android:src="@mipmap/icon_sex_autuor" />
+
+            <TextView
+                android:id="@+id/item_sex_tv_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_toRightOf="@+id/imgs"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:textColor="#ff909090"
+                android:textSize="11.0sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

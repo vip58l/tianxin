@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/close"
+        android:layout_marginBottom="@dimen/s10"
+        android:background="@drawable/acitvity012"
+        android:padding="@dimen/s10" />
+
+    <TextView
+        android:id="@+id/close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/s10"
+        android:text="取消"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/sp16" />
+
+</RelativeLayout>

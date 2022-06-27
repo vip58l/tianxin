@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tianxin">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.REPLACE_EXISTING_PACKAGE" /> <!-- 这个权限用于允许程序在手机屏幕关闭后后台进程仍然运行 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" /> <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" /> <!-- Android Vibrator振动器 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" /> <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_MTK_MMHW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.SAMSUNG_TUNTAP" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.BLUETOOTH" /> <!-- 悬浮view功能实现 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_PROFILE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <queries>
+        <package android:name="com.eg.android.AlipayGphone" />
+        <!-- 支付宝 -->
+        <package android:name="hk.alipay.wallet" />
+        <!-- AlipayHK -->
+        <!-- 指定微信包名 -->
+        <package android:name="com.tencent.mm" />
+    </queries>
+
+    <application
+        android:name=".app.DemoApplication"
+        android:allowBackup="true"
+        android:allowNativeHeapPointerTagging="false"
+        android:alwaysRetainTaskState="true"
+        android:exported="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:preserveLegacyExternalStorage="true"
+        android:requestLegacyExternalStorage="true"
+        android:resizeableActivity="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:sharedUserId="android.uid.system"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:label">
+        <activity
+            android:name=".activity.Activity_qiaoapi"
+            android:exported="false" />
+        <activity
+            android:name=".activity.sesemys.activity_amountconfig"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shareqrcode.activity_getspreadUrl"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IMtencent.chta.ChatActivityMessage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.party.activity_party_user_list"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.party.activity_party_list"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.party.activity_party_toName"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.party.activity_party_imge"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.party.activity_edit_party"
+            android:exported="false" />
+        <activity
+            android:name=".activity.party.activity_user_party"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.activity_chat_settings"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Withdrawal.activity_balance"
+            android:exported="false" />
+        <activity
+            android:name=".activity.picenter.activity_data"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.picenter.activity_personalhome"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Aboutus.activity_joinin"
+            android:exported="false" />
+        <activity
+            android:name=".activity.video.Call.TheresaCall"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="TheresaCall" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Fragment.page2.activity.activity_page"
+            android:exported="false" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.browse.activity_browse"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LatestNews.activity_show_trend"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.Withdrawal.moneylog.activity_moneylog"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.video2.activity.activityplayer"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.register.activity_rpwd"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Image.activity_img_page"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Image.activity_img_cover"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.video.videoijkplayer3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.loadmatching.activity_Loadmatching"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Test.activity_Nornal"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LatestNews.activity_news"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LatestNews.activity_trend"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 协议部分配置 要在web配置相同的参数 -->
+                <!-- 声明自定义scheme，类似于http, https -->
+                <!-- pmccb://android/userid=2201 -->
+                <!-- pmccb://www.pmccb.com/path?userid=2201&name=123456 -->
+
+
+                <!-- 清单文本编写调启APP起启 -->
+                <!-- android:host="www.pmccb.com" -->
+                <!-- android:scheme="pmccb" -->
+
+                <data
+                    android:host="platformapi"
+                    android:scheme="paixide" />
+
+                <action android:name="android.intent.action.VIEW" />
+                <!-- 表示该页面可以被隐式调用，必须加上该项 -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- BROWSABLE指定该Activity能被浏览器安全调用 -->
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Withdrawal.activity_detailed"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZYservices.activity_zshouxianming"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZYservices.activity_myper"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Searchactivity.activity_select"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.ZYservices.activity_editing_more"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZYservices.activity_servicepj"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZYservices.activity_mycurriculum"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZYservices.activity_course"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.activity_list_column"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.activity_sevaluate"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.activity_home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZYservices.activity_serviceaccount"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZYservices.activity_servicetitle"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZYservices.acitivity_NewsServices"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZYservices.activity_courses"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.activity_album"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.activity_follow"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.activity_home_page"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Withdrawal.ordermoeny"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Withdrawal.Withdrawals"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Withdrawal.acitivity_settlement"
+            android:exported="false"
+            android:label="结算帐号"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.activity_mylikeyou"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Withdrawal.References"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="Withdrawal.references" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.shareqrcode.activity_Share"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DouYing.activity_jsonvideo"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.mywebview.activity.jsoup" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.edit.activity_uploadavatar"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.edit.activity_updateedit"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.register.activity_register"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.meun.MEUN_MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Memberverify.activity_Namecenter"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Memberverify.activity_livebroadcast"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="livebroadcastActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Test.MainActivityshow"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Withdrawal.Detailedlist"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".activity.Withdrawal.Detailedlist" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".IMtencent.scenes.view.LiveRoomAnchorActivity2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IMtencent.scenes.LiveRoomAudienceActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IMtencent.scenes.LiveRoomAnchorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.video.videoijkplayer1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IMtencent.chta.ChatActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="Fragment.im.chta.ChatActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 华为离线推送打开应用内页面 -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="com.paixide"
+                    android:path="/detail"
+                    android:scheme="pushscheme" />
+            </intent-filter>
+
+            <!-- OPPO离线推送的intent action方式必须配置category且不能有data数据 -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- OPPO离线推送的scheme url方式必须配置action和category -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.tencent.qcloud"
+                    android:scheme="pushscheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.activit_Invitefriends"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IMtencent.FriendProfileActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.activity_svip"
+            android:exported="true"
+            android:label="升级会员"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="activity_svip" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tencent.demo.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.tencent.demo.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tencent.demo.TRTCMainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.tencent.demo.TRTCMainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.picenter.activity_picbage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.picenter.activity_picenter"
+            android:exported="false"
+            android:label="个人主页"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="UIactivity.activity_picenter" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.activity_list1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sesemys.activity_sesemys"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="activity_sesemys" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Aboutus.activity_viecode"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.edit.activity_edits"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.edit.activity_edit"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.register.activity_reg"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Test.playviewactivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.video.live.LiveVideo"
+            android:exported="false"
+            android:label="直播聊天"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IMtencent.menu.AddMoreActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IMtencent.contact.NewFriendActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IMtencent.menu.StartC2CChatActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IMtencent.menu.StartGroupChatActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".IMtencent.contact.GroupListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IMtencent.contact.BlackListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IMtencent.contact.FriendProfileActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.video.videoijkplayer4"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Searchactivity.SearchActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Searchactivity.SearchDeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Web.BookWebActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".UIactivity.bookWebActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Web.DyWebActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MhReadActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" /> <!-- 接听来电视频 -->
+        <activity
+            android:name=".activity.video.Call.Call_video"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".activity.video.CallVideo" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Web.SexDeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.video.videoijkplayer2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.videoalbum.activity_list_Video"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialog.money.activity_GiftInfo"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name=".dialog.money.activity_GiftInfo" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.videoalbum.activity_list_Images"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.video.videoijkplayer0"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="videoijkplayer" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.video.videoijkplayer5"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="videoijkplayer5" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.picenter.activity_picture"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.edit.activity_nickname1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.edit.activity_nickname2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.edit.activity_nickname3"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".activity.edit.activity_nickname3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mytime.userdatetime"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Test.live_animation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.matching.activity_likeyou"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.matching.activity_audio_speed"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.matching.activity_video_speed"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.matching.activity_thesamecity_speed"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.matching.activity_Matchchat"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZYservices.activity_categories"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZYservices.activity_photo_album"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.activity_music_play"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZYservices.activity_courseedit"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.edit.activity_nickname4"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.callvideo"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shareqrcode.activity_scan_qrcode"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.video2.activity.PagerPlay"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="MyPagerPlay" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Login.UserLoginActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.activity_item.fragment_load"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shareqrcode.activity_shareqrcode"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Web.Webviewactivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Fragment.page2.fragment.dialogRoomBaseActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="dialogRoomBaseActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.activitycity.activity_cityshow"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Aboutus.Activity_logout"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.activity_new_boon"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".tencent.demo.CallService"
+            android:enabled="true"
+            android:exported="false" /> <!-- 更新自动安装应用权限 -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider> <!-- 音乐播放服务 -->
+        <service
+            android:name=".Receiver.MyService"
+            android:exported="false" /> <!-- 向后台发送统计服务 -->
+        <service
+            android:name=".Receiver.MyService_Notification"
+            android:exported="false" /> <!-- 高德地图定位服务 -->
+        <service
+            android:name="com.amap.api.location.APSService"
+            android:exported="false" /> <!-- 高德导航SDK添加高德Key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="42fdf96cfdc5f7c2afda20b460c5e9e8" /> <!-- 视频呼叫 -->
+        <service
+            android:name=".Receiver.FloatingService"
+            android:exported="false" /> <!-- 视频呼叫 -->
+        <service
+            android:name=".Receiver.videoService"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.Main.MainActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".activity.game.Game_aActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.game.Game_Activity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.game.Game_Activity_add"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.game.Game_Activity_finish"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.game.Game_Activity_list"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.game.Game_bin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.game.Game_Activity_title"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.game.Game_Activity_show"
+            android:exported="false"
+            android:screenOrientation="portrait" /> <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:taskAffinity="${applicationId}"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- 微信支付回调 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:taskAffinity="${applicationId}"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- 微信广播 -->
+        <receiver
+            android:name=".wxapi.AppRegister"
+            android:exported="true"
+            android:permission="com.tencent.mm.plugin.permission.SEND">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver> <!-- 微信授权登录 -->
+        <activity
+            android:name=".activity.Login.UserInfoActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.video2.activity.activitymyplay"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.video2.activity.activity_video"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sesemys.activity_privacy_settings"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sesemys.actrivity_sesemy_notice"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.party.activity_party"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IMtencent.chta.ChatActivityMessage"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".activity.register.activity_phone_bind"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

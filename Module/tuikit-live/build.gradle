@@ -1,0 +1,116 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+
+        release {
+            minifyEnabled true
+            //正式上线版 自定义变量
+            buildConfigField 'String', 'wapyequlive', quotWrapper("https://wap.yequ.live/api/mainpage/mainPage/")
+            buildConfigField 'String', 'miaobolive', quotWrapper("http://www.miaobolive.com/Ajax/")
+            buildConfigField 'String', 'v6', quotWrapper("http://v.6.cn/minivideo/getlist.php?act=recommend&pageSize=20&page=")
+            buildConfigField 'String', 'HTTP_WEB', quotWrapper("https://api.qiaoapi.com")
+            buildConfigField 'String', 'HTTP_API', quotWrapper("https://api.qiaoapi.com/index.php/api")
+
+
+            //bugly上报 com.paixide.IMtencent.utils.PrivateConstants
+            buildConfigField 'String', 'BUGLY_APPID', quotWrapper("461ea57ee3")
+            //友盟统计
+            buildConfigField 'String', 'DEVICE_TYPE_KEY', quotWrapper("6058158374e0026086291696")
+            //微信开放平台分享
+            buildConfigField 'String', 'APP_ID', quotWrapper("wxb99230c627136c99")
+            buildConfigField 'String', 'AppSecret', quotWrapper("34dac3e9d4f09dbabdae3dd8ac85e0d7")
+
+            //1交友 2心里咨询
+            buildConfigField 'int', 'TYPE', '1'
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "boolean", "isWifiProxy", "false"
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            //调试测试版 自定义变量
+            buildConfigField 'String', 'wapyequlive', quotWrapper("https://wap.yequ.live/api/mainpage/mainPage/")
+            buildConfigField 'String', 'miaobolive', quotWrapper("http://www.miaobolive.com/Ajax/")
+            buildConfigField 'String', 'v6', quotWrapper("http://v.6.cn/minivideo/getlist.php?act=recommend&pageSize=20&page=")
+            buildConfigField 'String', 'HTTP_WEB', quotWrapper("https://api.qiaoapi.com")
+            buildConfigField 'String', 'HTTP_API', quotWrapper("https://api.qiaoapi.com/index.php/api")
+
+            //bugly上报 com.paixide.IMtencent.utils.PrivateConstants
+            buildConfigField 'String', 'BUGLY_APPID', quotWrapper("461ea57ee3")
+            //友盟统计
+            buildConfigField 'String', 'DEVICE_TYPE_KEY', quotWrapper("6058158374e0026086291696")
+
+            //微信开放平台分享
+            buildConfigField 'String', 'APP_ID', quotWrapper("wxb99230c627136c99")
+            buildConfigField 'String', 'AppSecret', quotWrapper("34dac3e9d4f09dbabdae3dd8ac85e0d7")
+
+            //1交友 2心里咨询
+            buildConfigField 'int', 'TYPE', '1'
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "boolean", "isWifiProxy", "true"
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+//处理双此号字符串
+String quotWrapper(key) {
+    if (key == null) {
+        return "\"\""
+    }
+    return "\"".concat(key).concat("\"")
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.aar'], dir: '../libs')
+
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation project(path: ':Module:debug')
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'com.google.code.gson:gson:2.8.8'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.github.ctiao:DanmakuFlameMaster:0.5.3'
+    //播放动画特效
+    implementation 'com.airbnb.android:lottie:4.2.0'
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.2'
+    api 'com.tencent.liteav:LiteAVSDK_TRTC:9.2.10641'
+    api 'com.tencent.imsdk:imsdk:5.1.66'
+
+    //直播礼物动画效果 SVGAPlayer 是一个轻量的动画渲染库
+    //SVGAPlayer 可以从本地 assets 目录，或者远端服务器上加载动画文件
+    implementation 'com.github.yyued:SVGAPlayer-Android:2.5.15'
+    implementation 'androidx.core:core-ktx:1.7.0-rc01'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    //背景模糊
+    //Transformations 主要处理图片模糊 设置 圆角和高斯模糊（BlurTransformation）
+    //https://github.com/wasabeef/glide-transformations
+    implementation 'jp.wasabeef:glide-transformations:4.3.0'
+
+    //CircleImageView主要处理图片头像圆型
+    //https://github.com/hdodenhof/CircleImageView#circleimageview
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+}

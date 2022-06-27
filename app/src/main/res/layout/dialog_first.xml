@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/s300"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/acitvity012"
+    android:orientation="vertical"
+    android:padding="@dimen/s20">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/tv_msg280"
+        android:textColor="@color/homeback"
+        android:textSize="@dimen/sp16" />
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/s10"
+        android:layout_marginBottom="@dimen/s10"
+        android:text="@string/tv_msg279"
+        android:textColor="@color/home"
+        android:textSize="@dimen/sp13" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginTop="@dimen/s10"
+        android:layout_marginBottom="@dimen/s20"
+
+        android:background="@color/home" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/s5">
+
+        <TextView
+            android:id="@+id/send2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_radius_bottom_pink2"
+            android:gravity="center"
+            android:paddingLeft="@dimen/s10"
+            android:paddingTop="@dimen/s9"
+            android:paddingRight="@dimen/s10"
+            android:paddingBottom="@dimen/s9"
+            android:text="同意并继续"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/send1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s10"
+            android:gravity="center"
+            android:paddingLeft="@dimen/s10"
+            android:paddingTop="@dimen/s5"
+            android:paddingRight="@dimen/s10"
+            android:paddingBottom="@dimen/s5"
+            android:text="不同意"
+            android:textColor="@color/home"
+            android:textSize="@dimen/sp16" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

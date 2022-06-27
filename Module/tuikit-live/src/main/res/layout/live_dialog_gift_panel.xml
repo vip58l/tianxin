@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/giftLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/live_gift_bg_panel"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:text="打赏个小礼物吧"
+            android:textColor="@color/live_dark_black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_send_gift"
+            android:layout_width="85dp"
+            android:layout_height="31dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/live_confirm_btn_red_bg"
+            android:text="确认打赏"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="11dp"
+        android:background="@color/live_color_line" />
+    <!--    礼物面板-->
+    <include layout="@layout/live_layout_gift_panel_container" />
+
+    <RelativeLayout
+        android:id="@+id/giftBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/btn_charge"
+            android:gravity="left|center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/senbntpost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgjb"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/beauty_h10"
+                    android:src="@drawable/ic_task_cy"></ImageView>
+
+                <TextView
+                    android:id="@+id/smoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgjb"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="0"
+                    android:textColor="@color/live_gift_dark_orange"></TextView>
+
+                <TextView
+                    android:id="@+id/namemoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/money"
+                    android:text="充值>"
+                    android:textColor="@color/live_gift_dark_orange"
+                    android:textSize="14sp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/btn_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/live_confirm_btn_red_bg"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp"
+            android:text="赠送"
+            android:textColor="@color/white"
+            android:textSize="14sp"></TextView>
+
+    </RelativeLayout>
+
+</LinearLayout>

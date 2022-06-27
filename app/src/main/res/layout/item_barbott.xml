@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/s10"
+    android:paddingBottom="@dimen/s10">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/s40"
+        android:layout_height="@dimen/s40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+       android:src="@mipmap/a_f" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="好样的"
+        android:textSize="@dimen/sp12"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:layout_editor_absoluteX="176dp" />
+
+</LinearLayout>

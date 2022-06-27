@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/show_pup_pos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mtrl_textinput_hovered_box_stroke_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.core.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mtrl_textinput_hovered_box_stroke_color"></androidx.core.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/gallery_lin_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@mipmap/bg_shade_top"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/photos_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10.0dip"
+            android:src="@mipmap/icon_tbback" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gallery_lin_down"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/bg_shade_bom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5.0dip">
+
+        <ImageView
+            android:id="@+id/photos_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3.0dip"
+            android:padding="5.0dip"
+            android:src="@mipmap/icon_gallery_down" />
+
+        <TextView
+            android:id="@+id/photos_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3.0dip"
+            android:gravity="right"
+            android:text="1/20"
+            android:textColor="#ffffffff" />
+
+    </LinearLayout>
+
+</RelativeLayout>

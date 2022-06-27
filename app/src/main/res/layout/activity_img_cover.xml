@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.Image.activity_img_cover">
+
+    <com.tianxin.widget.itembackTopbr
+        android:id="@+id/itemback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--这里可以自一义下拉刷新Header-->
+        <!--srlAccentColor srlPrimaryColor 将会改变 Header 和 Footer 的主题颜色-->
+        <!--srlEnablePreviewInEditMode 可以开启和关闭预览功能-->
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/s2" />
+        <!--这里可以自一义下拉刷新footer-->
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <include layout="@layout/eorr" />
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/s300"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/momey_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/chartmsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/s20"
+        android:layout_marginBottom="@dimen/s10"
+        android:gravity="center"
+        android:text="@string/dialoged"
+        android:textColor="@color/homeback"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginTop="@dimen/s5"
+        android:layout_marginBottom="@dimen/s5"
+        android:background="@color/home3" />
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/s10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/kankan"
+            style="@style/actexts2"
+            android:text="@string/tv_msg158" />
+
+
+        <TextView
+            android:id="@+id/exit"
+            style="@style/actexts2"
+            android:text="@string/tv_msg154" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_gift_root"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@color/black"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_gift_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/tv_gift_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_gift_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/trtckaraoke_gift_give_gift"
+        android:textColor="@color/trtcvoiceroom_color_msg_7"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+</LinearLayout>

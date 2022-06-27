@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!--头部背景-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s100"
+        android:alpha="0.8"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bg_shade_top" />
+
+    <!--主播头部-->
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/s10">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s5"
+                android:background="@drawable/bg_radius_top_black"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/s60"
+                android:paddingTop="2dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="正在直播"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/hani_icon_tag_exp" />
+
+                    <TextView
+                        android:id="@+id/tvgz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="关注"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circular"
+                android:layout_width="@dimen/s50"
+                android:layout_height="@dimen/s50"
+                android:background="@drawable/acitvity02"
+                android:padding="1dp"
+                android:src="@mipmap/icon_woman_choose"
+                app:civ_border_color="#f1f1f1"
+                app:civ_border_width="1dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/hlv_audience"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/home4"
+                style="@style/tyless"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_news_detail_withvideo_close" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--等级动态-->
+    <RelativeLayout
+        android:id="@+id/rl_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/s10"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s10"
+            android:background="@drawable/bg_radius_bottom_pink"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="2dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="10dp"
+                android:src="@mipmap/molive_icon_charm_lv_20" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="小时榜单第5名"
+                android:textColor="#fff"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/conum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/reis2"
+            android:gravity="center"
+            android:paddingLeft="@dimen/s5"
+            android:paddingTop="@dimen/s2"
+            android:paddingRight="@dimen/s5"
+            android:paddingBottom="@dimen/s2"
+            android:text="2584"
+            android:textColor="@color/white"
+            android:textSize="10sp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <!--用于插入特效-->
+    <LinearLayout
+        android:id="@+id/ll_gift_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lv_message"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:animateLayoutChanges="true"
+        android:gravity="top"
+        android:orientation="vertical" />
+
+    <!--滚动隐天内容-->
+    <ListView
+        android:id="@+id/lv_message"
+        android:layout_width="300dp"
+        android:layout_height="260dp"
+        android:layout_above="@+id/fragmentf"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="@dimen/s10"
+        android:layout_marginBottom="@dimen/s50"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:listSelector="#00000000"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="none"
+        android:transcriptMode="normal" />
+
+    <!--底部文件-->
+    <FrameLayout
+        android:id="@+id/fragmentf"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s50"
+        android:layout_alignParentBottom="true">
+
+        <!--聊天评论刷礼物UI-->
+        <LinearLayout
+            android:id="@+id/linfoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s5"
+            android:layout_marginBottom="@dimen/s5"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/s10">
+
+            <LinearLayout
+                android:layout_width="@dimen/s100"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_chat"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/s30"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/acitvity01"
+                    android:gravity="center"
+                    android:hint="在此输入你要说的话!"
+                    android:padding="@dimen/s5"
+                    android:text="在此输入你要说的话!"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/home1"
+                    style="@style/tyless2"
+                    android:src="@mipmap/btnicon_0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/home2"
+                    style="@style/tyless2"
+                    android:src="@mipmap/ic_praise_sm6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/home3"
+                    style="@style/tyless2"
+                    android:src="@mipmap/home" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linmsess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/Mesges"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="想说点什么?" />
+
+            <Button
+                android:id="@+id/senbnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/activity011"
+                android:text="发送"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!--礼物动画-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--动画特效-->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+        <!--3. 显示 SVGA 动画-->
+        <com.opensource.svgaplayer.SVGAImageView
+            android:id="@+id/svgaImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            app:autoPlay="true"
+            app:loopCount="1" />
+        <!--点赞特效-->
+        <lib.homhomlib.view2.DivergeView
+            android:id="@+id/divergeView"
+            android:layout_width="130dp"
+            android:layout_height="300dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="@dimen/s60"
+            android:layout_marginBottom="@dimen/s60" />
+
+    </FrameLayout>
+
+</RelativeLayout>

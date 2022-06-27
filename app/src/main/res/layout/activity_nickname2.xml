@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home3"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.tianxin.widget.itembackTopbr
+        android:id="@+id/itemback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/sp10"
+            android:text="@string/tm68"
+            android:textSize="@dimen/sp12"
+            android:visibility="gone" />
+
+
+        <EditText
+            android:id="@+id/nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/s10"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/diis_bg1"
+            android:gravity="left|top"
+            android:maxLength="50"
+            android:maxLines="50"
+            android:minLines="5"
+            android:padding="@dimen/sp10"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/s10">
+
+            <TextView
+                android:id="@+id/endpadder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tm60"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:id="@+id/close1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="0/50"
+                android:textSize="@dimen/sp12" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s40"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_marginRight="@dimen/s10"
+            android:background="@drawable/dis_bg"
+            android:hint="@string/tm62"
+            android:padding="@dimen/s10"
+            android:textSize="@dimen/sp14"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_marginTop="@dimen/s30"
+            android:layout_marginRight="@dimen/s10"
+            android:layout_marginBottom="@dimen/s10"
+            android:background="@drawable/bg_radius_bottom_pink2"
+            android:text="@string/tv_msg113"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

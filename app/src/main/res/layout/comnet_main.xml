@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        app:tabBackground="@null"
+        app:tabGravity="center"
+        app:tabIndicatorColor="@null"
+        app:tabIndicatorHeight="1dip"
+        app:tabMinWidth="0dip"
+        app:tabMode="scrollable"
+        app:tabPaddingEnd="8dp"
+        app:tabPaddingStart="8dp"
+        app:tabPaddingTop="8dp"
+        app:tabSelectedTextColor="#000"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+        app:tabTextColor="#999" />
+    <!--
+    tabGravity有两种属性：center和fill；center指的是居中显示，fill指的是沾满全屏。
+    app:tabGravity="fill"：拉伸宽度
+    app:tabMode="fixed"   :默认
+    app:tabIndicatorColor ：指示条的颜色
+    app:tabIndicatorHeight  ：指示条的高度
+    app:tabSelectedTextColor ： tab被选中时的字体颜色
+    app:tabTextColor ： tab未被选中时的字体颜色
+    app:tabMode="scrollable" ： 默认是fixed：固定的，标签很多时候会被挤压，不能滑动。
+    -->
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dip"
+        android:layout_weight="1"
+        android:background="#fff" />
+
+
+</LinearLayout>

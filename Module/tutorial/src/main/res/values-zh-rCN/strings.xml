@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Agora Tutorial</string>
+    <string name="agora_app_id">505b09ce0d95483bbea891ec84af777a</string>
+    <string name="endcall_msg">您已关闭视频聊天</string>
+</resources>

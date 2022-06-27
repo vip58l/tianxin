@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/s180"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/s10"
+    android:paddingTop="@dimen/s5"
+    android:paddingRight="@dimen/s10"
+    android:paddingBottom="@dimen/s5">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_per" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/s10"
+        android:orientation="vertical"
+        android:padding="@dimen/s10">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s10"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="泰国一日游（2人）"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/describe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s10"
+            android:text="完美配对"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:id="@+id/datetime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s5"
+            android:ellipsize="end"
+            android:lines="1"
+
+            android:text="04/03 22:00-04/04 00:00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14" />
+
+        <com.tianxin.widget.FlowLayout
+            android:id="@+id/flowLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+        </com.tianxin.widget.FlowLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/s10"
+        android:layout_marginBottom="@dimen/s10"
+        android:background="@drawable/acitvity07"
+        android:paddingLeft="@dimen/s10"
+        android:paddingTop="@dimen/s4"
+        android:paddingRight="@dimen/s10"
+        android:paddingBottom="@dimen/s4"
+        android:text="Ta买单"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp14" />
+
+</RelativeLayout>

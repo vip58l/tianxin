@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.Login.UserLoginActivity">
+
+    <!--  <com.paixide.activity.Login.LonginAninator
+          android:layout_width="match_parent"
+          android:visibility="gone"
+          android:layout_height="match_parent" />-->
+
+
+    <TextView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/s100"
+        android:padding="@dimen/s5"
+        android:text="@string/tv_msg_login"
+        android:textSize="@dimen/sp24"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon"
+        android:layout_marginLeft="@dimen/s10"
+        android:layout_marginTop="@dimen/s60"
+        android:layout_marginRight="@dimen/s10"
+        android:orientation="vertical"
+        android:padding="@dimen/s10">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s40"
+            android:background="@drawable/diis_bg1"
+            android:drawableLeft="@mipmap/icon_login_phone"
+            android:hint="@string/tv_msg_login_tip"
+            android:inputType="text"
+            android:maxLength="20"
+            android:paddingLeft="@dimen/s10"
+            android:textSize="@dimen/sp14" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s40"
+            android:layout_marginTop="@dimen/s20"
+            android:background="@drawable/diis_bg1"
+            android:drawableLeft="@mipmap/icon_login_pass"
+            android:hint="@string/tv_msg_password"
+            android:inputType="textPassword"
+            android:maxLength="32"
+            android:paddingLeft="@dimen/s10"
+            android:textSize="@dimen/sp14" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s40"
+            android:background="@drawable/bg_jianbian_yuanjiao"
+            android:text="@string/tv_msg_login_user"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/linfoot"
+            android:layout_width="@dimen/s300"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/s30"
+            android:gravity="center"
+            android:paddingLeft="@dimen/s10"
+            android:paddingRight="@dimen/s10">
+
+
+            <TextView
+                android:id="@+id/regs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/s10"
+                android:text="@string/tv_msg_reg"
+                android:textColor="@color/divider"
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/s40"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/regs1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/s10"
+                android:text="@string/regs1pwd"
+                android:textColor="@color/divider"
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--    TextView-->
+    <!--    1. android:shadowColor：阴影的颜色-->
+    <!--    2. android:shadowDx：水平方向上的偏移量-->
+    <!--    3. android:shadowDy：垂直方向上的偏移量-->
+    <!--    4. android:shadowRadius：是阴影的的半径大少-->
+    <!--    android:shadowColor="@color/c_fu"-->
+    <!--    android:shadowDx="2"-->
+    <!--    android:shadowDy="2"-->
+    <!--    android:shadowRadius="0.1"-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/s10"
+        android:layout_marginBottom="@dimen/s30"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/check_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:alpha="0.8"
+            android:button="@drawable/login_checkbox"
+            android:checked="false"
+            android:gravity="center"
+            android:padding="@dimen/s5" />
+
+
+        <TextView
+            android:id="@+id/tv_privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:lines="1"
+            android:text="@string/readdialog" />
+
+    </LinearLayout>
+
+    <com.tianxin.activity.Login.LoginActivity
+        android:id="@+id/loginactivity"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

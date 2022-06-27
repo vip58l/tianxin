@@ -1,0 +1,96 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/home2"
+            android:orientation="horizontal"
+            android:padding="@dimen/s10">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="导航地图"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="夜景地图"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="即普通地图"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="室内地图"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/home2"
+            android:orientation="horizontal"
+            android:padding="@dimen/s10">
+
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="卫星图"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="高德"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="百度"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="腾讯"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

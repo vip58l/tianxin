@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/s10"
+    android:paddingLeft="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rlparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_radius_top_black">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cv_send_gift_userIcon"
+            android:layout_width="@dimen/s40"
+            android:layout_height="@dimen/s40"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/s2"
+            android:padding="@dimen/s2"
+            android:src="@drawable/default_head" />
+
+        <LinearLayout
+            android:id="@+id/lin0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_toRightOf="@+id/cv_send_gift_userIcon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tag_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="小美"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/gifname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="送给主播"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_gift"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/s5"
+            android:layout_marginRight="@dimen/s5"
+            android:layout_toRightOf="@+id/lin0"
+            android:padding="@dimen/s2"
+            android:src="@drawable/zem70" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mtv_giftNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/s10"
+        android:layout_marginRight="@dimen/s10"
+        android:layout_toRightOf="@+id/rlparent"
+        android:includeFontPadding="false"
+        android:text="x1"
+        android:textColor="@color/live_primary"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

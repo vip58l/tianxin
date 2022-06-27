@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homeback"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.Image.activity_img_page">
+
+    <com.tianxin.widget.itembackTopbr
+        android:id="@+id/itemback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+    <include layout="@layout/eorr" />
+</LinearLayout>

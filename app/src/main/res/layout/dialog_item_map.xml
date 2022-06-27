@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sf_paydialog_yuanjiaotop2"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/s10"
+            android:text="推荐高德"
+            android:textColor="@color/homeback"
+            android:textSize="@dimen/sp12" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_news2_detail_withvideo_close" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/send1"
+        style="@style/symatch"
+        android:text="高德地图" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/home3" />
+
+    <TextView
+        android:id="@+id/send2"
+
+        style="@style/symatch"
+        android:text="百度地图" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/home3" />
+
+    <TextView
+        android:id="@+id/send3"
+
+        style="@style/symatch"
+        android:text="腾讯地图" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s8"
+        android:background="@color/home3" />
+
+    <TextView
+        android:id="@+id/send4"
+        style="@style/symatch"
+        android:text="取消" />
+
+
+</LinearLayout>

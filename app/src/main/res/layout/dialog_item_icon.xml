@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/s2">
+
+    <ImageView
+        android:id="@+id/image"
+        style="@style/fenxiamg"
+        android:src="@mipmap/cdq" />
+
+    <TextView
+        android:id="@+id/tv1"
+        style="@style/fenxiamgtext"
+        android:text="转发" />
+
+</LinearLayout>

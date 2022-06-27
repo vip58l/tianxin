@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="380.0dip"
+        android:background="@drawable/live_popular_head_bg">
+
+        <RelativeLayout
+            android:id="@+id/rl_first"
+            android:layout_width="89.0dip"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="105.0dip">
+
+            <RelativeLayout
+                android:id="@+id/rl_firstAvatar"
+                android:layout_width="89.0dip"
+                android:layout_height="110.0dip"
+                android:background="@drawable/live_popular_first">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_firstAvatar"
+                    android:layout_width="82.5dip"
+                    android:layout_height="82.5dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="24.299988dip"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/default_app_bg" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_firstNick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_firstAvatar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5.0dip"
+                android:ellipsize="end"
+                android:maxWidth="100.0dip"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="15.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_firstValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_firstNick"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3.0dip"
+                android:textColor="@color/white"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_second"
+            android:layout_width="76.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150.0dip"
+            android:layout_marginRight="25.0dip"
+            android:layout_toLeftOf="@+id/rl_first">
+
+            <RelativeLayout
+                android:id="@+id/rl_secondAvatar"
+                android:layout_width="76.0dip"
+                android:layout_height="93.0dip"
+                android:background="@drawable/live_popular_second">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_secondAvatar"
+                    android:layout_width="71.0dip"
+                    android:layout_height="71.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="19.0dip"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/default_app_bg" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_secondNick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_secondAvatar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5.0dip"
+                android:ellipsize="end"
+                android:maxWidth="100.0dip"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="14.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_secondValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_secondNick"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3.0dip"
+                android:textColor="@color/white"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_third"
+            android:layout_width="75.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rl_second"
+            android:layout_marginLeft="25.0dip"
+            android:layout_toRightOf="@+id/rl_first">
+
+            <RelativeLayout
+                android:id="@+id/rl_thirdAvatar"
+                android:layout_width="75.0dip"
+                android:layout_height="93.0dip"
+                android:background="@drawable/live_popular_third">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_thirdAvatar"
+                    android:layout_width="71.0dip"
+                    android:layout_height="71.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20.0dip"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/default_app_bg" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_thirdNick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_thirdAvatar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5.0dip"
+                android:ellipsize="end"
+                android:maxWidth="100.0dip"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="14.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_thirdValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_thirdNick"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3.0dip"
+                android:textColor="@color/white"
+                android:textSize="12.0sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_liveWarning"
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="每日0点更新榜单排名记录"
+        android:textColor="#ff888888"
+        android:textSize="12.0sp" />
+
+
+</LinearLayout>

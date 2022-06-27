@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/s5"
+        android:background="@drawable/bg_flowlayout"
+        android:gravity="center"
+        android:paddingLeft="@dimen/s10"
+        android:paddingTop="@dimen/s5"
+        android:paddingRight="@dimen/s10"
+        android:paddingBottom="@dimen/s5"
+        android:text="热门流标签"
+        android:textSize="16sp" />
+</LinearLayout>

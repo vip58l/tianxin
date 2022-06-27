@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editselect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/s20"
+            android:layout_toLeftOf="@+id/close"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:background="@drawable/bg_radius_bottom_pink3"
+            android:ellipsize="end"
+            android:hint="搜索或最近浏览"
+            android:lines="1"
+            android:maxLength="32"
+            android:paddingLeft="@dimen/s40"
+            android:paddingTop="@dimen/s8"
+            android:paddingRight="@dimen/s35"
+            android:paddingBottom="@dimen/s8"
+            android:textSize="@dimen/sp14" />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/s10"
+            android:alpha="0.5"
+            android:src="@mipmap/icon_search" />
+
+        <ImageView
+            android:id="@+id/img_del"
+            android:layout_width="@dimen/s20"
+            android:layout_height="@dimen/s20"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/s30"
+            android:layout_toLeftOf="@+id/close"
+            android:src="@mipmap/ce7" />
+
+        <TextView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="取消"
+            android:textColor="@color/homeback"
+            android:textSize="@dimen/sp16" />
+
+    </RelativeLayout>
+
+</LinearLayout>

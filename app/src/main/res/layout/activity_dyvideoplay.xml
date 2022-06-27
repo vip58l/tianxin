@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginBottom="10dp">
+
+        <com.pili.pldroid.player.widget.PLVideoView
+            android:id="@+id/plvideoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryDark" />
+
+        <ImageView
+            android:id="@+id/videobg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/loadingview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/play_mp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_sppaly" />
+
+        <LinearLayout
+            android:id="@+id/vde_lin_mp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="3.0dip"
+            android:background="@mipmap/bg_shade_bom"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <ImageButton
+                android:id="@+id/vde_img_ps_mpc"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10.0dip"
+                android:background="@android:color/transparent"
+                android:padding="1dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_stop_mp" />
+
+            <TextView
+                android:id="@+id/tv_startime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textSize="13.0sp" />
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:indeterminateDrawable="@drawable/qn_progress_seek"
+                android:maxHeight="2.0dip"
+                android:minHeight="2.0dip"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:progressDrawable="@drawable/qn_progress_seek"
+                android:thumb="@mipmap/qn_seek_dot"
+                android:thumbOffset="10.0dip" />
+
+            <TextView
+                android:id="@+id/tv_endtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.0dip"
+                android:text="00:56"
+                android:textColor="#ffffffff"
+                android:textSize="13.0sp" />
+
+
+            <ImageView
+                android:id="@+id/onaudio"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="@dimen/s10"
+                android:padding="2dp"
+                android:src="@mipmap/ms_sp_boy_sound_open" />
+
+            <ImageView
+                android:id="@+id/full"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="6.0dip"
+                android:padding="2dp"
+                android:src="@mipmap/icon_full_mp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:padding="5.0dip"
+            android:src="@mipmap/icon_back_white" />
+
+        <ImageView
+            android:id="@+id/restart1"
+            android:layout_width="@dimen/s25"
+            android:layout_height="@dimen/s25"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/s10"
+            android:layout_marginRight="@dimen/s10"
+            android:src="@mipmap/signature_refresh_icon_n" />
+
+        <ImageView
+            android:id="@+id/download"
+            android:layout_width="@dimen/s25"
+            android:layout_height="@dimen/s25"
+            android:layout_above="@+id/vde_lin_mp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/s10"
+            android:layout_marginRight="@dimen/s10"
+            android:layout_marginBottom="@dimen/s10"
+            android:src="@mipmap/ic_download_01" />
+
+        <ImageView
+            android:id="@+id/fandal"
+            android:layout_width="@dimen/s25"
+            android:layout_height="@dimen/s25"
+            android:layout_above="@+id/download"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/s10"
+            android:layout_marginRight="@dimen/s10"
+            android:layout_marginBottom="@dimen/s10"
+            android:src="@mipmap/hv_player_scale_btn" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/s5"
+                android:orientation="vertical"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/s10"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text="name"
+                    android:textColor="@color/half_transparent"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tags"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:paddingBottom="@dimen/s5"
+                    android:text="tags"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/views"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:text="views"
+                    android:textColor="@color/c_font_defult"
+                    android:textSize="12sp" />
+
+                <!--
+                android:ellipsize="end"　　   省略号在结尾
+                android:ellipsize="start" 　　省略号在开头
+                android:ellipsize="middle"   省略号在中间
+                android:ellipsize="marquee"  跑马灯
+    -->
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s10"
+                android:background="@color/home3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/s5"
+                android:paddingRight="@dimen/s5">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/how"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:lines="1"
+                        android:paddingTop="@dimen/s10"
+                        android:paddingBottom="@dimen/s10"
+                        android:text="@string/tv_msg83" />
+
+                    <TextView
+                        android:id="@+id/how2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="@dimen/s10"
+                        android:paddingTop="@dimen/s10"
+                        android:paddingRight="@dimen/s10"
+                        android:paddingBottom="@dimen/s10"
+                        android:text="@string/tv_msg84" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:descendantFocusability="blocksDescendants">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

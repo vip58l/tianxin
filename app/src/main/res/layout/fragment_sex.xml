@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_gravity="center"
+        android:background="@color/c_main"
+        android:gravity="center"
+        android:text="两性专栏"
+        android:textColor="#ffffffff"
+        android:textSize="18.0sp"
+        android:visibility="gone" />
+
+    <com.tianxin.widget.PullListView
+        android:id="@+id/pullListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:scrollingCache="false" />
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dis_bg1"
+        android:orientation="vertical"
+        android:padding="@dimen/s15">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s40"
+            android:gravity="left|center"
+            android:text="@string/tv_ss_a6"
+            android:textColor="@color/homeback"
+            android:textSize="@dimen/sp16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/home3" />
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s20"
+            android:layout_marginBottom="@dimen/s10"
+            android:lineSpacingExtra="2dp"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/teal006"
+            android:text="@string/tv_ss_a5"
+            android:textSize="@dimen/sp16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s10">
+
+            <TextView
+                android:id="@+id/btnDel"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/s40"
+                android:layout_marginBottom="@dimen/s10"
+                android:layout_weight="1"
+                android:background="@drawable/diis_bg5"
+                android:gravity="center"
+                android:text="确认"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s10"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/s40"
+                android:layout_weight="1"
+                android:background="@drawable/bg_flowlayout"
+                android:gravity="center"
+                android:text="取消" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/s40"
+                android:layout_weight="1"
+                android:background="@drawable/diis_bg4"
+                android:gravity="center"
+                android:text="去设置"
+                android:textColor="@color/c_main" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

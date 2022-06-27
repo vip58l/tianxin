@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:interpolator="@android:anim/linear_interpolator">
+    <!--360度转动 50%中心点转动 10秒  android:repeatCount="infinite" 一直转动-->
+    <!--android:duration="100" 时间越大速度越慢-->
+    <rotate
+        android:duration="5000"
+        android:fromDegrees="0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:repeatCount="infinite"
+        android:toDegrees="360" />
+
+
+</set>

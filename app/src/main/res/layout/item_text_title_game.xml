@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/s10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/s80"
+            android:layout_height="@dimen/s80"
+            android:layout_gravity="center" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="小可爱"
+                    android:textColor="@color/homeback"
+                    android:textSize="@dimen/sp16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/s10"
+                    android:background="@drawable/activity011"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:paddingLeft="@dimen/s8"
+                    android:paddingTop="@dimen/s2"
+                    android:paddingRight="@dimen/s8"
+                    android:paddingBottom="@dimen/s2"
+                    android:text="@string/tm32"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp10" />
+
+                <TextView
+                    android:id="@+id/money"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="0币/小时"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/sp14"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/s8"
+                    android:layout_marginBottom="@dimen/s8"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="看电影"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/svip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/s10"
+                    android:background="@drawable/activity011"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:paddingLeft="@dimen/s8"
+                    android:paddingTop="@dimen/s2"
+                    android:paddingRight="@dimen/s8"
+                    android:paddingBottom="@dimen/s2"
+                    android:text="@string/tm32"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp10"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="@dimen/s15"
+                    android:layout_height="@dimen/s15"
+                    android:layout_marginRight="@dimen/s5"
+                    android:src="@mipmap/boy_on" />
+
+                <TextView
+                    android:id="@+id/msg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:lines="1"
+                    android:text="给你不一样的感受"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/money2"
+                    android:layout_width="@dimen/s80"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_radius_bottom_pink2"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/tv_msg_tmhh"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/delete1"
+                    android:layout_width="@dimen/s80"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_radius_bottom_pink2"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="@string/tv_msg78"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp12"
+                    android:visibility="gone"></TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

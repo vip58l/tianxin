@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bgstar"
+        android:gravity="center"
+        android:paddingLeft="@dimen/s15"
+        android:paddingTop="@dimen/s10"
+        android:paddingRight="@dimen/s15"
+        android:paddingBottom="@dimen/s10"
+        android:text="消息弹出展示"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="VIP福利"
+            android:textColor="@color/lineColor2"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/c_font_defult2" />
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/arp" />
+
+
+            <TextView
+                style="@style/setAppCompat2"
+                android:text="良家壹夜情" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:text="即将上线"
+                android:textColor="@color/c_font_defult" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/icon_me_jiao" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/c_font_defult2"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/arp" />
+
+
+            <TextView
+                style="@style/setAppCompat"
+                android:text="楼凤/兼职" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/icon_me_jiao" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/c_font_defult2" />
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/arp" />
+
+
+            <TextView
+                style="@style/setAppCompat"
+                android:text="会所/洗浴" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/icon_me_jiao" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/c_font_defult2" />
+
+        <LinearLayout
+            android:id="@+id/layout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/arp" />
+
+
+            <TextView
+                style="@style/setAppCompat"
+                android:text="酒店/宾馆" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/icon_me_jiao" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/c_font_defult2"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/arp" />
+
+
+            <TextView
+                style="@style/setAppCompat"
+                android:text="高清套图" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/icon_me_jiao" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/c_font_defult2" />
+
+        <LinearLayout
+            android:id="@+id/layout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/arp" />
+
+
+            <TextView
+                style="@style/setAppCompat"
+                android:text="短篇小说" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/icon_me_jiao" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/c_font_defult2" />
+
+        <LinearLayout
+            android:id="@+id/layout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/arp" />
+
+
+            <TextView
+                style="@style/setAppCompat"
+                android:text="长篇小说" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/icon_me_jiao" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/c_font_defult2" />
+
+        <LinearLayout
+            android:id="@+id/layout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/arp" />
+
+
+            <TextView
+                style="@style/setAppCompat2"
+                android:text="在线直播" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:text="即将上线"
+                android:textColor="@color/c_font_defult" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/icon_me_jiao" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c_font_defult2"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</LinearLayout>

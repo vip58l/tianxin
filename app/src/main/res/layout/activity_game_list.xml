@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_marginBottom="@dimen/s10"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <com.tianxin.widget.Backtitle
+            android:id="@+id/backtitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s40"
+            android:layout_marginBottom="@dimen/s10"></com.tianxin.widget.Backtitle>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--这里可以自一义下拉刷新Header-->
+            <!--srlAccentColor srlPrimaryColor 将会改变 Header 和 Footer 的主题颜色-->
+            <!--srlEnablePreviewInEditMode 可以开启和关闭预览功能-->
+
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--这里可以自一义下拉刷新footer-->
+            <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <include layout="@layout/eorr" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/s10"
+        android:padding="@dimen/s10">
+
+        <Button
+            android:id="@+id/buutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_radius_bottom_pink2"
+            android:text="@string/tm28"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14"
+            android:textStyle="bold"></Button>
+
+    </LinearLayout>
+
+</RelativeLayout>

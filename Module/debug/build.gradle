@@ -1,0 +1,48 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+    }
+
+    buildTypes {
+        release {
+            //即时通讯 IM
+            minifyEnabled true
+            buildConfigField "int", "SDKAPPID", "1400694058"
+            buildConfigField "String", "SECRETKEY", quotWrapper("dca4afa1a7fbbc3c79d36dc5e9e69cf6e8806243be111bbe7b0a5583e3627a21")
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            //即时通讯 IM
+            buildConfigField "int", "SDKAPPID", "1400694058"
+            buildConfigField "String", "SECRETKEY", quotWrapper("dca4afa1a7fbbc3c79d36dc5e9e69cf6e8806243be111bbe7b0a5583e3627a21")
+        }
+
+
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+static String quotWrapper(key) {
+    if (key == null) {
+        return "\"\""
+    }
+    return "\"".concat(key).concat("\"")
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+}
+

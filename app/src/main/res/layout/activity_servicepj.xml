@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:fitsSystemWindows="true"
+    tools:context=".activity.ZYservices.activity_servicepj">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s200">
+
+                <ImageView
+                    android:id="@+id/bg_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/cover_defult" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.3"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/bg_shade_bom" />
+
+                <com.tianxin.widget.itembackTopbr
+                    android:id="@+id/itemback"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s40"
+                    android:layout_marginLeft="@dimen/s10"
+                    android:layout_marginTop="@dimen/s5"
+                    android:layout_marginRight="@dimen/s10" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user"
+                    android:layout_width="@dimen/s60"
+                    android:layout_height="@dimen/s60"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/s10"
+                    android:src="@mipmap/icon_sex_autuor"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="2dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/s20"
+                    android:layout_toRightOf="@+id/user"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/s10"
+                        android:layout_toRightOf="@+id/user"
+                        android:text="name"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp18" />
+
+                    <TextView
+                        android:id="@+id/name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/user"
+                        android:text="@string/tv_msg104"
+                        android:textColor="@color/home3"
+                        android:textSize="@dimen/sp14" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/s10">
+
+                    <LinearLayout
+                        android:id="@+id/layout"
+                        style="@style/tags2">
+
+                        <TextView
+                            android:id="@+id/a1"
+                            style="@style/tag4"
+                            android:text="0.0" />
+
+                        <TextView
+                            android:id="@+id/a5"
+                            style="@style/tags1"
+                            android:text="0人评价" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout2"
+                        style="@style/tags2">
+
+                        <TextView
+                            android:id="@+id/a2"
+                            style="@style/tag4"
+                            android:text="0" />
+
+                        <TextView
+                            style="@style/tags1"
+                            android:text="持证年限" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/tags2">
+
+                        <TextView
+                            android:id="@+id/a3"
+                            style="@style/tag4"
+                            android:text="0" />
+
+                        <TextView
+                            style="@style/tags1"
+                            android:text="帮助人数" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/tags2">
+
+                        <TextView
+                            android:id="@+id/a4"
+                            style="@style/tag4"
+                            android:text="0" />
+
+                        <TextView
+                            style="@style/tags1"
+                            android:text="服务时长(小时)" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/s5"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/acitvity011"
+                android:gravity="top|left"
+                android:hint="输入评价内容让更多人了解他"
+                android:lines="5"
+                android:maxLength="200"
+                android:padding="@dimen/s10"
+                android:textSize="@dimen/sp14"
+                app:layout_constraintTop_toBottomOf="@+id/itembackTopbr3"
+                tools:layout_editor_absoluteX="10dp" />
+
+            <com.tianxin.widget.FlowLayout
+                android:id="@+id/FlowLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <!--  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="8dp"
+                      android:background="@drawable/diis_bg7"
+                      android:paddingLeft="@dimen/s10"
+                      android:paddingTop="@dimen/s5"
+                      android:paddingRight="@dimen/s10"
+                      android:paddingBottom="@dimen/s5"
+                      android:text="无法访问此网站"
+                      android:textColor="@color/colorAccent" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="8dp"
+                      android:background="@drawable/diis_bg2"
+                      android:paddingLeft="@dimen/s10"
+                      android:paddingTop="@dimen/s5"
+                      android:paddingRight="@dimen/s10"
+                      android:paddingBottom="@dimen/s5"
+                      android:text="github.com 的响应时间过长。"
+                      android:textColor="@color/colorAccent" />-->
+
+            </com.tianxin.widget.FlowLayout>
+
+            <TextView
+                android:id="@+id/tvsendbtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s40"
+                android:layout_marginLeft="@dimen/s10"
+                android:layout_marginTop="@dimen/s20"
+                android:layout_marginRight="@dimen/s10"
+                android:background="@drawable/bg_radius_bottom_pink2"
+                android:gravity="center"
+                android:text="提交评价"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

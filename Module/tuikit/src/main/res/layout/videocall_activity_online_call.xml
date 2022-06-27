@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--参考线-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_guide_line"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+    <!--参考线-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <!--分组-->
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_sponsor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="mycamera,callrelativeLayout" />
+
+    <!--分组-->
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_inviting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="tv_inviting_tag,ll_img_container" />
+
+    <!--背景图-->
+    <ImageView
+        android:id="@+id/shade_sponsor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/activit_fill_call_bg" />
+
+    <!--通话视频界面-->
+    <com.tencent.liteav.trtcvideocalldemo.ui.videolayout.TRTCVideoLayoutManager
+        android:id="@+id/trtc_layout_manager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--我的头像和名称-->
+    <com.tencent.Camera.camera_item
+        android:id="@+id/camraitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--对方的头像和名称-->
+    <com.tencent.Camera.My_Camera
+        android:id="@+id/mycamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_inviting_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/them_exist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/trtc_layout_manager" />
+
+    <LinearLayout
+        android:id="@+id/ll_img_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_inviting_tag" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_middle16"
+        app:layout_constraintBottom_toTopOf="@+id/ll_hangupbottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="00:01" />
+
+    <LinearLayout
+        android:id="@+id/ll_hangupbottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/tv_inviting_tag">
+
+        <LinearLayout
+            android:id="@+id/ll_mute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_mute"
+                style="@style/TUIKIT_Img"
+                android:src="@drawable/bg_mute_mic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_hangup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_hangup"
+                style="@style/TUIKIT_Img"
+                android:src="@drawable/ic_hangup" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_handsfree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_handsfree"
+                style="@style/TUIKIT_Img"
+                android:src="@drawable/bg_handsfree" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_dialing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_dialing"
+                style="@style/TUIKIT_Img"
+                android:src="@drawable/ic_dialing" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_dialing1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_dialing1"
+                style="@style/TUIKIT_Img"
+                android:src="@drawable/boxmenu_gift_giving" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--礼物动画-->
+    <com.savglotti.activity.PlaySavgLotti
+        android:id="@+id/playsavglotti"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/tv_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!--摄像头转换操作-->
+    <ImageButton
+        android:id="@+id/btn_switch_cam"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/live_icon_camera"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--等待接听最小化-->
+    <RelativeLayout
+        android:id="@+id/callrelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/s10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/top_guide_line">
+
+        <ImageView
+            android:id="@+id/icon_groups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/s10"
+            android:src="@drawable/icon_call_video_minimize" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon_groups"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_call_guide" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

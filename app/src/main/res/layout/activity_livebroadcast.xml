@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home3"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.tianxin.widget.itembackTopbr
+        android:id="@+id/itemback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40" />
+
+    <com.tianxin.pullableview.PullToRefreshLayout
+        android:id="@+id/swiprefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleconte">
+
+        <include layout="@layout/refresh_head" />
+
+        <!--支持所有实现Pullable接口的View -->
+        <com.tianxin.pullableview.PullableScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/contentPanel"
+                    style="@style/linaryl2">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/icon"
+                        android:layout_width="@dimen/s80"
+                        android:layout_height="@dimen/s80"
+                        android:layout_marginStart="20dp"
+                        android:src="@mipmap/boy_on"
+                        app:civ_border_color="@color/home3"
+                        app:civ_border_width="@dimen/s1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/tm118"
+                        android:textColor="@color/homeback"
+                        android:textSize="@dimen/sp14"
+                        app:layout_constraintStart_toEndOf="@+id/icon"
+                        app:layout_constraintTop_toTopOf="@+id/icon" />
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/tm119"
+                        android:textSize="@dimen/sp12"
+                        app:layout_constraintStart_toEndOf="@+id/icon"
+                        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout style="@style/linaryl">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.1dp"
+                        android:background="@color/white"
+                        android:gravity="bottom"
+                        android:padding="@dimen/s10"
+                        android:text="@string/tv_msg205"
+                        android:textColor="@color/home"
+                        android:textSize="@dimen/sp12" />
+
+                    <LinearLayout
+                        android:id="@+id/lin11"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/s50"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0.3dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/hwidth3"
+                            android:alpha="0.8"
+                            android:src="@mipmap/arp" />
+
+                        <TextView
+                            style="@style/hwidth"
+                            android:text="@string/tv_msg206" />
+
+                        <TextView
+                            android:id="@+id/stv1"
+                            style="@style/hwidth2"
+                            android:text="@string/tv_msg207" />
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="@dimen/s20"
+                            android:layout_height="@dimen/s15"
+                            android:layout_marginRight="@dimen/s10"
+                            android:src="@mipmap/icon_me_jiao" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin22"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/s50"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0.3dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/hwidth3"
+                            android:src="@mipmap/ar5" />
+
+                        <TextView
+                            style="@style/hwidth"
+                            android:text="@string/tm122"/>
+
+                        <TextView
+                            android:id="@+id/stv2"
+                            style="@style/hwidth2"
+                            android:text="@string/tv_msg207"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/s20"
+                            android:layout_height="@dimen/s15"
+                            android:layout_marginRight="@dimen/s10"
+                            android:src="@mipmap/icon_me_jiao" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/linaryl">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="bottom"
+                        android:paddingLeft="@dimen/s10"
+                        android:paddingTop="@dimen/s5"
+                        android:paddingBottom="@dimen/s5"
+                        android:text="@string/tv_msg208"
+                        android:textColor="@color/c_font_3"
+                        android:textSize="@dimen/sp12" />
+
+                    <LinearLayout
+                        android:id="@+id/lin1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/s50"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0.3dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/hwidth3"
+                            android:alpha="0.8"
+                            android:src="@mipmap/aa4" />
+
+                        <TextView
+                            style="@style/hwidth"
+                            android:text="@string/tm116" />
+
+                        <TextView
+                            android:id="@+id/stv3"
+                            style="@style/hwidth2"
+                            android:text="@string/livebr_tv4" />
+
+                        <ImageView
+                            android:layout_width="@dimen/s20"
+                            android:layout_height="@dimen/s15"
+                            android:layout_marginRight="@dimen/s10"
+                            android:src="@mipmap/icon_me_jiao" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/s50"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0.3dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/hwidth3"
+                            android:alpha="0.8"
+                            android:src="@mipmap/aa4" />
+
+                        <TextView
+                            style="@style/hwidth"
+                            android:alpha="0.8"
+                            android:text="@string/tm115" />
+
+                        <TextView
+                            android:id="@+id/stv4"
+                            style="@style/hwidth2"
+                            android:text="@string/livebr_tv4" />
+
+                        <ImageView
+                            android:layout_width="@dimen/s20"
+                            android:layout_height="@dimen/s15"
+                            android:layout_marginRight="@dimen/s10"
+                            android:src="@mipmap/icon_me_jiao" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/s50"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0.3dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/hwidth3"
+                            android:src="@mipmap/ar7" />
+
+                        <TextView
+                            style="@style/hwidth"
+                            android:text="@string/tm113" />
+
+                        <TextView
+                            android:id="@+id/stv5"
+                            style="@style/hwidth2"
+                            android:text="@string/livebr_tv4" />
+
+                        <ImageView
+                            android:layout_width="@dimen/s20"
+                            android:layout_height="@dimen/s15"
+                            android:layout_marginRight="@dimen/s10"
+                            android:src="@mipmap/icon_me_jiao" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin4"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/s50"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0.3dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/hwidth3"
+                            android:src="@mipmap/aro" />
+
+                        <TextView
+                            style="@style/hwidth"
+                            android:text="@string/tm114" />
+
+                        <TextView
+                            android:id="@+id/stv6"
+                            style="@style/hwidth2"
+                            android:text="@string/livebr_tv4" />
+
+                        <ImageView
+                            android:layout_width="@dimen/s20"
+                            android:layout_height="@dimen/s15"
+                            android:layout_marginRight="@dimen/s10"
+                            android:src="@mipmap/icon_me_jiao" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin5"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/s50"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0.3dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/hwidth3"
+                            android:src="@mipmap/ar3" />
+
+                        <TextView
+                            style="@style/hwidth"
+                            android:text="关注10个好友" />
+
+                        <TextView
+                            android:id="@+id/stv7"
+                            style="@style/hwidth2"
+                            android:text="@string/livebr_tv4" />
+
+                        <ImageView
+                            android:layout_width="@dimen/s20"
+                            android:layout_height="@dimen/s15"
+                            android:layout_marginRight="@dimen/s10"
+                            android:src="@mipmap/icon_me_jiao" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin6"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/s50"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0.3dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvleft"
+                            style="@style/hwidth"
+                            android:textColor="@color/home"
+                            android:text="@string/tm121"/>
+
+                        <TextView
+                            android:id="@+id/stv8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/s15"
+                            android:background="@drawable/acitvity02"
+                            android:paddingLeft="@dimen/s15"
+                            android:paddingTop="@dimen/s2"
+                            android:paddingRight="@dimen/s10"
+                            android:paddingBottom="@dimen/s2"
+                            android:text="@string/tm120"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp12" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </com.tianxin.pullableview.PullableScrollView>
+
+        <include layout="@layout/load_more" />
+
+    </com.tianxin.pullableview.PullToRefreshLayout>
+
+
+</LinearLayout>

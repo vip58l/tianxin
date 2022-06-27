@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s40"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="相册"
+            android:textColor="@color/c_font_2"
+            android:textSize="@dimen/sp16"/>
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/home" />
+
+    </LinearLayout>
+
+</RelativeLayout>

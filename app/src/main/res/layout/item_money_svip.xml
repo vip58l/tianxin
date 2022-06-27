@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/s5"
+        android:layout_marginRight="@dimen/s5"
+        android:padding="@dimen/s20"
+        android:layout_weight="1"
+        android:background="@drawable/diis_bg3"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s5"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="年卡会员"
+            android:textColor="@color/c_font_1"
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s10"
+            android:text="￥99"
+            android:textColor="@color/c_fu"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s5"
+            android:layout_marginBottom="@dimen/s5"
+            android:text="￥316"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/acitvity06"
+            android:paddingLeft="@dimen/s8"
+            android:paddingTop="@dimen/s2"
+            android:paddingRight="@dimen/s8"
+            android:paddingBottom="@dimen/s2"
+            android:text="￥0.72/天"
+            android:textColor="@color/c_fu"
+            android:textSize="@dimen/sp10" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>
+

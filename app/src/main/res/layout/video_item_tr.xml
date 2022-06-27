@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:id="@+id/bgmp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/s100"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/s5">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/s120"
+            android:layout_height="@dimen/s120"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/girl_on"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/tag_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dialog_item3"
+            android:paddingLeft="@dimen/sp10"
+            android:paddingTop="@dimen/s5"
+            android:paddingRight="@dimen/sp10"
+            android:paddingBottom="@dimen/s5"
+            android:text="小甜心"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/videos1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/tv_msg175"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/videos2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/tv_msg176"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="@dimen/s10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/s50"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="@dimen/s240"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_marginRight="@dimen/s10"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/off"
+                android:layout_width="@dimen/s60"
+                android:layout_height="@dimen/s60"
+                android:src="@mipmap/ih" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/connect"
+                android:layout_width="@dimen/s60"
+                android:layout_height="@dimen/s60"
+                android:layout_gravity="center"
+                android:src="@mipmap/ig" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

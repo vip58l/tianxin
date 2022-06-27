@@ -1,0 +1,87 @@
+//里是gradle脚本执行所需依赖，分别是对应的maven库和插件
+buildscript {
+    ext.kotlin_version = '1.6.0-RC'
+    //存储库
+    repositories {
+        maven { url "https://mirrors.tencent.com/repository/maven/tencent_public" }
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        maven { url "https://mirrors.tencent.com/repository/maven/liteavsdk" }
+        maven { url "https://mirrors.tencent.com/nexus/repository/maven-public/" }
+        maven { url 'http://maven.aliyun.com/repository/google' }
+
+        jcenter()
+        google()
+        mavenCentral()
+
+        maven { url 'https://developer.huawei.com/repo/' } //华为推送
+        maven { url 'https://repo1.maven.org/maven2/' } //友盟统计
+        maven { url 'https://dl.google.com/dl/android/maven2/' }
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://www.jitpack.io' }
+
+        tasks.withType(Javadoc) {
+            options.addStringOption('Xdoclint:none', '-quiet')
+            options.addStringOption('encoding', 'UTF-8')
+            options.addStringOption('charset', 'UTF-8')
+        }
+    }
+
+    //依赖项
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.3'
+        classpath 'com.novoda:bintray-release:0.9'
+        classpath 'com.google.gms:google-services:4.3.4'
+        classpath 'com.huawei.agconnect:agcp:1.4.1.300'
+        classpath 'com.kezong:fat-aar:1.2.17'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31"
+    }
+}
+
+
+//项目本身需要的依赖
+allprojects {
+    repositories {
+        maven { url "https://mirrors.tencent.com/repository/maven/tencent_public" }
+        maven { url "https://mirrors.tencent.com/repository/maven/liteavsdk" }
+        maven { url "https://mirrors.tencent.com/nexus/repository/maven-public/" }
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        maven { url 'http://maven.aliyun.com/repository/google' }
+        jcenter()
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://www.jitpack.io' }
+        maven { url 'http://developer.huawei.com/repo/' }
+        maven { url 'https://repo1.maven.org/maven2/' } //友盟统计
+        flatDir {
+            dirs project(':app').file('libs')
+        }
+
+    }
+
+    tasks.withType(Javadoc) {
+        options.addStringOption('Xdoclint:none', '-quiet')
+        options.addStringOption('encoding', 'UTF-8')
+        options.addStringOption('charset', 'UTF-8')
+    }
+}
+
+//统一管理版本号
+ext {
+    compileSdkVersion = 31
+    buildToolsVersion = "29.0.2"
+    minSdkVersion = 21
+    targetSdkVersion = 31
+    supportSdkVersion = "29.0.2"
+    versionCode = 1
+    versionName = "1.0.0"
+    liteavSdk = "com.tencent.liteav:LiteAVSDK_TRTC:latest.release"
+    imSdk = "com.tencent.imsdk:imsdk:5.1.66"
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+

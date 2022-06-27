@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/colas"
+        android:background="@drawable/bg_flowlayout2"
+        android:orientation="vertical"
+        android:padding="@dimen/s5">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/colas"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/s10"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/bg_flowlayout2"
+        android:text="取消"></TextView>
+
+</RelativeLayout>

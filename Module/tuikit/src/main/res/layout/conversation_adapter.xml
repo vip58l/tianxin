@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_left"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="14.85dp"
+    android:paddingTop="8dp">
+
+    <!--聊天头像-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="62.3dp">
+
+        <com.tencent.qcloud.tim.uikit.modules.conversation.base.ConversationIconView
+            android:id="@+id/conversation_icon"
+            android:layout_width="@dimen/conversation_avatar_width"
+            android:layout_height="@dimen/conversation_avatar_height"
+            android:layout_marginTop="@dimen/icon_margin5" />
+
+        <!--小红点-->
+        <com.tencent.qcloud.tim.uikit.component.UnreadCountTextView
+            android:id="@+id/conversation_unread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textColor="#fff"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="62.3dp"
+        android:layout_marginTop="@dimen/icon_margin5"
+        android:paddingLeft="11.43dp"
+        android:paddingTop="1.37dp"
+        android:paddingRight="18.11dp">
+
+        <!--聊天标题-->
+        <TextView
+            android:id="@+id/conversation_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:gravity="top|left"
+            android:singleLine="true"
+            android:textColor="@color/black_font_color"
+            android:textSize="16.3sp" />
+
+        <!--聊天时间-->
+        <TextView
+            android:id="@+id/conversation_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/conversation_time_color"
+            android:textSize="11.14sp" />
+
+
+        <!--聊天消息-->
+        <TextView
+            android:id="@+id/conversation_at_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view_line"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15.54dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="11111"
+            android:textColor="@color/list_bottom_text_bg"
+            android:textSize="12.86sp"
+            android:visibility="gone" />
+
+        <!--聊天消息-->
+        <TextView
+            android:id="@+id/conversation_last_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view_line"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="48dp"
+            android:layout_marginBottom="15.54dp"
+            android:layout_toRightOf="@+id/conversation_at_msg"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/list_bottom_text_bg"
+            android:textSize="12.86sp" />
+
+        <!--未读消息-->
+        <TextView
+            android:id="@+id/tv_conversation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view_line"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15.54dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="未读"
+            android:textColor="@color/conversation_time_color"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="12dp"
+            android:background="@color/split_lint_color" />
+    </RelativeLayout>
+
+</LinearLayout>

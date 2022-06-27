@@ -1,0 +1,23 @@
+√‹∂»
+
+Ω®“È≥ﬂ¥Á
+
+mipmap-mdpi
+
+48 * 48
+
+mipmap-hdpi
+
+72 * 72
+
+mipmap-xhdpi
+
+96 * 96
+
+mipmap-xxhdpi
+
+144 * 144
+
+mipmap-xxxhdpi
+
+192 * 192

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.core.widget.SwipeRefreshLayout
+        android:id="@+id/swiprefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+
+                <com.tianxin.Pornhub.pfragment.data.MyGridView
+                    android:id="@+id/pullGridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:numColumns="3"></com.tianxin.Pornhub.pfragment.data.MyGridView>
+
+                <com.tianxin.Pornhub.pfragment.FlowLayout
+                    android:id="@+id/FlowLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/pullGridview"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </androidx.core.widget.SwipeRefreshLayout>
+
+</LinearLayout>

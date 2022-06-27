@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/s10">
+
+    <EditText
+        android:id="@+id/nickname"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s50"
+        android:background="@drawable/diis_bg1"
+        android:gravity="center"
+        android:hint="请输入昵称"
+        android:lines="1"
+        android:maxLength="10"
+        android:padding="@dimen/s10"
+        android:textSize="@dimen/sp14" />
+
+    <ImageView
+        android:id="@+id/myclose"
+        android:layout_width="@dimen/s20"
+        android:layout_height="@dimen/s20"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/s5"
+        android:alpha="0.5"
+        android:src="@mipmap/ic_news_detail_withvideo_close" />
+
+
+</RelativeLayout>

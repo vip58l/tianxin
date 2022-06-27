@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/boobutton"
+        android:background="@drawable/sf_paydialog_yuanjiaotop2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/s10">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/s20"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@mipmap/icon_lent" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/back"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/s5"
+                android:text="个人成长咨询（包月）"
+                android:textColor="@color/homeback"
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s5"
+                    android:background="@color/home3"></View>
+
+                <LinearLayout style="@style/pad_tv">
+
+                    <TextView
+                        style="@style/padd_tv2"
+                        android:text="服务介绍" />
+
+                    <TextView
+                        android:id="@+id/titlesver"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/s10"
+                        android:lineSpacingExtra="8dp"
+                        android:text="用心服务，二级心理咨询师在线为你服务！"
+                        android:textColor="@color/c_font_1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s5"
+                    android:background="@color/home3"></View>
+
+                <LinearLayout style="@style/pad_tv">
+
+                    <TextView
+                        style="@style/padd_tv2"
+                        android:text="服务说明" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/s20"
+                        android:paddingBottom="@dimen/s20">
+
+                        <LinearLayout
+                            android:id="@+id/layleft"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="类型"
+                                android:textSize="@dimen/sp12" />
+
+                            <TextView
+                                android:id="@+id/typemsg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="单次"
+                                android:textColor="@color/homeback" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:text="单次可选时长"
+                                android:textSize="@dimen/sp12" />
+
+                            <TextView
+                                android:id="@+id/duration"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/s5"
+                                android:text="60分钟/30分钟"
+                                android:textColor="@color/homeback" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="次数"
+                                android:textSize="@dimen/sp12" />
+
+                            <TextView
+                                android:id="@+id/second"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="1次"
+                                android:textColor="@color/homeback" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:text="支付方式"
+                                android:textSize="@dimen/sp12" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="视频/音频/电话/文字"
+                                android:textColor="@color/homeback" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s5"
+                    android:background="@color/home3"></View>
+
+                <LinearLayout style="@style/pad_tv">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="咨询流程说明"
+                        android:textColor="@color/homeback"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/s10">
+
+                    <LinearLayout style="@style/padtv1">
+
+                        <ImageView
+                            android:layout_width="@dimen/s40"
+                            android:layout_height="@dimen/s40"
+                            android:src="@mipmap/are1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="下单预约"
+                            android:textSize="@dimen/sp12" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/padtv1">
+
+                        <ImageView
+                            android:layout_width="@dimen/s40"
+                            android:layout_height="@dimen/s40"
+                            android:src="@mipmap/are" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="咨询师确认"
+                            android:textSize="@dimen/sp12" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/s40"
+                            android:layout_height="@dimen/s40"
+                            android:src="@mipmap/ar5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="音视频通话"
+                            android:textSize="@dimen/sp12" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/padtv1">
+
+                        <ImageView
+                            android:layout_width="@dimen/s40"
+                            android:layout_height="@dimen/s40"
+                            android:src="@mipmap/ar7" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="开始咨询"
+                            android:textSize="@dimen/sp12" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_above="@+id/boobutton"
+        android:background="@color/home"></View>
+
+    <RelativeLayout
+        android:id="@+id/boobutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="@dimen/s10">
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/s40"
+            android:gravity="center"
+            android:text="￥555.00/次"></TextView>
+
+        <TextView
+            android:id="@+id/senbnt"
+            android:layout_width="@dimen/s150"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_radius_bottom_pink2"
+            android:gravity="center"
+            android:paddingLeft="@dimen/s20"
+            android:paddingTop="@dimen/s8"
+            android:paddingRight="@dimen/s20"
+            android:paddingBottom="@dimen/s8"
+            android:text="立即预约"
+            android:textColor="@color/white"></TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.game.Game_Activity_show">
+
+    <com.tianxin.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/s30" />
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s80"
+        android:layout_margin="@dimen/s10"
+        android:background="@drawable/yuanjiao_button"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/s20"
+            android:src="@mipmap/icon_book_shujia"></ImageView>
+
+        <TextView
+            style="@style/symatchtab"
+            android:layout_weight="1"
+            android:text="@string/tm59"></TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/s10"
+            android:rotation="180"
+            android:src="@mipmap/authsdk_return_bg"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s80"
+        android:layout_margin="@dimen/s10"
+        android:background="@drawable/shape_comment"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/s20"
+            android:src="@mipmap/icon_book_shujia"></ImageView>
+
+        <TextView
+            style="@style/symatchtab"
+            android:layout_weight="1"
+            android:text="@string/tm49"></TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/s10"
+            android:rotation="180"
+            android:src="@mipmap/authsdk_return_bg"></ImageView>
+    </LinearLayout>
+
+
+</LinearLayout>

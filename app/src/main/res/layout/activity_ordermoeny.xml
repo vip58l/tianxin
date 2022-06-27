@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.Withdrawal.ordermoeny">
+
+    <com.tianxin.widget.itembackTopbr
+        android:id="@+id/itemback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40" />
+
+    <com.tianxin.pullableview.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/s1"
+        android:orientation="vertical">
+
+        <include layout="@layout/refresh_head" />
+        <!--支持所有实现Pullable接口的View -->
+
+        <com.tianxin.pullableview.PullableListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:dividerHeight="0.1dp"
+            android:scrollbars="none" />
+
+        <!-- 支持所有实现load_more接口的View -->
+        <include layout="@layout/load_more" />
+
+    </com.tianxin.pullableview.PullToRefreshLayout>
+
+    <include layout="@layout/layout_img_eoerr" />
+
+</LinearLayout>

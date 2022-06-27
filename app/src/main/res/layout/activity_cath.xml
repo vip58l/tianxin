@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home3"
+    android:fitsSystemWindows="true">
+
+    <com.tianxin.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:title_name="@string/xinyucahttitle" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/backtitle" />
+
+    <!--动画播放-->
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/svgaImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/backtitle"
+        app:autoPlay="false"
+        app:loopCount="1" />
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        android:padding="@dimen/s5">
+
+        <EditText
+            android:id="@+id/editsend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/s5"
+            android:layout_marginRight="@dimen/s5"
+            android:layout_weight="1"
+            android:background="@drawable/acitvity012"
+            android:gravity="center|left"
+            android:hint="想说点什么？"
+            android:maxLines="50"
+            android:padding="@dimen/s10"
+            android:textSize="@dimen/sp14" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/chat"
+                android:layout_width="@dimen/s40"
+                android:layout_height="@dimen/s40"
+                android:layout_centerVertical="true"
+                android:alpha="0.8"
+                android:src="@mipmap/ic_input_face_normal" />
+
+            <ImageView
+                android:id="@+id/gift"
+                android:layout_width="@dimen/s40"
+                android:layout_height="@dimen/s40"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/chat"
+                android:alpha="0.8"
+                android:src="@mipmap/ic_input_more_normal" />
+
+            <TextView
+                android:id="@+id/btnsend"
+                android:layout_width="@dimen/s60"
+                android:layout_height="@dimen/s35"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|bottom"
+                android:layout_toRightOf="@+id/chat"
+                android:background="@drawable/activity011"
+                android:gravity="center"
+                android:text="发送"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp12"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

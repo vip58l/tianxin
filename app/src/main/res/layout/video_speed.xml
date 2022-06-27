@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+
+        android:id="@+id/imags"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_welcome1" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/s20"
+        android:paddingRight="@dimen/s20"
+        android:text="她想和你聊天哟"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="@dimen/s120"
+        android:layout_height="@dimen/s120"
+        android:layout_marginTop="80dp"
+        android:autofillHints="12dp"
+        android:src="@mipmap/ic_welcome1"
+        app:civ_border_color="#F1ECF1"
+        app:civ_border_width="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/mssge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/video_speed_tv1"
+        android:textColor="@color/white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circleImageView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/acitvity03"
+        android:paddingLeft="@dimen/s20"
+        android:paddingTop="@dimen/s5"
+        android:paddingRight="@dimen/s20"
+        android:paddingBottom="@dimen/s5"
+        android:textColor="@color/home4"
+        android:textSize="@dimen/sp12"
+        app:layout_constraintBottom_toBottomOf="@+id/circleImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/circleImageView"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/senbnt"
+        android:layout_width="@dimen/s300"
+        android:layout_height="@dimen/s50"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/bg_radius_bottom_pink2"
+        android:gravity="center"
+        android:text="去聊天"
+        android:textColor="@color/home3"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/cols"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一会在再聊"
+        android:textColor="@color/home"
+        android:padding="@dimen/s10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/senbnt"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_marginTop="@dimen/s30"
+        android:id="@+id/back"
+        android:layout_width="@dimen/s40"
+        android:layout_height="@dimen/s30"
+        android:layout_marginStart="0dp"
+
+        android:padding="@dimen/s5"
+        android:src="@mipmap/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

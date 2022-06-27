@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sf_paydialog_yuanjiaotop2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s30"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@+id/close"
+            android:gravity="left|center"
+            android:paddingLeft="@dimen/s10"
+            android:text="快捷用语"
+            android:textColor="@color/homeback"
+            android:textSize="@dimen/sp18" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="@dimen/s20"
+            android:layout_height="@dimen/s20"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/s10"
+            android:layout_marginRight="@dimen/s10"
+            android:src="@mipmap/cdq" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="@dimen/s10"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

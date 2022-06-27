@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/login_bg_image4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/login_right_bg" />
+
+        <ImageView
+            android:id="@+id/login_bg_image3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/login_left_bg" />
+
+        <ImageView
+            android:id="@+id/login_bg_image2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_welcome1" />
+
+        <ImageView
+            android:id="@+id/login_bg_image1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ef" />
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:background="@color/c_main"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/s35"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/diis_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/s20"
+                android:layout_height="@dimen/s20"
+                android:layout_marginLeft="8.0dip"
+                android:src="@mipmap/icon_search" />
+
+            <EditText
+                android:id="@+id/se_edittext_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:background="@null"
+                android:ellipsize="end"
+                android:hint="请入要搜索的内容"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#ff333333"
+                android:textColorHint="#ff999999"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/se_img_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginRight="6.0dip"
+            android:padding="5.0dip"
+            android:text="取消"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="3.0dip"
+            android:layout_height="20.0dip"
+            android:background="@color/c_main" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:text="热门分类"
+            android:textColor="#ff323232"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:background="#ffd7d7d7" />
+
+    <GridView
+        android:id="@+id/se_gridview_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="1.0dip"
+        android:layout_marginTop="3.0dip"
+        android:layout_marginRight="1.0dip"
+        android:layout_marginBottom="3.0dip"
+        android:gravity="center"
+        android:numColumns="3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10.0dip"
+        android:background="#fff0eff5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="3.0dip"
+            android:layout_height="20.0dip"
+            android:background="#ffff4576" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:text="人气推荐"
+            android:textColor="#ff323232"
+            android:textSize="16.0sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:background="#ffd7d7d7" />
+
+    <GridView
+        android:id="@+id/se_gridview_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginBottom="5.0dip"
+        android:gravity="center"
+        android:numColumns="4" />
+
+</LinearLayout>
+
+

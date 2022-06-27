@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/acitvity012"
+    android:padding="@dimen/s20">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="@dimen/s20"
+        android:layout_height="@dimen/s20"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/cdq" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/back"
+        android:layout_marginTop="@dimen/s20"
+        android:layout_marginBottom="2dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/cover_defult" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleimageview"
+            android:layout_width="@dimen/s60"
+            android:layout_height="@dimen/s60"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:src="@mipmap/cover_defult" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/s10"
+                android:text="我是小可爱"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sxyh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s10"
+                android:text="年龄：18"
+                android:textSize="@dimen/sp12" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/qrecode"
+            android:layout_width="@dimen/s120"
+            android:layout_height="@dimen/s120"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/cover_defult" />
+    </LinearLayout>
+
+</RelativeLayout>

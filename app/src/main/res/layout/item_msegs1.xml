@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fadeScrollbars="false"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/s8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/s10"
+        android:paddingBottom="@dimen/s10">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/s80"
+            android:layout_height="@dimen/s80"
+            android:layout_marginRight="@dimen/s10"
+            android:padding="@dimen/s2"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/a8f"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s5"
+            android:layout_toRightOf="@+id/icon"
+            android:text="我在这里等你哦"
+            android:textColor="@color/homeback"
+            android:textSize="@dimen/sp14"></TextView>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s20"
+            android:layout_below="@+id/tv1"
+            android:layout_marginTop="@dimen/s5"
+            android:layout_toRightOf="@+id/icon"
+            android:text="性感大比拼"
+            android:textSize="@dimen/sp12"></TextView>
+
+    </RelativeLayout>
+
+</LinearLayout>

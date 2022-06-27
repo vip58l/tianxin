@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"   xmlns:tools="http://schemas.android.com/tools"
+    package="com.tencent.qcloud.tim.tuikit.live">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application>
+
+        <!--主播创建房间-->
+        <activity
+            android:name=".modules.liveroom.ui.DefaultGroupLiveAnchorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.tencent.qcloud.tim.tuikit.live.grouplive.anchor" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--观众进入房间-->
+        <activity
+            android:name=".modules.liveroom.ui.DefaultGroupLiveAudienceActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.tencent.qcloud.tim.tuikit.live.grouplive.audience" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

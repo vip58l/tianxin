@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/home3">
+
+    <com.tianxin.widget.itembackTopbr
+        android:id="@+id/itemback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40" />
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemback"
+        android:orientation="vertical"
+        android:padding="@dimen/sp10">
+
+        <EditText
+            android:id="@+id/password1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s40"
+            android:layout_marginBottom="@dimen/s10"
+            android:background="@drawable/diis_bg1"
+            android:hint="原旧密码"
+            android:inputType="textPassword"
+            android:maxLength="32"
+            android:paddingLeft="@dimen/s10"
+            android:paddingRight="@dimen/s10"
+            android:textSize="@dimen/sp14"></EditText>
+
+        <EditText
+            android:id="@+id/password2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s40"
+            android:layout_marginBottom="@dimen/s10"
+            android:background="@drawable/diis_bg1"
+            android:hint="新的密码"
+            android:inputType="textPassword"
+            android:maxLength="32"
+            android:paddingLeft="@dimen/s10"
+            android:paddingRight="@dimen/s10"
+            android:textSize="@dimen/sp14"></EditText>
+
+        <EditText
+            android:id="@+id/password3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s40"
+            android:layout_marginBottom="@dimen/s10"
+            android:background="@drawable/diis_bg1"
+            android:hint="确认密码"
+            android:inputType="textPassword"
+            android:maxLength="32"
+            android:paddingLeft="@dimen/s10"
+            android:paddingRight="@dimen/s10"
+            android:textSize="@dimen/sp14"></EditText>
+
+        <EditText
+            android:id="@+id/wx"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s40"
+            android:layout_marginBottom="@dimen/s10"
+            android:background="@drawable/diis_bg1"
+            android:hint="微信号/选填"
+            android:paddingLeft="@dimen/s10"
+            android:paddingRight="@dimen/s10"
+            android:textSize="@dimen/sp14"
+            android:visibility="gone"></EditText>
+
+        <EditText
+            android:id="@+id/qq"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s40"
+            android:layout_marginBottom="@dimen/s10"
+            android:background="@drawable/diis_bg1"
+            android:hint="QQ号码/选填"
+            android:inputType="number"
+            android:maxLength="15"
+            android:paddingLeft="@dimen/s10"
+            android:paddingRight="@dimen/s10"
+            android:textSize="@dimen/sp14"
+            android:visibility="gone"></EditText>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/senbnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:layout_marginLeft="@dimen/s10"
+        android:layout_marginTop="@dimen/s40"
+        android:layout_marginRight="@dimen/s10"
+        android:background="@drawable/bg_radius_bottom_pink2"
+        android:text="确认"
+        android:textColor="@color/white"></Button>
+
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home3"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.tianxin.widget.itembackTopbr
+        android:id="@+id/itemback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40" />
+
+    <EditText
+        android:id="@+id/nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/s10"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/diis_bg1"
+        android:gravity="left|top"
+        android:hint="请输入标题内容"
+        android:lines="5"
+        android:maxLength="50"
+        android:padding="@dimen/sp10"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/s10">
+
+        <TextView
+            android:id="@+id/endpadder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择自动填写"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:id="@+id/close1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0/50"
+            android:textSize="@dimen/sp12" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/s10"
+        android:layout_marginTop="@dimen/s30"
+        android:layout_marginRight="@dimen/s10"
+        android:background="@drawable/bg_radius_bottom_pink2"
+        android:text="确认"
+        android:textColor="@color/white" />
+
+</LinearLayout>

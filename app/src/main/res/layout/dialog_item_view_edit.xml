@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/acitvity012"
+        android:orientation="vertical"
+        android:padding="@dimen/s10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/homeback"
+                android:text="在下方辑框输入内容" />
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="@dimen/s20"
+                android:layout_height="@dimen/s20"
+                android:layout_gravity="right"
+                android:src="@mipmap/ic_news_detail_withvideo_close" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s10"
+            android:layout_marginBottom="@dimen/s10"
+            android:background="@drawable/acitvity011"
+            android:gravity="top|left"
+            android:hint="请输入您的内容"
+            android:lines="4"
+            android:padding="@dimen/s10"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:id="@+id/senbnt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s40"
+            android:layout_marginTop="@dimen/s10"
+            android:layout_marginBottom="@dimen/s10"
+            android:background="@drawable/bg_radius_bottom_pink2"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</LinearLayout>

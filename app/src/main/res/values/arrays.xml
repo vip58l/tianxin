@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="col">
+        <item>#D81B60</item>
+        <item>#008577</item>
+        <item>#008577</item>
+        <item>#2F942A</item>
+        <item>#FFF44336</item>
+        <item>#FFE91E63</item>
+        <item>#FF4CAF50</item>
+        <item>#FFFF5722</item>
+        <item>#FF0D7E12</item>
+        <item>#FF03A9F4</item>
+        <item>#FF0D100D</item>
+        <item>#FF528518</item>
+        <item>#FFD8668D</item>
+        <item>#FF8B8F1B</item>
+    </string-array>
+
+    <string-array name="group_type">
+        <item>Private</item>
+        <item>Public</item>
+        <item>ChatRoom</item>
+    </string-array>
+
+    <declare-styleable name="circleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <string-array name="array_img">
+        <item>https://liteav-test-1252463788.cos.ap-guangzhou.myqcloud.com/voice_room/voice_room_cover1.png </item>
+        <item>https://liteav-test-1252463788.cos.ap-guangzhou.myqcloud.com/voice_room/voice_room_cover2.png </item>
+        <item>https://liteav-test-1252463788.cos.ap-guangzhou.myqcloud.com/voice_room/voice_room_cover3.png </item>
+        <item>https://liteav-test-1252463788.cos.ap-guangzhou.myqcloud.com/voice_room/voice_room_cover4.png </item>
+        <item>https://liteav-test-1252463788.cos.ap-guangzhou.myqcloud.com/voice_room/voice_room_cover5.png </item>
+        <item>https://liteav-test-1252463788.cos.ap-guangzhou.myqcloud.com/voice_room/voice_room_cover6.png </item>
+        <item>https://liteav-test-1252463788.cos.ap-guangzhou.myqcloud.com/voice_room/voice_room_cover7.png </item>
+        <item>https://liteav-test-1252463788.cos.ap-guangzhou.myqcloud.com/voice_room/voice_room_cover8.png </item>
+        <item>https://liteav-test-1252463788.cos.ap-guangzhou.myqcloud.com/voice_room/voice_room_cover9.png </item>
+        <item>https://liteav-test-1252463788.cos.ap-guangzhou.myqcloud.com/voice_room/voice_room_cover10.png </item>
+        <item>https://liteav-test-1252463788.cos.ap-guangzhou.myqcloud.com/voice_room/voice_room_cover11.png </item>
+        <item>https://liteav-test-1252463788.cos.ap-guangzhou.myqcloud.com/voice_room/voice_room_cover12.png </item>
+    </string-array>
+
+
+    <string-array name="two">
+        <item>推荐</item>
+        <item>最新</item>
+        <item>语音</item>
+        <item>视频</item>
+        <item>性感</item>
+        <item>性感</item>
+    </string-array>
+
+    <string-array name="toolsns">
+        <item>推荐</item>
+        <item>最新</item>
+        <item>排行</item>
+
+    </string-array>
+
+    <string-array name="four">
+        <item>性感</item>
+        <item>美丽</item>
+        <item>清纯</item>
+        <item>清纯</item>
+        <item>可爱</item>
+        <item>包臀</item>
+        <item>情感</item>
+        <item>娱乐</item>
+        <item>才艺</item>
+    </string-array>
+
+    <string-array name="title">
+        <item>推荐专家</item>
+        <item>同城专家</item>
+        <item>附近专家</item>
+        <item>我的关注</item>
+        <item>视频聊天</item>
+        <item>语音聊天</item>
+        <item>交友</item>
+        <item>实名会员</item>
+    </string-array>
+
+    <string-array name="guild">
+        <item>个人</item>
+        <item>公会</item>
+    </string-array>
+
+    <string-array name="onindex">
+        <item>推荐专家</item>
+        <item>同城专家</item>
+        <item>附近专家</item>
+        <item>我的关注</item>
+        <item>视频聊天</item>
+        <item>语音聊天</item>
+        <item>交友</item>
+        <item>实名会员</item>
+        <item>实名会员</item>
+        <item>实名会员</item>
+        <item>实名会员</item>
+        <item>实名会员</item>
+        <item>实名会员</item>
+        <item>实名会员</item>
+
+    </string-array>
+
+    <string-array name="onindex2">
+        <item>推荐</item>
+        <item>同城</item>
+        <item>附近人</item>
+        <item>视频聊天</item>
+        <item>语音聊天</item>
+        <item>交友聊天</item>
+        <item>真人认证</item>
+        <item>真人认证</item>
+        <item>真人认证</item>
+        <item>真人认证</item>
+        <item>真人认证</item>
+        <item>真人认证</item>
+        <item>真人认证</item>
+        <item>真人认证</item>
+    </string-array>
+
+
+    <string-array name="msgindex">
+        <item>消息</item>
+        <item>通讯录</item>
+        <item>公告</item>
+        <item>公告</item>
+
+    </string-array>
+
+    <string-array name="arr">
+        <item>个人</item>
+        <item>公会</item>
+    </string-array>
+
+    <string-array name="myarray">
+        <item>遇上了也一种缘分：哦，你也在这里吗？</item>
+        <item>很想认识你，能给我一个认识你的机会吗</item>
+        <item>有空吗？我想和你聊聊 可以吗？</item>
+        <item>我平时喜欢逛街，看电影上网你呢？</item>
+        <item>你好我想约你有时间吗</item>
+        <item>你是那里人，我们聊聊吧</item>
+        <item>今夜你寂寞吗？我们聊聊吧</item>
+        <item>别看了就是你,进来我们聊聊吧!</item>
+    </string-array>
+
+    <array name="question">
+        <item>二级心理咨询师</item>
+        <item>住院医师</item>
+        <item>主治医师</item>
+        <item>副主任医师</item>
+        <item>主任医师</item>
+        <item>四级律师</item>
+        <item>三级律师</item>
+        <item>二级律师</item>
+        <item>一级律师</item>
+        <item>高级教师</item>
+        <item>一级教师</item>
+        <item>二级教师</item>
+        <item>三级教师</item>
+    </array>
+
+    <string-array name="squestion">
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>500</item>
+        <item>800</item>
+        <item>1500</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>5000</item>
+    </string-array>
+    <array name="arrayitem">
+        <item>喜欢收集小玩意 爱干净</item>
+        <item>性格直爽 不喜欢拐弯抹角</item>
+        <item>望结交同道中人,非诚勿扰!</item>
+        <item>稳定的工作 有点小理想</item>
+        <item>约吗？不谈钱 真心谈感情</item>
+        <item>找个知心伴侣</item>
+        <item>谈得来,不在呼对方条件</item>
+        <item>告别单身，一起努力</item>
+        <item>相貌一般 工作稳定</item>
+        <item>性格直爽 不喜欢拐弯抹角</item>
+        <item>不抽烟不喝酒 爱好:美食 积极向上 有责任心 工作稳定</item>
+        <item>有婚房 喜欢可爱的我 愿意陪我到处吃吃喝喝 愿意听我唠叨 三观正</item>
+        <item>寻一有缘人相互了解共建家庭</item>
+        <item>长相过的去，五官端正，你带出去见人不寒碜</item>
+    </array>
+    <array name="arrayitem1">
+        <item>未婚</item>
+        <item>单身</item>
+        <item>离异</item>
+        <item>保密</item>
+    </array>
+
+    <array name="arrayitem2">
+        <item>工程师</item>
+        <item>销售员</item>
+        <item>公司职员</item>
+        <item>中层管理</item>
+        <item>警察</item>
+        <item>演艺人员</item>
+        <item>模特</item>
+        <item>设计师</item>
+        <item>投资顾问</item>
+        <item>IT从业者</item>
+        <item>风险投资人</item>
+        <item>自由职业</item>
+        <item>网红</item>
+        <item>化妆师</item>
+        <item>公务员</item>
+        <item>个体户</item>
+        <item>学生</item>
+        <item>打工</item>
+        <item>老师</item>
+        <item>医生</item>
+        <item>护仕</item>
+        <item>白领</item>
+        <item>其他</item>
+    </array>
+    <array name="arrayitem3">
+        <item>小学</item>
+        <item>初中</item>
+        <item>高中</item>
+        <item>大专</item>
+        <item>本科</item>
+        <item>硕士</item>
+        <item>博士</item>
+        <item>保密</item>
+    </array>
+    <string-array name="arrayitem4">
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+        <item>120</item>
+        <item>150</item>
+        <item>160</item>
+        <item>170</item>
+        <item>180</item>
+        <item>190</item>
+        <item>200</item>
+    </string-array>
+
+    <string-array name="arrayitem5">
+        <item>120</item>
+        <item>130</item>
+        <item>135</item>
+        <item>140</item>
+        <item>145</item>
+        <item>150</item>
+        <item>155</item>
+        <item>160</item>
+        <item>165</item>
+        <item>170</item>
+        <item>175</item>
+        <item>180</item>
+        <item>185</item>
+        <item>200</item>
+    </string-array>
+    <string-array name="arrayitemamount">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+        <item>65</item>
+        <item>70</item>
+        <item>75</item>
+        <item>80</item>
+    </string-array>
+
+    <array name="arrayitem6">
+        <item>发布课程</item>
+        <item>发布服务</item>
+        <item>更多简介</item>
+        <item>擅长领域</item>
+        <item>用户评价</item>
+        <item>我的粉丝</item>
+        <item>预览主页</item>
+    </array>
+
+    <array name="arrayitem7">
+        <item>资料</item>
+        <item>动态</item>
+        <item>视频</item>
+        <item>相册</item>
+        <item>标签</item>
+        <item>其他</item>
+    </array>
+
+    <array name="arrayitem8">
+        <item>年龄</item>
+        <item>身高</item>
+        <item>体重</item>
+        <item>学历</item>
+        <item>感情</item>
+        <item>职业</item>
+        <item>现居</item>
+    </array>
+
+    <array name="arrayitem9">
+        <item>无限畅聊</item>
+        <item>私密相册</item>
+        <item>极速好友</item>
+        <item>签到翻倍</item>
+        <item>关注上限</item>
+        <item>付费视频</item>
+        <item>尊享标识</item>
+        <item>打招呼上限</item>
+    </array>
+
+    <array name="arrayitem10">
+        <item>昵称</item>
+        <item>帐号</item>
+        <item>密码</item>
+        <item>手机号</item>
+        <item>年龄</item>
+        <item>身高</item>
+        <item>体重</item>
+        <item>学历</item>
+        <item>职业</item>
+        <item>感情</item>
+        <item>居住地</item>
+        <item>个性签名</item>
+        <item>征友条件</item>
+    </array>
+
+    <array name="arrayitem11">
+        <item>昵称</item>
+        <item>年龄</item>
+        <item>身高</item>
+        <item>体重</item>
+        <item>学历</item>
+        <item>职业</item>
+        <item>性格</item>
+        <item>身材</item>
+        <item>爱好</item>
+        <item>感情</item>
+        <item>星座</item>
+        <item>家乡</item>
+        <item>居住地</item>
+        <item>个人介绍</item>
+        <item>征友条件</item>
+        <item>喜欢类型</item>
+    </array>
+    <string-array name="arrayitem12">
+        <item>最新</item>
+        <item>丰满</item>
+        <item>清纯</item>
+        <item>可爱</item>
+        <item>车模</item>
+        <item>性感</item>
+        <item>大师</item>
+        <item>原创</item>
+        <item>时尚</item>
+    </string-array>
+
+    <string-array name="arrayitem13">
+        <item>嫩模美腿</item>
+        <item>精选视频</item>
+        <item>炸大街了</item>
+        <item>诱惑写真</item>
+        <item>漂亮美女</item>
+        <item>街拍美女</item>
+        <item>街拍潮人</item>
+        <item>时尚街拍</item>
+    </string-array>
+    <string-array name="arrayitem14">
+        <item>充值明细</item>
+        <item>收入明细</item>
+        <item>支出明细</item>
+    </string-array>
+
+
+    <string-array name="arrayitem15">
+        <item>视频速配</item>
+        <item>随机匹配</item>
+        <item>VIP专属</item>
+        <item>短视频</item>
+    </string-array>
+
+    <string-array name="tab001">
+        <item>交友</item>
+        <item>旅游</item>
+        <item>探险</item>
+        <item>游泳</item>
+        <item>登山</item>
+        <item>吃饭</item>
+        <item>喝酒</item>
+        <item>唱歌</item>
+        <item>自驾游</item>
+        <item>代购</item>
+        <item>购物</item>
+        <item>摄影</item>
+        <item>钓鱼</item>
+        <item>拼团</item>
+        <item>租车</item>
+        <item>电影</item>
+        <item>约会</item>
+        <item>免费</item>
+        <item>高大尚</item>
+        <item>白富美</item>
+        <item>大财主</item>
+        <item>放松</item>
+        <item>美食</item>
+        <item>住宿</item>
+        <item>相亲</item>
+        <item>烤肉</item>
+        <item>我买单</item>
+        <item>线上</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="tab002">
+        <item>跟朋友一起聚餐</item>
+        <item>公司聚会一起去天体海滩</item>
+        <item>我们一起吃个饭</item>
+        <item>一起去吃烧烤</item>
+        <item>我们一起吃个饭</item>
+        <item>海南旅游南山文化旅游区</item>
+        <item>三亚海棠湾镇蜈支洲岛度假中心</item>
+        <item>亚龙湾热带天堂森林公园</item>
+        <item>南山文化旅游区</item>
+        <item>泰国一日游</item>
+        <item>东南亚国家旅游</item>
+        <item>第一次出国旅游</item>
+        <item>普吉岛、长滩岛、巴厘岛</item>
+        <item>泰国、马来西亚、柬埔寨、新加坡等九国</item>
+    </string-array>
+    <string-array name="tab003">
+        <item>前面拐个湾就到我等你</item>
+        <item>海南三亚</item>
+        <item>广东深圳</item>
+        <item>上海迪士尼乐园</item>
+        <item>上海中心大厦</item>
+        <item>北京八宝山</item>
+        <item>武汉黄鹤楼</item>
+        <item>广西桂林漓江冠岩风景区</item>
+        <item>云南昆明丽江</item>
+
+
+    </string-array>
+    <string-array name="tabs2">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>50</item>
+        <item>80</item>
+        <item>100</item>
+        <item>150</item>
+        <item>160</item>
+        <item>180</item>
+        <item>200</item>
+        <item>300</item>
+    </string-array>
+
+    <string-array name="tabs3">
+        <item>谁看过我</item>
+        <item>我看过谁</item>
+    </string-array>
+
+    <string-array name="tabs4">
+        <item>#66cdcc</item>
+        <item>#ff99cb</item>
+        <item>#ffcc9a</item>
+        <item>#99cc67</item>
+        <item>#ff6666</item>
+        <item>#ff443f</item>
+        <item>#fd903d</item>
+        <item>#ffc535</item>
+        <item>#00A66B</item>
+        <item>#008577</item>
+        <item>#FF5722</item>
+        <item>#006EFF</item>
+        <item>#BF1FEC</item>
+        <item>#0B0C0E</item>
+        <item>#4CAF50</item>
+        <item>#E10A79</item>
+        <item>#00BCD4</item>
+        <item>#E7A3F3</item>
+    </string-array>
+
+    <string-array name="tabs5">
+        <item>#ff443f</item>
+        <item>#fd903d</item>
+        <item>#ffc535</item>
+        <item>#cccccc</item>
+        <item>#ff6666</item>
+        <item>#ff443f</item>
+        <item>#fd903d</item>
+        <item>#ffc535</item>
+        <item>#00A66B</item>
+        <item>#008577</item>
+        <item>#FF5722</item>
+        <item>#006EFF</item>
+        <item>#BF1FEC</item>
+        <item>#0B0C0E</item>
+        <item>#4CAF50</item>
+        <item>#E10A79</item>
+        <item>#00BCD4</item>
+        <item>#E7A3F3</item>
+    </string-array>
+
+    <string-array name="tabs6">
+        <item>现金明细</item>
+        <item>提现明细</item>
+    </string-array>
+
+
+    <string-array name="tabs7">
+        <item>视频/语音/聊天</item>
+        <item>发布我的动态</item>
+        <item>发布我的视频</item>
+        <item>发布我的图片</item>
+    </string-array>
+    <string-array name="tabs8">
+        <item>我的下单</item>
+        <item>我的接单</item>
+    </string-array>
+
+    <string-array name="tabs9">
+        <item>渠道推广合作</item>
+        <item>大主播入驻合作</item>
+        <item>代理商加盟合作</item>
+        <item>城市代理合作</item>
+        <item>广告投放合作</item>
+        <item>取消</item>
+    </string-array>
+
+    <string-array name="tabs10">
+        <item>我会准时到</item>
+        <item>我会晚到15分钟</item>
+        <item>我会早到15分钟</item>
+    </string-array>
+
+    <string-array name="tabs11">
+        <item>聚会活动列表</item>
+        <item>我发布的聚会</item>
+        <item>我参加的聚会</item>
+    </string-array>
+
+    <declare-styleable name="LineController">
+        <!-- 名称 -->
+        <attr name="name" format="string" />
+        <!-- 内容或当前状态 -->
+        <attr name="subject" format="string" />
+        <!-- 是否是列表中最后一个 -->
+        <attr name="isBottom" format="boolean" />
+        <!-- 是否可以跳转 -->
+        <attr name="canNav" format="boolean" />
+        <!-- 是否是开关 -->
+        <attr name="isSwitch" format="boolean" />
+        <!--图片地址-->
+        <attr name="src" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="widgetactivity">
+        <attr name="text_name" format="string" />
+        <attr name="text_title" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="backtitle">
+        <attr name="title_textSize" format="dimension" />
+        <attr name="title_name" format="string" />
+        <attr name="title_msg" format="string" />
+        <attr name="title_right" format="string" />
+        <attr name="title_isboolean" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="itembackTopbr">
+        <attr name="to_name" format="string" />
+        <attr name="to_msg" format="string" />
+        <attr name="to_isboolean" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="page5">
+        <attr name="page5_name" format="string" />
+        <attr name="page5_msg" format="string" />
+        <attr name="page5_isboolean" format="boolean" />
+        <attr name="page5_src" format="reference|color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="chat_settings">
+        <attr name="chat_name" format="string" />
+        <attr name="chat_msg" format="string" />
+        <attr name="chat_isboolean" format="boolean" />
+        <attr name="chat_src" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="homefooter">
+        <attr name="home_name" format="string" />
+        <attr name="home_src" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="party_weide">
+        <attr name="patry_name" format="string" />
+        <attr name="patry_tag" format="string" />
+        <attr name="patry_src" format="reference|color" />
+        <attr name="patry_visibility">
+            <!-- Visible on screen; the default value. -->
+            <enum name="visible" value="0" />
+            <!-- Not displayed, but taken into account during layout (space is left for it). -->
+            <enum name="invisible" value="1" />
+            <!-- Completely hidden, as if the view had not been added. -->
+            <enum name="gone" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="indexlay_item">
+        <attr name="indexlay_name" format="string" />
+        <attr name="indexlay_tag" format="string" />
+        <attr name="indexlay_src" format="reference|color" />
+        <attr name="indexlay_visibility">
+            <!-- Visible on screen; the default value. -->
+            <enum name="visible" value="0" />
+            <!-- Not displayed, but taken into account during layout (space is left for it). -->
+            <enum name="invisible" value="1" />
+            <!-- Completely hidden, as if the view had not been added. -->
+            <enum name="gone" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="dialog_Item_icon">
+        <attr name="t_name" format="string" />
+        <attr name="t_tag" format="string" />
+        <attr name="t_src" format="reference|color" />
+        <attr name="t_visibility">
+            <!-- Visible on screen; the default value. -->
+            <enum name="visible" value="0" />
+            <!-- Not displayed, but taken into account during layout (space is left for it). -->
+            <enum name="invisible" value="1" />
+            <!-- Completely hidden, as if the view had not been added. -->
+            <enum name="gone" value="2" />
+        </attr>
+    </declare-styleable>
+
+</resources>

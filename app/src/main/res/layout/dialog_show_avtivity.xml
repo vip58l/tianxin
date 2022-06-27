@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center"
+    android:background="@drawable/acitvitya1"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/s150"
+            android:layout_height="@dimen/s150"
+            android:layout_marginTop="@dimen/s10"
+            android:layout_marginBottom="@dimen/s10"
+            android:src="@mipmap/boy_off" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/tm140"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/send11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginBottom="@dimen/s10"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/tm141"
+            android:textColor="@color/teal006"
+            android:textSize="@dimen/sp16"
+
+            />
+
+        <TextView
+            android:id="@+id/send22"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s45"
+            android:layout_marginLeft="@dimen/s20"
+            android:layout_marginRight="@dimen/s20"
+            android:layout_marginBottom="@dimen/s20"
+            android:background="@drawable/register_input_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/tm142"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+

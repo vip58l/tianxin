@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home3"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.tianxin.widget.itembackTopbr
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40" />
+
+    <LinearLayout
+        android:id="@+id/qrcodeliine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/s10"
+        android:background="@drawable/acitvity012"
+        android:orientation="vertical"
+        android:padding="@dimen/s10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/s10">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/s60"
+                android:layout_height="@dimen/s60"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/s10"
+                android:src="@mipmap/icon_woman"
+                app:civ_border_color="@color/home3"
+                app:civ_border_width="2dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s10"
+                android:layout_toRightOf="@+id/icon"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/s10"
+                    android:layout_marginBottom="@dimen/s5"
+                    android:text="昵称"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@+id/nameid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/icon"
+                    android:text="昵称id123"
+                    android:textSize="@dimen/sp12" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/myqrcode"
+            android:layout_width="@dimen/s240"
+            android:layout_height="@dimen/s240"
+            android:layout_below="@+id/itemback"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/s30"
+            android:layout_marginBottom="@dimen/s20"
+            android:background="@color/white"
+            android:padding="@dimen/s5"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/s20"
+
+            android:layout_marginBottom="@dimen/s30"
+            android:gravity="center"
+            android:text="扫一扫上面的二维码，添加我为好友,或下载APP"
+            android:textColor="@color/c_fu"
+            android:textSize="@dimen/sp14" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/s10">
+
+        <TextView
+            android:id="@+id/send1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/acitvity012"
+            android:gravity="center"
+            android:padding="@dimen/s10"
+            android:text="保存相册" />
+
+        <TextView
+
+            android:layout_width="@dimen/s30"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/send2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/activity011"
+            android:gravity="center"
+            android:padding="@dimen/s10"
+            android:text="分享"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

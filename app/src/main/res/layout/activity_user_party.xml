@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.tianxin.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40"
+        app:title_name="@string/tssss1"
+        app:title_textSize="6sp" />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/s10"
+        android:orientation="vertical"
+        android:padding="@dimen/s10">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tips"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s40"
+                    android:layout_marginBottom="@dimen/s10"
+                    android:gravity="center"
+                    android:text="@string/ta94"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/sp20" />
+
+                <com.tianxin.widget.party_weide
+                    android:id="@+id/t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s40"
+                    app:patry_name="@string/ta4"
+                    app:patry_visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/s5"
+                    android:layout_marginBottom="@dimen/s5"
+                    android:background="@color/home3" />
+
+                <com.tianxin.widget.party_weide
+                    android:id="@+id/t2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:patry_name="@string/ta5"
+                    app:patry_visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/s5"
+                    android:layout_marginBottom="@dimen/s5"
+                    android:background="@color/home3" />
+
+                <com.tianxin.widget.party_weide
+                    android:id="@+id/t3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:patry_name="@string/ta6"
+                    app:patry_tag=""
+                    app:patry_visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/s5"
+                    android:layout_marginBottom="@dimen/s5"
+                    android:background="@color/home3" />
+
+                <com.tianxin.widget.party_weide
+                    android:id="@+id/t4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:patry_name="@string/ta9"
+                    app:patry_tag=""
+                    app:patry_visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/s5"
+                    android:layout_marginBottom="@dimen/s5"
+                    android:background="@color/home3" />
+
+                <com.tianxin.widget.party_weide
+                    android:id="@+id/t5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:patry_name="@string/ta8"
+                    app:patry_tag=""
+                    app:patry_visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/s5"
+                    android:layout_marginBottom="@dimen/s5"
+                    android:background="@color/home3" />
+
+                <com.tianxin.widget.party_weide
+                    android:id="@+id/t7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:patry_name="@string/ta7"
+                    app:patry_tag=""
+                    app:patry_visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/s5"
+                    android:layout_marginBottom="@dimen/s5"
+                    android:background="@color/home3" />
+
+                <com.tianxin.widget.party_weide
+                    android:id="@+id/t6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:patry_name="@string/ta91"
+                    app:patry_visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/s5"
+                    android:layout_marginBottom="@dimen/s5"
+                    android:background="@color/home3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s40"
+                    android:gravity="center|left"
+                    android:text="@string/ta10"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/s5"
+                    android:layout_marginBottom="@dimen/s5"
+                    android:background="@color/home3" />
+
+                <TextView
+                    android:id="@+id/e2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|top"
+                    android:hint="@string/ta92"
+                    android:maxLength="50"
+                    android:maxLines="6"
+                    android:minLines="6"
+                    android:padding="@dimen/s10"
+                    android:textSize="@dimen/sp16" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/s10"
+            android:background="@drawable/activity013"
+            android:text="@string/ta93"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/tvsendbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/s10"
+            android:background="@drawable/activity013"
+            android:text="@string/paysss1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

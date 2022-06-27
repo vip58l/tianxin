@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.activity_chat_settings">
+
+    <com.tianxin.widget.Backtitle
+        android:id="@+id/backtitle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title_name="@string/title_chat" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <com.tianxin.widget.chat_settings
+                    android:id="@+id/s1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    app:chat_msg="@string/tt1"
+                    app:chat_name="@string/chat_aa1" />
+
+                <com.tianxin.widget.chat_settings
+                    android:id="@+id/s2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    app:chat_msg="@string/tt2"
+                    app:chat_name="@string/chat_aa2" />
+
+                <com.tianxin.widget.chat_settings
+                    android:id="@+id/s3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    app:chat_msg="@string/tt3"
+                    app:chat_name="@string/chat_aa3" />
+
+                <com.tianxin.widget.chat_settings
+                    android:id="@+id/s4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    app:chat_msg="@string/tt4"
+                    app:chat_name="@string/tt10" />
+
+
+                <TextView
+                    android:id="@+id/molev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/s10"
+                    android:layout_marginBottom="@dimen/s20"
+                    android:gravity="center"
+                    android:text="@string/chat_aa4_msg"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

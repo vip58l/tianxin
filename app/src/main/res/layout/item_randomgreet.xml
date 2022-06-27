@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/s450"
+    android:background="@drawable/acitvity012">
+
+
+    <ImageView
+        android:id="@+id/colas"
+        android:layout_width="@dimen/s30"
+        android:layout_height="@dimen/s30"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:alpha="0.5"
+        android:src="@mipmap/ic_news2_detail_withvideo_close" />
+
+    <TextView
+        android:id="@+id/ititle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40"
+        android:layout_marginTop="@dimen/s10"
+        android:layout_toLeftOf="@+id/colas"
+        android:gravity="center"
+        android:text="@string/tv_ran"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/sp16" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/send1"
+        android:layout_below="@+id/ititle"
+        android:layout_marginBottom="@dimen/s2"
+        android:paddingLeft="@dimen/s10"
+        android:paddingRight="@dimen/s10" />
+
+    <TextView
+        android:id="@+id/send1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40"
+        android:layout_above="@+id/send2"
+        android:layout_marginLeft="@dimen/s10"
+        android:layout_marginTop="@dimen/s2"
+        android:layout_marginRight="@dimen/s10"
+        android:layout_marginBottom="@dimen/s5"
+        android:background="@drawable/bg_radius_bottom_pink2"
+        android:gravity="center"
+        android:text="@string/tv_msg130"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/send2"
+        android:layout_width="@dimen/s100"
+        android:layout_height="@dimen/s30"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/s10"
+        android:layout_marginRight="@dimen/s10"
+        android:layout_marginBottom="@dimen/s10"
+        android:gravity="center"
+        android:text="换一批"
+        android:textColor="@color/home" />
+
+</RelativeLayout>
+
+

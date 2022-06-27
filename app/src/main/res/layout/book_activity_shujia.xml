@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/bg_jianbian_h">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="书架"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+
+        <ImageView
+            android:id="@+id/book_shujia_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:padding="8.0dip"
+            android:src="@mipmap/icon_tbback" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/book_shujia_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+</LinearLayout>

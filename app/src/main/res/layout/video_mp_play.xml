@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homeback"
+    android:fitsSystemWindows="true">
+
+    <com.pili.pldroid.player.widget.PLVideoView
+        android:id="@+id/plvideoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bgsimg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/s10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/s30"
+            android:layout_height="@dimen/s30"
+            android:src="@mipmap/icon_back_white"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="@dimen/s60"
+        android:layout_height="@dimen/s60"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/play"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/plvideoView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="2"
+        android:paddingLeft="@dimen/s10"
+        android:paddingRight="@dimen/s10"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp14"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <TextView
+        android:id="@+id/daytetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/acitvity01"
+        android:paddingLeft="@dimen/s15"
+        android:paddingTop="@dimen/s2"
+        android:paddingRight="@dimen/s15"
+        android:paddingBottom="@dimen/s2"
+        android:text="00:01/05:05"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="@dimen/s50"
+        android:progress="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_flowlayout"
+        android:paddingLeft="@dimen/s15"
+        android:paddingTop="@dimen/s5"
+        android:paddingRight="@dimen/s15"
+        android:paddingBottom="@dimen/s5"
+        android:text="删除本条视频"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@mipmap/a3v"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"></ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40.0dip"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/mtitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s40"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="小视频"
+            android:textColor="#fff"
+            android:textSize="18.0sp" />
+
+        <ImageView
+            android:id="@+id/mhde_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0.0dip"
+            android:padding="5.0dip"
+            android:src="@mipmap/icon_tbback" />
+
+        <ImageView
+            android:id="@+id/refresh_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/y5" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

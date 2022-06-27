@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/s10">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="转帐提现-公司周转"
+        android:textColor="@color/homeback" />
+
+    <TextView
+        android:id="@+id/datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="@dimen/s5"
+        android:text="昨天18:18"
+        android:textSize="@dimen/sp12" />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:text="+100.66"
+        android:textColor="@color/homeback"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/money"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/s5"
+        android:gravity="right"
+        android:text="交易成功"
+        android:textSize="@dimen/sp12" />
+
+
+</RelativeLayout>

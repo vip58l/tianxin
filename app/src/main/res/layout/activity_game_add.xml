@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.game.Game_Activity_add">
+
+    <com.tianxin.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></com.tianxin.widget.Backtitle>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/s10"
+        android:paddingRight="@dimen/s10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backtitle"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/acitvity012"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/s10">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/s50"
+                android:layout_height="@dimen/s50"
+                android:padding="@dimen/s1"
+                android:src="@mipmap/boy_on"
+                app:civ_border_color="@color/home3"
+                app:civ_border_width="@dimen/s1" />
+
+            <TextView
+                android:id="@+id/game_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s10"
+                android:layout_weight="1"
+                android:text="title"
+                android:textColor="@color/homeback"
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/s15"
+                android:layout_height="@dimen/s15"
+                android:rotation="180"
+                android:src="@mipmap/aqh" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/s10"
+            android:background="@drawable/acitvity012"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/s10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s10"
+                android:text="单价"
+                android:textColor="@color/homeback"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(币/小时)"
+                android:textSize="@dimen/sp12"></TextView>
+
+            <EditText
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/s30"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right|center"
+                android:hint="请设置单价"
+                android:inputType="number"
+                android:textSize="@dimen/sp14"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/s10"
+            android:background="@drawable/acitvity012"
+            android:orientation="vertical"
+            android:padding="@dimen/s10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s10"
+                android:text="备注"
+                android:textColor="@color/homeback" />
+
+            <EditText
+                android:id="@+id/msg_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="top|left"
+                android:hint="请输入备注内容"
+                android:maxLines="50"
+                android:minLines="5"
+                android:padding="@dimen/s10"
+                android:textSize="@dimen/sp14"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s20">
+
+            <Button
+                android:id="@+id/buttion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_radius_bottom_pink2"
+                android:text="确认"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold"></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

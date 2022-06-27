@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/guardian_bg"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:padding="@dimen/s2"
+            android:src="@drawable/ic_avatar" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/s5"
+            android:layout_marginRight="@dimen/s5"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:lines="1"
+                android:text="@string/call_a1"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/call_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s10"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/call_a2"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/colas"
+            android:layout_width="@dimen/s40"
+            android:layout_height="@dimen/s40"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/s10"
+            android:src="@drawable/ic_hangup" />
+
+        <ImageView
+            android:id="@+id/agree"
+            android:layout_width="@dimen/s40"
+            android:layout_height="@dimen/s40"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/s10"
+            android:src="@drawable/ic_dialing" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

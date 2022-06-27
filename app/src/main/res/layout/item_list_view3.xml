@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/s5">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s120"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/cover_defult" />
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/list_tv_ms1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s10"
+            android:ellipsize="end"
+            android:lines="1"
+            android:padding="@dimen/s2"
+            android:text="name"
+            android:textColor="@color/homeback" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/s2">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleimageview"
+                android:layout_width="@dimen/s20"
+                android:layout_height="@dimen/s20"
+                android:src="@mipmap/cover_defult" />
+
+            <TextView
+                android:id="@+id/myoney"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s5"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:lines="1"
+                android:text="￥9.9 会员免费"
+                android:textSize="@dimen/sp10" />
+
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s5"
+                android:layout_marginRight="@dimen/s5"
+                android:text="已有0人购买"
+                android:textSize="@dimen/sp10" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

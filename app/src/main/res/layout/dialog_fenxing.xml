@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sf_paydialog_yuanjiaotop"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="分享到"
+        android:textColor="@android:color/background_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/fenxiamg"
+                android:src="@mipmap/bj6" />
+
+            <TextView
+                style="@style/fenxiamgtext"
+                android:text="微信" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/fenxiamg"
+                android:src="@mipmap/bii" />
+
+            <TextView
+                style="@style/fenxiamgtext"
+                android:text="朋友圈" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/fenxiamg"
+                android:src="@mipmap/bil"
+                android:text="QQ" />
+
+            <TextView
+                style="@style/fenxiamgtext"
+                android:text="QQ" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/fenxiamg"
+                android:src="@mipmap/bi9" />
+
+            <TextView
+                style="@style/fenxiamgtext"
+                android:text="QQ空间" />
+        </LinearLayout>
+
+        <com.tianxin.widget.dialog_Item_icon
+            android:id="@+id/layout5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:t_name="转发"
+            app:t_src="@mipmap/cf9" />
+
+        <com.tianxin.widget.dialog_Item_icon
+            android:id="@+id/delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            app:t_name="删除"
+            app:t_src="@mipmap/cdq" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/cancel_action"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="取消" />
+
+</LinearLayout>

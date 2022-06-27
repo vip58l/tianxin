@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgstar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/per_tv2"
+            android:text="@string/tvvip3"
+            android:visibility="gone"></TextView>
+
+        <TextView
+            style="@style/per_tv2"
+            android:text="@string/tvvip2"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/goosvip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/s20"
+            android:layout_marginBottom="@dimen/s20"
+            android:background="@drawable/bg_flowlayout"
+            android:gravity="center"
+            android:paddingLeft="@dimen/s30"
+            android:paddingTop="@dimen/s10"
+            android:paddingRight="@dimen/s30"
+            android:paddingBottom="@dimen/s10"
+            android:text="@string/tvvip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            style="@style/per_tv4"
+            android:text="@string/dialog_tvvip4" />
+
+        <TextView
+            style="@style/per_tv2"
+            android:text="@string/dialog_tvvip1"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

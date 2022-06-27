@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/acitvity012"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s20"
+            android:text="添加头像"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp18" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/s40"
+            android:gravity="center"
+            android:text="上传本人真实的个人正脸照"
+            android:textColor="@color/home"
+            android:textSize="@dimen/sp12" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s100"
+            android:layout_marginTop="@dimen/s10"
+            android:layout_marginBottom="@dimen/s10"
+            android:background="@color/home3"
+            android:src="@mipmap/avatar2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/s40"
+            android:gravity="center"
+            android:text="从相册选择"
+            android:textSize="@dimen/sp16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/home3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/s40"
+            android:gravity="center"
+            android:text="拍照上传"
+            android:textSize="@dimen/sp16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s10"
+            android:background="@color/home3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/s50"
+            android:gravity="center"
+            android:text="取消"
+            android:textSize="@dimen/sp16" />
+
+    </LinearLayout>
+
+</RelativeLayout>

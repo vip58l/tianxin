@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/home3"
+    android:padding="@dimen/s10">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/s50"
+        android:layout_height="@dimen/s50"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/s1"
+        android:src="@mipmap/icon_sex_autuor"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/s10"
+        android:layout_toLeftOf="@+id/icon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s5"
+            android:text="名称"
+            android:textColor="@color/teal006"
+            android:textSize="@dimen/sp12"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/s6"
+            android:text="消息提醒"
+            android:textColor="@color/home"
+            android:textSize="@dimen/sp14" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/bg_jianbian_h">
+
+        <TextView
+            android:id="@+id/mhde_tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/tv_msg77"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+
+        <ImageView
+            android:id="@+id/mhde_img_back"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:padding="8.0dip"
+            android:src="@mipmap/icon_tbback" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="132.0dip"
+                android:background="#ffffffff"
+                android:gravity="center_vertical"
+                android:padding="13.0dip">
+
+                <ImageView
+                    android:id="@+id/mhde_img_con"
+                    android:layout_width="75.0dip"
+                    android:layout_height="100.0dip"
+                    android:layout_marginStart="10dp"
+                    android:src="@mipmap/cover_defult"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/mhde_tv_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="作者:西瓜"
+                    android:textColor="@color/c_font_1"
+
+                    android:textSize="12.0sp"
+                    app:layout_constraintStart_toEndOf="@+id/mhde_img_con"
+                    app:layout_constraintTop_toTopOf="@+id/mhde_img_con" />
+
+                <TextView
+                    android:id="@+id/mhde_tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:text="状态:连载中"
+                    android:textColor="@color/c_font_1"
+                    android:textSize="12.0sp"
+                    app:layout_constraintStart_toEndOf="@+id/mhde_img_con"
+                    app:layout_constraintTop_toBottomOf="@+id/mhde_tv_readnum" />
+
+                <TextView
+                    android:id="@+id/mhde_tv_readnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:text="阅读:725843次"
+                    android:textColor="@color/c_font_1"
+                    android:textSize="12.0sp"
+                    app:layout_constraintStart_toEndOf="@+id/mhde_img_con"
+                    app:layout_constraintTop_toBottomOf="@+id/mhde_tv_author" />
+
+                <TextView
+                    android:id="@+id/mhde_tv_read"
+                    android:layout_width="90.0dip"
+                    android:layout_height="28.0dip"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/nopress_button_mc"
+                    android:gravity="center"
+                    android:text="开始学习"
+                    android:textColor="#ffffffff"
+                    android:textSize="12.0sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/mhde_img_con"
+                    app:layout_constraintStart_toEndOf="@+id/mhde_img_con" />
+
+                <TextView
+                    android:id="@+id/mhde_tv_vip"
+                    android:layout_width="90.0dip"
+                    android:layout_height="28.0dip"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/nopress_button_ju"
+                    android:gravity="center"
+                    android:paddingTop="4.0dip"
+                    android:paddingBottom="4.0dip"
+                    android:text="开通VIP"
+                    android:textColor="#ffffffff"
+                    android:textSize="12.0sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/mhde_tv_read" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dip"
+                android:layout_marginBottom="4.0dip"
+                android:background="#ffffffff"
+                android:orientation="vertical"
+                android:padding="13.0dip">
+
+                <TextView
+                    android:id="@+id/mhde_tv_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="隔壁住着美少女..."
+                    android:textColor="@color/c_font_1"
+                    android:textSize="12.0sp" />
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout_tag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="12.0dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="标签："
+                        android:textColor="@color/c_font_1"
+                        android:textSize="12.0sp"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="38.0dip"
+                android:background="#ffffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="5.0dip"
+                    android:layout_height="15.0dip"
+                    android:background="@color/c_main" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="章节列表"
+                    android:textColor="@color/c_font_1" />
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0" />
+
+                <TextView
+                    android:id="@+id/mhde_tv_chapnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip"
+                    android:text="共15话"
+                    android:textColor="@color/c_font_3" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="#ffd7d7d7" />
+
+            <com.tianxin.widget.MyListView
+                android:id="@+id/mhde_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:divider="@null"
+                android:scrollbars="none" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.tianxin.widget.Backtitle
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40"
+        app:title_name="@string/party_a01"
+        app:title_textSize="6sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/s10"
+        android:orientation="vertical"
+        android:padding="@dimen/s10">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s40"
+                    android:layout_marginBottom="@dimen/s10"
+                    android:gravity="center|left"
+                    android:text="@string/party_a01"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp20"
+                    android:visibility="gone" />
+
+                <com.tianxin.widget.party_weide
+                    android:id="@+id/t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s40"
+                    app:patry_name="@string/ta4"
+                    app:patry_tag="" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/s5"
+                    android:layout_marginBottom="@dimen/s5"
+                    android:background="@color/home3" />
+
+                <com.tianxin.widget.party_weide
+                    android:id="@+id/t2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:patry_name="@string/ta5"
+                    app:patry_tag="@string/ta15" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/s5"
+                    android:layout_marginBottom="@dimen/s5"
+                    android:background="@color/home3" />
+
+                <com.tianxin.widget.party_weide
+                    android:id="@+id/t21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:patry_name="@string/ta6"
+
+                    app:patry_tag="" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/s5"
+                    android:layout_marginBottom="@dimen/s5"
+                    android:background="@color/home3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s40"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ta9"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp14" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:paddingRight="@dimen/s10">
+
+                        <TextView
+                            android:id="@+id/t3"
+                            android:layout_width="@dimen/s50"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/activity014"
+                            android:gravity="center"
+                            android:text="-"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp16" />
+
+                        <EditText
+                            android:id="@+id/e1"
+                            android:layout_width="@dimen/s50"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/sp16" />
+
+                        <TextView
+                            android:id="@+id/t4"
+                            android:layout_width="@dimen/s50"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/activity014"
+                            android:gravity="center"
+                            android:text="+"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp16" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/s5"
+                    android:layout_marginBottom="@dimen/s5"
+                    android:background="@color/home3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s40"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ta8"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp14" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:paddingRight="@dimen/s10">
+
+                        <TextView
+                            android:id="@+id/t5"
+                            android:layout_width="@dimen/s100"
+                            android:layout_height="@dimen/s30"
+                            android:layout_marginRight="@dimen/s10"
+                            android:background="@drawable/activity014"
+                            android:gravity="center"
+                            android:text="@string/ta13" />
+
+                        <TextView
+                            android:id="@+id/t6"
+                            android:layout_width="@dimen/s100"
+                            android:layout_height="@dimen/s30"
+                            android:background="@drawable/activity011"
+                            android:gravity="center"
+                            android:text="@string/ta14"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/s5"
+                    android:layout_marginBottom="@dimen/s5"
+                    android:background="@color/home3" />
+
+                <com.tianxin.widget.party_weide
+                    android:id="@+id/t7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:patry_name="@string/ta7" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/s5"
+                    android:layout_marginBottom="@dimen/s5"
+                    android:background="@color/home3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s40"
+                    android:gravity="center|left"
+                    android:text="@string/ta10"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/s5"
+                    android:layout_marginBottom="@dimen/s5"
+                    android:background="@color/home3" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/e2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_flowlayout"
+                        android:gravity="left|top"
+                        android:hint="@string/ta11"
+                        android:maxLength="50"
+                        android:maxLines="6"
+                        android:minLines="6"
+                        android:padding="@dimen/s10"
+                        android:textSize="@dimen/sp16" />
+
+                    <ImageView
+                        android:id="@+id/clockwise"
+                        android:layout_width="@dimen/s20"
+                        android:layout_height="@dimen/s20"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="@dimen/s5"
+                        android:layout_marginBottom="@dimen/s5"
+                        android:src="@mipmap/ce7"
+                        android:visibility="gone"></ImageView>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/t8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/s5"
+                    android:text="1/50"
+                    android:textSize="@dimen/sp12" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tips"
+            android:layout_marginBottom="@dimen/s10"
+            android:background="@drawable/bg_jianbian_yuanjiao3"
+            android:text="发布"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+
+        <LinearLayout
+            android:id="@+id/tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/check_login"
+                android:layout_width="@dimen/s25"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:alpha="0.8"
+                android:button="@drawable/login_checkbox"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="@dimen/s5" />
+
+            <TextView
+                android:id="@+id/t9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ta12"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp14" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

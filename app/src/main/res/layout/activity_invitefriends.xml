@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.activit_Invitefriends">
+
+    <com.tianxin.widget.itembackTopbr
+        android:id="@+id/itemback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40"
+        android:gravity="center"
+        android:text="认证资质" />
+
+    <RelativeLayout
+        android:id="@+id/rlayout"
+        android:layout_width="@dimen/s240"
+        android:layout_height="@dimen/s240"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/s10"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/cover_defult" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/s10"
+            android:background="@color/colorAccent3"
+            android:gravity="center"
+            android:padding="@dimen/s5"
+            android:text="审核中"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/s10"
+        android:layout_marginBottom="@dimen/s10"
+        android:gravity="center"
+        android:padding="@dimen/s10"
+        android:text="二维心理咨询师"
+        android:textColor="@color/homeback"
+        android:textSize="@dimen/sp16"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/senbnt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40"
+        android:layout_marginLeft="@dimen/s10"
+        android:layout_marginRight="@dimen/s10"
+        android:background="@drawable/bg_radius_bottom_pink2"
+        android:gravity="center"
+        android:text="上传资质"
+        android:textColor="@color/white" />
+
+</LinearLayout>
+

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.party.activity_party_imge">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ic_welcome1"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bg_shade_bom"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </ImageView>
+
+    <ImageView
+
+        android:id="@+id/back"
+        android:layout_width="@dimen/s30"
+        android:layout_height="@dimen/s30"
+        android:layout_marginLeft="@dimen/s10"
+        android:layout_marginTop="@dimen/s35"
+        android:src="@mipmap/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ucrop"
+        android:layout_width="@dimen/s80"
+        android:layout_height="@dimen/s80"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="88dp"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="1dp"
+        android:src="@mipmap/avapic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="名称"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp18"
+        app:layout_constraintBottom_toBottomOf="@+id/ucrop"
+        app:layout_constraintStart_toEndOf="@+id/ucrop"
+        app:layout_constraintTop_toTopOf="@+id/ucrop"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <TextView
+        android:id="@+id/buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/activity013"
+        android:paddingLeft="@dimen/s10"
+        android:paddingTop="@dimen/s5"
+        android:paddingRight="@dimen/s10"
+        android:paddingBottom="@dimen/s5"
+        android:text="我买单"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp12"
+        android:alpha="0.8"
+        app:layout_constraintBottom_toBottomOf="@+id/ucrop"
+        app:layout_constraintStart_toEndOf="@+id/ucrop"
+        app:layout_constraintTop_toTopOf="@+id/ucrop"
+        app:layout_constraintVertical_bias="0.93" />
+
+    <TextView
+        android:id="@+id/decode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/s10"
+        android:padding="@dimen/s10"
+        android:text="题标"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp18"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ucrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/s10"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4">
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s10"
+            android:text="北京"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:id="@+id/datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2022-12-30"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:id="@+id/tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s5"
+            android:text="tag"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14" />
+
+        <com.tianxin.widget.FlowLayout
+            android:id="@+id/FlowLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s10"
+            android:layout_marginBottom="@dimen/s10" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="24dp"
+        android:text="累计报名"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <TextView
+        android:id="@+id/perres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp24"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:gravity="bottom"
+        android:text="人"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp14"
+        app:layout_constraintBottom_toBottomOf="@+id/perres"
+        app:layout_constraintStart_toEndOf="@+id/perres"
+        app:layout_constraintTop_toTopOf="@+id/perres"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <TextView
+        android:id="@+id/sned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/activity013"
+        android:padding="@dimen/s10"
+        android:text="报名参加 >"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp18"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="604dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

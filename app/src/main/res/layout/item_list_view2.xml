@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/s5"
+        android:background="@drawable/acitvity012"
+        android:padding="@dimen/s10">
+
+        <RelativeLayout
+            android:id="@+id/relayout1"
+            android:layout_width="@dimen/s150"
+            android:layout_height="@dimen/s100">
+
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/s150"
+                android:layout_height="@dimen/s100"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/cover_defult" />
+
+            <TextView
+                android:id="@+id/tv_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@color/colorPrimaryDark2"
+                android:gravity="center"
+                android:padding="@dimen/s5"
+                android:text="内容审核中"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp12"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_toRightOf="@+id/relayout1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:text="name"
+                    android:textColor="@color/homeback"
+                    android:textSize="@dimen/sp16"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_del"
+                    android:layout_width="@dimen/s20"
+                    android:layout_height="@dimen/s20"
+                    android:layout_marginLeft="@dimen/s10"
+                    android:src="@mipmap/ic_news_detail_withvideo_close"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/msg"
+                style="@style/list_tv_ms1"
+                android:layout_marginTop="@dimen/s10"
+                android:lines="1"
+                android:text="msg"
+                android:textSize="@dimen/sp12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/myoney"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/s40"
+                    android:layout_weight="1"
+                    android:gravity="center|left|bottom"
+                    android:text="￥9.9 会员免费"
+                    android:textSize="@dimen/sp10" />
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已有0人购买"
+                    android:textSize="@dimen/sp10" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

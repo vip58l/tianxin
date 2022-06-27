@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:background="@drawable/acitvitya1"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:text="请给文件填写个标题名称或描述"
+            android:textColor="@color/live_light_black"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#CCCCCC"></View>
+
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/acitvitya2"
+            android:ellipsize="end"
+            android:gravity="left|top"
+            android:hint="请输入标题内容"
+            android:lines="5"
+            android:maxLength="50"
+            android:maxLines="5"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:id="@+id/fenle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center|left"
+                android:text="分类类型:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/titlesend"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="性感"
+                android:textColor="@color/live_color_duration"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_me_jiao" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/smallLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/btn_left"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/acitvity08"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/btn_right"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/acitvity08"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

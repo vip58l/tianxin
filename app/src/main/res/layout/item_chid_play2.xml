@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <!--插入播放器容器-->
+    <com.pili.pldroid.player.widget.PLVideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bgmplay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/video_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--播放图标UI-->
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="@dimen/s80"
+        android:layout_height="@dimen/s80"
+        android:layout_centerInParent="true"
+        android:alpha="0"
+        android:src="@mipmap/play"
+        app:layout_constraintBottom_toBottomOf="@+id/video_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--底部标题背景-->
+    <ImageView
+        android:id="@+id/item_dy_img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.5"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bg_shade_bom"
+        app:layout_constraintBottom_toBottomOf="@+id/video_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--右边列表-->
+    <LinearLayout
+        android:id="@+id/rightlayout"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s5">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/s60"
+                android:layout_height="@dimen/s60"
+                android:layout_centerVertical="true"
+                android:layout_gravity="clip_horizontal"
+                android:layout_marginBottom="@dimen/s10"
+                android:layout_weight="1"
+                android:src="@mipmap/cover_defult"
+                app:civ_border_color="#F1ECF1"
+                app:civ_border_width="2dp" />
+
+            <com.opensource.svgaplayer.SVGAImageView
+                android:id="@+id/follow"
+                android:layout_width="@dimen/s20"
+                android:layout_height="@dimen/s20"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/s50"
+                android:src="@mipmap/icon_follow_user_transition_cmm"
+                app:autoPlay="false"
+                app:loopCount="1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.opensource.svgaplayer.SVGAImageView
+                android:id="@+id/axicone"
+                android:layout_width="@dimen/s60"
+                android:layout_height="@dimen/s60"
+                android:src="@mipmap/ax" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/axicone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-5dp"
+                android:text="6.5w"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon_jiaobiao_hot"
+                android:layout_width="@dimen/s60"
+                android:layout_height="@dimen/s60"
+                android:layout_marginTop="@dimen/s5"
+                android:src="@mipmap/c62" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon_jiaobiao_hot"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-5dp"
+                android:text="6.5w"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/vipshow"
+                android:layout_width="@dimen/s60"
+                android:layout_height="@dimen/s60"
+                android:layout_marginTop="@dimen/s5"
+                android:src="@mipmap/cbw" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vipshow"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-12dp"
+                android:text="6.5w"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--位置或发布时间-->
+    <LinearLayout
+        android:id="@+id/lin1date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/acitvity07"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/timeimg"
+            android:layout_width="@dimen/s20"
+            android:layout_height="@dimen/s20"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_dv_weixin" />
+
+        <TextView
+            android:id="@+id/datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/s5"
+            android:text="更新时间 2021-02-28"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp12" />
+
+    </LinearLayout>
+
+    <!--购买VIP会员-->
+    <RelativeLayout
+        android:id="@+id/show_vip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/acitvity01"
+        android:gravity="center"
+        android:paddingLeft="@dimen/s10"
+        android:paddingTop="@dimen/s5"
+        android:paddingRight="@dimen/s10"
+        android:paddingBottom="@dimen/s5"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/title"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/viptype1title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/s40"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/viptype"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/viptype2title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/s5"
+            android:background="@drawable/acitvity04"
+            android:gravity="center"
+            android:paddingLeft="@dimen/s10"
+            android:paddingTop="@dimen/s5"
+            android:paddingRight="@dimen/s10"
+            android:paddingBottom="@dimen/s5"
+            android:text="@string/svip2"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+    <!--底部标题内容-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/s70"
+        android:padding="@dimen/s10"
+        android:layout_marginBottom="@dimen/s5"
+        android:lines="3"
+        android:text="标题名称"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

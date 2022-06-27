@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/s5"
+    android:background="@color/colorAccent"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/s5"
+    android:paddingTop="@dimen/s2"
+    android:paddingRight="@dimen/s5"
+    android:paddingBottom="@dimen/s2">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="身高"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/mssge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@+id/name"
+        android:gravity="center"
+        android:paddingRight="@dimen/s2"
+        android:text="18"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

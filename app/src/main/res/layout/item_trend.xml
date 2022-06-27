@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/s10">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="@dimen/s40"
+        android:layout_height="@dimen/s40"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/s10"
+        android:src="@mipmap/ic_welcome1" />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/s5"
+        android:layout_toRightOf="@+id/circleImageView"
+        android:text="最可爱的人"
+        android:textSize="@dimen/sp12" />
+
+    <TextView
+        android:id="@+id/conter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="@dimen/s5"
+        android:layout_marginRight="@dimen/s40"
+        android:layout_toRightOf="@+id/circleImageView"
+        android:textColor="@color/home"
+        android:textSize="@dimen/sp14" />
+
+    <TextView
+        android:id="@+id/datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/s5"
+        android:layout_marginRight="@dimen/s10"
+        android:text="刚刚"
+        android:textSize="@dimen/sp12" />
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/datetime"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/s5"
+        android:layout_marginRight="@dimen/s10"
+        android:text="@string/tm150"
+        android:visibility="gone"
+        android:textColor="@color/c_fu"
+        android:textSize="@dimen/sp14" />
+
+
+</RelativeLayout>

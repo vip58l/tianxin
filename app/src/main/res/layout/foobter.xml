@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/boobutton"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/s50"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingTop="2sp"
+    android:paddingBottom="2sp">
+
+    <LinearLayout style="@style/per_tv1">
+
+        <ImageView
+            android:id="@+id/shouhu"
+            style="@style/picenter_img"
+            android:src="@mipmap/icon_user_detail_bottom_gift_cmm_auth" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chat_view"
+        style="@style/per_tv1">
+
+        <ImageView
+            android:id="@+id/guard"
+            style="@style/picenter_img"
+            android:src="@mipmap/wx" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/per_tv1">
+
+        <ImageView
+            android:id="@+id/message"
+            style="@style/picenter_img"
+            android:src="@mipmap/ar2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/per_tv1"
+        android:layout_marginRight="@dimen/s10"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/messagezhuo"
+            style="@style/picenter_img"
+            android:src="@mipmap/yoo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/layoutvideocall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/s10"
+        android:layout_weight="2"
+        android:background="@drawable/bg_radius_bottom_pink2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/s20"
+            android:layout_height="@dimen/s20"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/s20"
+            android:src="@mipmap/a8z" />
+
+        <TextView
+            android:id="@+id/videocall"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/s40"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/s8"
+            android:gravity="center|left"
+            android:text="@string/tv_msg_peenter"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp12" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

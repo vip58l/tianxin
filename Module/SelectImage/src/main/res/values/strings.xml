@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">图片选取/预览</string>
+    <string name="tv_msg">你已选择了9张图片</string>
+</resources>

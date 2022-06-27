@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.Withdrawal.activity_balance">
+
+
+    <com.tianxin.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40"
+        android:background="@color/colorAccent"
+        app:title_name="我的钱包"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/s15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backtitle"
+        app:layout_constraintVertical_bias="0.19">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="我的余额(元)"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/s20"
+            android:layout_marginBottom="@dimen/s50"
+            android:gravity="center"
+            android:text="￥00.00"
+            android:textSize="@dimen/sp20"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/actionto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/activity011"
+            android:gravity="center"
+            android:padding="@dimen/s10"
+            android:text="充值"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/actiongo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/s20"
+            android:background="@drawable/diis_bg2"
+            android:gravity="center"
+            android:padding="@dimen/s10"
+            android:text="提现"
+            android:textSize="@dimen/sp16" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

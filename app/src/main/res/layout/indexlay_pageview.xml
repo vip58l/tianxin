@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/bannner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s150">
+
+        <com.tianxin.widget.CustomViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/dot"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s20"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/navigationicon1"
+        style="@style/index_lay01"
+        android:paddingTop="@dimen/s2">
+
+        <com.tianxin.widget.indexlay_item
+            android:id="@+id/banner_title1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:indexlay_name="@string/banner_title1"
+            app:indexlay_src="@mipmap/aa22" />
+
+        <com.tianxin.widget.indexlay_item
+            android:id="@+id/banner_title2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:indexlay_name="@string/banner_title2"
+            app:indexlay_src="@mipmap/a22" />
+
+        <com.tianxin.widget.indexlay_item
+            android:id="@+id/banner_title3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:indexlay_name="@string/banner_title3"
+            app:indexlay_src="@mipmap/ic_praise_sm3" />
+
+        <com.tianxin.widget.indexlay_item
+            android:id="@+id/banner_title4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:indexlay_name="@string/banner_title4"
+            app:indexlay_src="@mipmap/aq5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navigationicon2"
+        style="@style/index_lay01" />
+
+    <View
+        android:id="@+id/adarwaiting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s5"
+        android:background="@color/home3" />
+
+</LinearLayout>
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/s20"
+        android:paddingRight="@dimen/s10">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp15"
+            android:text="name" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_marginRight="@dimen/s10"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:lines="1"
+            android:textSize="@dimen/sp15"
+            android:text="title"
+            android:textColor="@color/homeback" />
+
+        <ImageView
+            android:layout_width="@dimen/s15"
+            android:layout_height="@dimen/s15"
+            android:src="@mipmap/icon_me_jiao"
+            android:text="标题" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewhtml"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/home3" />
+
+</LinearLayout>

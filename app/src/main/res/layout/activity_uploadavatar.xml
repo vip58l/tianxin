@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.edit.activity_uploadavatar">
+
+    <com.tianxin.widget.itembackTopbr
+        android:id="@+id/itemback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40"
+        app:to_name="上传头像" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/itemback">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/itemback"
+            android:layout_marginTop="@dimen/s30"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s200"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/s10"
+                android:layout_marginTop="@dimen/s30"
+                android:layout_marginRight="@dimen/s10"
+                android:gravity="center"
+                android:src="@mipmap/avatar" />
+
+            <TextView
+                android:id="@+id/avatar_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s20"
+                android:layout_marginBottom="@dimen/s10"
+                android:gravity="center"
+                android:text="@string/aa1"
+                android:textColor="@color/homeback"
+                android:textSize="@dimen/sp18" />
+
+            <TextView
+                android:id="@+id/titlemsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="更多小%s的青睐和关注哦" />
+
+            <TextView
+                android:id="@+id/upload"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s40"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/s20"
+                android:layout_marginTop="@dimen/s30"
+                android:layout_marginRight="@dimen/s20"
+                android:layout_marginBottom="@dimen/s10"
+                android:background="@drawable/bg_radius_bottom_pink2"
+                android:gravity="center"
+                android:text="上传头像"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/contentcll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s40"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/s20"
+                android:layout_marginTop="@dimen/s10"
+                android:layout_marginRight="@dimen/s20"
+                android:layout_marginBottom="@dimen/s20"
+                android:background="@drawable/diis_bg4"
+                android:gravity="center"
+                android:text="拍照"
+                android:textColor="@color/c_fu"
+                android:textSize="@dimen/sp18" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

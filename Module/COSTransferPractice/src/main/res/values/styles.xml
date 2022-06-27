@@ -1,0 +1,70 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--不显示导航图标-->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="UIListStyle">
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:divider">#00000000</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:listSelector">#00000000</item>
+    </style>
+
+    <style name="UIListDividerStyle" parent="UIListStyle">
+        <item name="android:divider">#888888</item>
+        <item name="android:dividerHeight">1px</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="BottomDialog" parent="@style/Base.V7.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="fei_style_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!--对话框显示时从底部进入，关闭时从底部滑出-->
+    <style name="BottomDialog.Animation" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/translate_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/translate_dialog_out</item>
+    </style>
+
+    <style name="BottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/bottomSheetStyleWrapper</item>
+    </style>
+
+    <style name="bottomSheetStyleWrapper" parent="Widget.Design.BottomSheet.Modal">
+        <item name="behavior_peekHeight">500dp</item>
+    </style>
+
+    <style name="actexts2">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">@dimen/s35</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/s10</item>
+        <item name="android:paddingRight">@dimen/s10</item>
+        <item name="android:textColor">@color/live_color_duration</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

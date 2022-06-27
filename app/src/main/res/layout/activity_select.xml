@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/s10"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="@dimen/s10"
+    tools:context=".activity.Searchactivity.activity_select">
+
+    <com.tianxin.widget.Dmselect
+        android:id="@+id/dmselect"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/s20" />
+
+    <LinearLayout
+        android:id="@+id/hanguptip"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lclose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/tv_msg256"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/sp14"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hangup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rsearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/rclose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/tv_msg256"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/sp14"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s20"
+            android:layout_marginBottom="@dimen/s20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="推荐用户"
+                android:textColor="@color/homeback" />
+
+            <ImageView
+                android:id="@+id/restart"
+                android:layout_width="@dimen/s25"
+                android:layout_height="@dimen/s25"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/vs2" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

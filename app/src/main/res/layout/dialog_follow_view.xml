@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/acitvity012"
+        android:orientation="vertical"
+        android:padding="@dimen/s10">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="@dimen/s20"
+            android:layout_height="@dimen/s20"
+            android:layout_gravity="right"
+            android:src="@mipmap/ic_news_detail_withvideo_close" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s10"
+            android:gravity="center"
+            android:text="选择您关注的问题"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/sp20" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/senbnt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s40"
+            android:layout_marginTop="@dimen/s20"
+            android:layout_marginBottom="@dimen/s20"
+            android:background="@drawable/bg_radius_bottom_pink2"
+            android:gravity="center"
+            android:text="确认提交"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

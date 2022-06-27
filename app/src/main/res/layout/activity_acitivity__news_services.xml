@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home3"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.ZYservices.acitivity_NewsServices">
+
+    <com.tianxin.widget.itembackTopbr
+        android:id="@+id/itemback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout"
+        android:layout_below="@+id/itemback"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/s10">
+
+            <EditText
+                android:id="@+id/title"
+                style="@style/edit_e5"
+                android:layout_height="wrap_content"
+                android:hint="填写服务标题"
+                android:lines="10" />
+
+            <EditText
+                android:id="@+id/msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/diis_bg1"
+                android:ellipsize="end"
+                android:gravity="left|top"
+                android:hint="服务内容介绍"
+                android:lines="10"
+                android:padding="@dimen/s10"
+                android:textSize="14sp"></EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/s10"
+                android:layout_marginBottom="@dimen/s10"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/myoney1"
+                    style="@style/fb_tv1"
+                    android:text="500" />
+
+                <TextView
+                    android:id="@+id/myoney2"
+                    style="@style/fb_tv1"
+                    android:text="800" />
+
+                <TextView
+                    android:id="@+id/myoney3"
+                    style="@style/fb_tv1"
+                    android:text="1000" />
+
+                <TextView
+                    android:id="@+id/myoney4"
+                    style="@style/fb_tv1"
+                    android:text="2000" />
+
+                <EditText
+                    android:id="@+id/money"
+                    style="@style/fb_tv1"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="2"
+                    android:hint="其他金额"
+                    android:maxLength="5"
+                    android:padding="@dimen/s5"
+
+                    android:textColor="@color/colorAccent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s1"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/s40"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/s10"
+                    android:paddingRight="@dimen/s10"
+                    android:text="@string/second"></TextView>
+
+                <TextView
+                    android:id="@+id/second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="1/次"
+                    android:textColor="@color/homeback" />
+
+                <ImageView
+                    android:layout_width="@dimen/s20"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/icon_me_jiao"></ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s1"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/s40"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/s10"
+                    android:paddingRight="@dimen/s10"
+                    android:text="@string/duration"></TextView>
+
+                <TextView
+                    android:id="@+id/duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="30/分钟"
+                    android:textColor="@color/homeback" />
+
+                <ImageView
+                    android:layout_width="@dimen/s20"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/icon_me_jiao"></ImageView>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s10"
+                android:layout_marginBottom="@dimen/s10"
+                android:text="发布需知"
+                android:textColor="@color/homeback"
+                android:textSize="@dimen/sp12"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/standard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5sp"
+                android:textSize="@dimen/sp12" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lookup"
+            android:layout_width="@dimen/s100"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/s10"
+            android:gravity="center"
+            android:text="我的服务"></TextView>
+
+        <TextView
+            android:id="@+id/boobutton"
+            style="@style/fb_tv"
+            android:text="发布服务"></TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>

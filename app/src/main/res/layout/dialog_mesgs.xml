@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s50"
+            android:background="@drawable/momey_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/s50"
+                android:gravity="center"
+                android:text="@string/dialog_a3"
+                android:textColor="@color/toolpop_background"
+                android:textSize="@dimen/sp18" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="还有体验卡未使用哦"
+                android:textColor="@color/home"
+                android:textSize="@dimen/sp12"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/kankan"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/dialog_a1"
+                    android:textColor="@color/colorAccent" />
+
+
+                <TextView
+                    android:id="@+id/exit"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/dialog_a2"
+                    android:textColor="@color/half_transparent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout2"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/s40"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/colas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/a3v"></ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/s80"
+                android:layout_height="@dimen/s80"
+                app:civ_border_color="#FAF6F6"
+                app:civ_border_width="2dp"
+                android:src="@mipmap/a8f"/>
+
+            <TextView
+
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_jianbian_yuanjiao"
+                android:paddingLeft="@dimen/s10"
+                android:paddingTop="@dimen/s5"
+                android:paddingRight="@dimen/s10"
+                android:paddingBottom="@dimen/s5"
+                android:text="我是小虾鱼"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp10"></TextView>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

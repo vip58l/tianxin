@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layoutcc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/s10"
+        android:background="@drawable/acitvity012"
+        android:gravity="center"
+        android:padding="@dimen/s10"
+        android:paddingBottom="@dimen/s10">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/s40"
+            android:layout_height="@dimen/s40"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/s15"
+            android:alpha="0.3"
+            android:padding="@dimen/s2"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_handsfree_disable" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s5"
+            android:layout_marginRight="@dimen/s10"
+            android:layout_toRightOf="@+id/icon"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/homeback"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="@dimen/s10"
+            android:layout_height="@dimen/s10"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_radius_bottom_pink5"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s10" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"
+            android:layout_marginTop="@dimen/s10"
+            android:layout_toRightOf="@+id/icon"
+            android:ellipsize="end"
+            android:lineSpacingExtra="5dp"
+            android:maxLines="2"
+            android:minLines="1"
+            android:textColor="@color/home"
+            android:textSize="@dimen/sp14" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/s5"
+        android:textColor="@color/home"
+        android:textSize="@dimen/sp12" />
+
+</LinearLayout>

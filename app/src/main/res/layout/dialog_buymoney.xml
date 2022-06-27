@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="@dimen/s300"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/acitvity014"
+        android:orientation="vertical"
+        android:padding="@dimen/s10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/s40"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/s15">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/s10"
+                android:text="@string/title_msg"
+                android:textColor="@color/teal006"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/send1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s10"
+                android:background="@drawable/dialog_pass1"
+                android:gravity="center"
+                android:paddingLeft="@dimen/s10"
+                android:paddingTop="@dimen/s8"
+                android:paddingRight="@dimen/s10"
+                android:paddingBottom="@dimen/s8"
+                android:text="@string/msg_vip2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:id="@+id/send2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s20"
+                android:background="@drawable/dialopss"
+                android:gravity="center"
+                android:paddingLeft="@dimen/s10"
+                android:paddingTop="@dimen/s8"
+                android:paddingRight="@dimen/s10"
+                android:paddingBottom="@dimen/s8"
+                android:text="@string/msg_vip1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/send3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s20"
+                android:layout_marginBottom="@dimen/s8"
+                android:background="@drawable/bg_radius_bottom_pink2"
+                android:gravity="center"
+                android:paddingLeft="@dimen/s10"
+                android:paddingTop="@dimen/s8"
+                android:paddingRight="@dimen/s10"
+                android:paddingBottom="@dimen/s8"
+                android:text="@string/msg_vip3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/send4"
+        android:layout_width="@dimen/s35"
+        android:layout_height="@dimen/s35"
+        android:layout_below="@+id/l1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/s20"
+        android:src="@mipmap/ce7" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/s100"
+        android:layout_height="@dimen/s100"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/a1"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="1dp" />
+
+</RelativeLayout>

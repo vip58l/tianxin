@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="20.0dip"
+        android:paddingBottom="20.0dip">
+
+        <ImageView
+            android:id="@+id/head_xw_ptr_arrow_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60.0dip"
+            android:src="@mipmap/icon_xw_ptr_arrow" />
+
+        <ProgressBar
+            android:id="@+id/head_xw_ptr_progress_bar"
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="65.0dip"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@anim/anim_xw_ptr_refresh_loading"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/head_xw_ptr_hint_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/xw_ptr_pull_to_refresh"
+            android:textColor="#ff999999"
+            android:textSize="13.0sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

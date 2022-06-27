@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.tianxin.widget.itembackTopbr
+        android:id="@+id/itemback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40" />
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemback"
+        android:layout_marginLeft="@dimen/s10"
+        android:layout_marginRight="@dimen/s10"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s150">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s150"
+                android:layout_marginTop="@dimen/s10"
+                android:background="@mipmap/b8"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/myoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/s10"
+                    android:text="可用金币"
+                    android:textColor="@color/background_color" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sendsvip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/s10"
+                android:alpha="0.8"
+                android:text="开通VIP会员"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp14" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s10"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/s40"
+                    android:layout_height="@dimen/s40"
+                    android:src="@mipmap/wifipay_wallet_deposit_default_icon"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/s10"
+                    android:text="收入"
+                    android:textColor="@color/homeback"></TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="@dimen/s40"
+                android:background="@color/c_font_defult"></View>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/s40"
+                    android:layout_height="@dimen/s40"
+                    android:src="@mipmap/wifipay_wallet_withdraw_default_icon"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/s10"
+                    android:text="支出"
+                    android:textColor="@color/homeback"></TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/l2"
+        android:layout_below="@+id/l1"
+        android:layout_marginTop="@dimen/s10"
+        android:layout_marginBottom="@dimen/s10"
+        android:padding="@dimen/s10" />
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="@dimen/s10"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s15"
+            android:text="选持支付方式"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s15"
+            android:gravity="center"
+            android:text="支付通道已关闭"
+            android:textSize="@dimen/sp20"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/s40"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lay1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/activity014"
+                android:gravity="center"
+                android:padding="@dimen/s10">
+
+                <ImageView
+                    android:layout_width="@dimen/s20"
+                    android:layout_height="@dimen/s20"
+                    android:src="@mipmap/icon_dv_ailipay" />
+
+                <TextView
+                    android:id="@+id/alipay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/s5"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="@string/alipay"
+                    android:textSize="@dimen/s16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/s5"
+                android:layout_marginRight="@dimen/s5"
+                android:layout_weight="1"
+                android:background="@drawable/activity014"
+                android:gravity="center"
+                android:padding="@dimen/s10">
+
+                <ImageView
+                    android:layout_width="@dimen/s20"
+                    android:layout_height="@dimen/s20"
+                    android:src="@mipmap/icon_dv_weixin" />
+
+                <TextView
+                    android:id="@+id/wxpaly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/s5"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="@string/wxpaly"
+                    android:textSize="@dimen/s16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:background="@drawable/activity014"
+                android:padding="@dimen/s10"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/s20"
+                    android:layout_height="@dimen/s20"
+                    android:src="@mipmap/icon_dv_ailipay" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/s5"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="银联支付" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/senbnt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s50"
+            android:background="@drawable/acitvity013"
+            android:gravity="center"
+            android:text="@string/tm88"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/pay_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/s15"
+            android:gravity="center"
+            android:text="@string/tv_msg_tt29"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

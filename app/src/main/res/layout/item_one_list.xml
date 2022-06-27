@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/s5">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s180"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s60"
+        android:alpha="0.5"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bg_shade_bom"
+        app:layout_constraintBottom_toBottomOf="@+id/image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/s10"
+        android:layout_marginBottom="@dimen/s5"
+        android:text="name"
+        android:textColor="@color/c_font_defult2"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintBottom_toTopOf="@+id/msg"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <!--android:shadowColor="#474646"-->
+    <!--android:shadowDx="1"-->
+    <!--android:shadowDy="1"-->
+    <!--android:shadowRadius="2"-->
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/s10"
+        android:layout_marginBottom="@dimen/s10"
+        android:ellipsize="end"
+        android:lines="1"
+        android:shadowColor="#787575"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="湖北.十堰|0岁|165cm|个体"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp10"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_image"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_image"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/s5"
+        android:ellipsize="end"
+        android:lines="1"
+        android:padding="@dimen/s5"
+        android:textSize="@dimen/sp12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_image" />
+
+    <LinearLayout
+        android:id="@+id/online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/image"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/online1"
+            android:layout_width="@dimen/s8"
+            android:layout_height="@dimen/s8"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/s5"
+            android:background="@drawable/acitvity017"
+            android:padding="@dimen/s5" />
+
+        <TextView
+            android:id="@+id/online2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/s2"
+            android:padding="@dimen/s5"
+            android:text="在线"
+            android:textColor="#4CAF50"
+            android:textSize="@dimen/sp10"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

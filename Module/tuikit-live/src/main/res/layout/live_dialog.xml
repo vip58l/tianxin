@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_avatar"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/sf_paydialog_yuanjiao"
+        android:gravity="center"
+
+        android:orientation="vertical"
+        android:padding="@dimen/icon_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/usersms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textSize="@dimen/beauty_h4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:textSize="@dimen/beauty_h4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+
+                android:id="@+id/report_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="举报"
+                android:textColor="@color/black"
+                android:textSize="@dimen/beauty_h4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/icon_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/icon_margin5"
+                    android:text="18" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/acitvitylinmai" />
+
+                <TextView
+                    android:id="@+id/mapgps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="北京"
+                    android:textSize="@dimen/beauty_h4" />
+
+                <TextView
+                    android:id="@+id/follow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关注0"
+                    android:textSize="@dimen/beauty_h4" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/expanded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/icon_margin"
+                android:text="感恩在这里相遇，让我们一起加油"
+                android:textSize="@dimen/beauty_h4" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/followstate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="+关注"
+                android:textColor="@color/live_primary" />
+
+            <TextView
+                android:id="@+id/useridtag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="\@TA"
+                android:textColor="@color/live_light_black" />
+
+            <TextView
+                android:id="@+id/et_user_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="主页"
+                android:textColor="@color/live_light_black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.tencent.liteav.audiosettingkit.CircleImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/audio_effect_setting_reverbtype_lowdeep"
+        app:civ_border_color="#F1ECF1"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>

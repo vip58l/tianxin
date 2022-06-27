@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/s400"
+    android:background="@drawable/sf_paydialog_yuanjiaotop"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="left|center"
+                android:paddingLeft="@dimen/s10"
+                android:paddingRight="@dimen/s10"
+                android:text="0条评论"
+                android:textColor="@android:color/background_dark" />
+
+            <ImageView
+                android:id="@+id/iv_back_btn"
+                android:layout_width="@dimen/s20"
+                android:layout_height="@dimen/s20"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/s10"
+                android:layout_marginRight="@dimen/s5"
+                android:alpha="0.5"
+                android:src="@mipmap/cdq" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@android:color/darker_gray" />
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/smartRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/s10"
+                android:paddingRight="@dimen/s10" />
+
+            <!--这里可以自一义下拉刷新footer-->
+            <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/home3" />
+
+        <LinearLayout
+            android:id="@+id/uinutpshow1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s50"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/s10"
+            android:paddingRight="@dimen/s10">
+
+            <EditText
+                android:id="@+id/tv_chat"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/s35"
+                android:layout_marginRight="@dimen/s20"
+                android:layout_weight="1"
+                android:background="@drawable/acitvity03"
+                android:gravity="left|center"
+                android:hint="留下您的精彩评论吧"
+                android:paddingLeft="@dimen/s10"
+                android:paddingTop="@dimen/s1"
+                android:paddingRight="@dimen/s10"
+                android:paddingBottom="@dimen/s1"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/tv_send"
+                android:layout_width="@dimen/s80"
+                android:layout_height="@dimen/s30"
+                android:background="@drawable/activity011"
+                android:gravity="center"
+                android:text="发送"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

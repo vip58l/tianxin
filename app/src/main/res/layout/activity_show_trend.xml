@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.LatestNews.activity_show_trend">
+
+    <com.tianxin.widget.itembackTopbr
+        android:id="@+id/itemback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemback"
+        android:layout_marginBottom="@dimen/s50">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/smartRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/boobutton"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/s10">
+
+                    <com.tianxin.widget.MTextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="2dp"
+                        android:textColor="@color/homeback"
+                        android:layout_marginBottom="@dimen/s10"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/s10"
+                        android:text="发布时间1小时前 浏览了175次"
+                        android:textSize="@dimen/sp12" />
+
+                    <TextView
+                        android:id="@+id/pinglun"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/s20"
+                        android:text="0 条评论"
+                        android:textColor="@color/homeback"
+                        android:textSize="@dimen/sp16" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/boobutton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s50"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/s5">
+
+        <EditText
+            android:id="@+id/editinupt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/s10"
+            android:layout_weight="1"
+            android:background="@drawable/acitvity011"
+            android:hint="发表评论"
+            android:padding="@dimen/s8"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:id="@+id/postsend"
+            android:layout_width="@dimen/s100"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/activity011"
+            android:gravity="center"
+            android:paddingTop="@dimen/s5"
+            android:paddingBottom="@dimen/s5"
+            android:text="评论"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

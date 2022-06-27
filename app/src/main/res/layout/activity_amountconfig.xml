@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.sesemys.activity_amountconfig">
+
+    <com.tianxin.widget.Backtitle
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40"
+        app:title_name="@string/agent_1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s150"
+        android:background="@color/purple_200"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/agentw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/s30"
+            android:gravity="center"
+            android:text="CPS 80%"
+            android:textColor="@color/white"
+            android:textSize="36sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/s10"
+            android:background="@drawable/acitvity03"
+            android:gravity="center"
+            android:paddingLeft="@dimen/s10"
+            android:paddingTop="@dimen/s3"
+            android:paddingRight="@dimen/s10"
+            android:paddingBottom="@dimen/s3"
+            android:text="@string/agen_2"
+            android:textColor="@color/shelf_background1"
+            android:textSize="@dimen/sp12" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/s10"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/s10"
+        android:paddingTop="@dimen/s5"
+        android:paddingRight="@dimen/s10"
+        android:paddingBottom="@dimen/s5">
+
+        <TextView
+            android:id="@+id/agent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/agen_3"
+            android:textColor="@color/teal006"
+            android:textSize="@dimen/sp14"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/agent"
+            android:layout_marginTop="@dimen/s5"
+            android:gravity="center"
+            android:paddingTop="@dimen/s5"
+            android:paddingRight="@dimen/s5"
+            android:paddingBottom="@dimen/s5"
+            android:text="@string/agen_4"
+            android:textColor="@color/home"
+            android:textSize="@dimen/sp12" />
+
+        <ImageView
+            android:layout_width="@dimen/s20"
+            android:layout_height="@dimen/s20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:alpha="0.5"
+            android:src="@mipmap/icon_me_jiao" />
+
+    </RelativeLayout>
+
+</LinearLayout>

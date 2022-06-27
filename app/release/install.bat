@@ -1,0 +1,1 @@
+adb install -t app-release.apk

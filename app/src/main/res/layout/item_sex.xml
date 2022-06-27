@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="93.0dip"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="13.0dip">
+
+        <ImageView
+            android:id="@+id/item_sex_img"
+            android:layout_width="105.0dip"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/cover_defult" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_sex_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp16"
+                android:text="最佳性技巧"
+                android:textStyle="bold"
+                android:textColor="#ff333333" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip">
+
+                <TextView
+                    android:id="@+id/item_sex_tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2018-03-25"
+                    android:textColor="#ff909090" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0" />
+
+                <TextView
+                    android:id="@+id/item_sex_tv_readnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="阅读 5689"
+                    android:textColor="#ff909090" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s10"
+        android:layout_marginLeft="12.0dip"
+        android:layout_marginRight="12.0dip"
+        android:background="@drawable/bg_line_base" />
+
+</LinearLayout>

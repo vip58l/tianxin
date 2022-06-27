@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home3"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.activity_home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s240"
+        android:background="@color/c_main">
+
+        <ImageView
+            android:id="@+id/bgsimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/b8" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.3"
+            android:scaleType="fitXY"
+            android:src="@mipmap/bg_shade_bom" />
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s20"
+            android:padding="@dimen/s10">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/s80"
+                android:layout_height="@dimen/s80"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/s30"
+                android:layout_marginRight="@dimen/s10"
+                android:src="@mipmap/cover_defult"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/s10"
+                android:layout_toRightOf="@+id/icon"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/s10"
+                    android:text="心语号"
+                    android:textColor="@color/home3"
+                    android:textSize="@dimen/sp12" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/user_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/activity013"
+                android:paddingLeft="@dimen/s15"
+                android:paddingTop="@dimen/s5"
+                android:paddingRight="@dimen/s15"
+                android:paddingBottom="@dimen/s5"
+                android:text="@string/edittitle"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/r2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r1"
+            android:orientation="horizontal"
+
+            android:padding="@dimen/s10">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/s25"
+                android:layout_height="@dimen/s25"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/s1"
+                android:gravity="center|left"
+                android:text="@string/tv_msg98"
+                android:textColor="@color/home3"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="@dimen/s15"
+                android:layout_height="@dimen/s15"
+                android:layout_gravity="center"
+                android:rotation="180"
+                android:src="@mipmap/authsdk_return_bg"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/s10">
+
+            <LinearLayout
+                android:id="@+id/layout"
+                style="@style/tags2">
+
+                <TextView
+                    android:id="@+id/a1"
+                    style="@style/tag4"
+                    android:layout_width="wrap_content"
+                    android:text="0.0" />
+
+                <TextView
+                    android:id="@+id/a5"
+                    style="@style/tags1"
+                    android:text="0人评价" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                style="@style/tags2">
+
+                <TextView
+                    android:id="@+id/a2"
+                    style="@style/tag4"
+                    android:text="0" />
+
+                <TextView
+                    style="@style/tags1"
+                    android:text="持证年限" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/tags2">
+
+                <TextView
+                    android:id="@+id/a3"
+                    style="@style/tag4"
+                    android:text="0" />
+
+                <TextView
+                    style="@style/tags1"
+                    android:text="帮助人数" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/tags2">
+
+                <TextView
+                    android:id="@+id/a4"
+                    style="@style/tag4"
+                    android:text="0" />
+
+                <TextView
+                    style="@style/tags1"
+                    android:text="服务时长(小时)" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/natitle"
+            android:layout_width="@dimen/s20"
+            android:layout_height="@dimen/s20"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/s10"
+            android:layout_marginRight="@dimen/s10"
+            android:padding="@dimen/s1"
+            android:src="@mipmap/a01e" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/s10"
+        android:layout_marginBottom="@dimen/s10"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/s10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s30"
+            android:gravity="left|center"
+            android:text="我的服务" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

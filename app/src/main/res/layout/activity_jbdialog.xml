@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sf_paydialog_yuanjiaotop"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s40"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/title_template1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="当前可用金币不足" />
+
+        <TextView
+            android:id="@+id/title_templatejb"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/title_template1"
+            android:gravity="center_vertical"
+            android:text="邀请好友赚取金币"
+            android:textColor="#f03" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s30"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/title_template2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="会员免费畅聊，看私密视频私照"
+            android:textColor="#55000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/title_templateff"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/title_template2"
+            android:gravity="center_vertical"
+            android:text="立即升级 >"
+            android:textColor="#f03" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:padding="@dimen/s10"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_template3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="选择更多充值"
+        android:textColor="@color/colorAccent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#ccc" />
+
+    <RelativeLayout
+        android:id="@+id/alipay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/icon_dv_ailipay"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:padding="6dp"
+            android:src="@mipmap/icon_dv_ailipay" />
+
+        <TextView
+            android:id="@+id/title_alipay"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/icon_dv_ailipay"
+            android:gravity="center_vertical"
+            android:text="支付宝支付" />
+
+        <RadioButton
+            android:id="@+id/radio_alipay"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/sf_radiobutton_selector"
+            android:checked="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/weixing"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/icon_dv_weixin"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:padding="6dp"
+            android:src="@mipmap/icon_dv_weixin" />
+
+        <TextView
+            android:id="@+id/title_wx"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/icon_dv_weixin"
+            android:drawablePadding="50dp"
+            android:gravity="center_vertical"
+            android:text="微信支付" />
+
+        <RadioButton
+            android:id="@+id/radio_weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/sf_radiobutton_selector" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/payment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/s10"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="@dimen/s10"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="@string/dialogjb"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/s10"
+        android:layout_marginBottom="@dimen/s10"
+        android:gravity="center"
+        android:text="@string/dialogmsgboot2"
+        android:textColor="@color/home"
+        android:textSize="@dimen/sp12"/>
+
+</LinearLayout>
